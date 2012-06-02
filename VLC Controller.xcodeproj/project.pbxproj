@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
+		B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
+		B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */; };
+		B7DEDDB4157A468000ADBD36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7DEDDB2157A468000ADBD36 /* InfoPlist.strings */; };
+		B7DEDDB6157A468000ADBD36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDB5157A468000ADBD36 /* main.m */; };
+		B7DEDDBA157A468000ADBD36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDB9157A468000ADBD36 /* AppDelegate.m */; };
+		B7DEDDBD157A468000ADBD36 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DEDDBB157A468000ADBD36 /* MainStoryboard.storyboard */; };
+		B7DEDDC0157A468000ADBD36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDBF157A468000ADBD36 /* ViewController.m */; };
+		B7DEDDC8157A468100ADBD36 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDC7157A468100ADBD36 /* SenTestingKit.framework */; };
+		B7DEDDC9157A468100ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
+		B7DEDDCA157A468100ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
+		B7DEDDD2157A468100ADBD36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7DEDDD0157A468100ADBD36 /* InfoPlist.strings */; };
+		B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7DEDDCB157A468100ADBD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DEDD9C157A467F00ADBD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7DEDDA4157A468000ADBD36;
+			remoteInfo = "VLC Controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7DEDDA5157A468000ADBD36 /* VLC Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DEDDA9157A468000ADBD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B7DEDDAB157A468000ADBD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B7DEDDB1157A468000ADBD36 /* VLC Controller-Info.plist */ = {isa = PBXFileReference; path = "VLC Controller-Info.plist"; sourceTree = "<group>"; };
+		B7DEDDB3157A468000ADBD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7DEDDB5157A468000ADBD36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B7DEDDB7157A468000ADBD36 /* VLC Controller-Prefix.pch */ = {isa = PBXFileReference; path = "VLC Controller-Prefix.pch"; sourceTree = "<group>"; };
+		B7DEDDB8157A468000ADBD36 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7DEDDB9157A468000ADBD36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B7DEDDBC157A468000ADBD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B7DEDDBE157A468000ADBD36 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		B7DEDDBF157A468000ADBD36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B7DEDDC6157A468100ADBD36 /* VLC ControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLC ControllerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DEDDC7157A468100ADBD36 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B7DEDDCF157A468100ADBD36 /* VLC ControllerTests-Info.plist */ = {isa = PBXFileReference; path = "VLC ControllerTests-Info.plist"; sourceTree = "<group>"; };
+		B7DEDDD1157A468100ADBD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B7DEDDD3157A468100ADBD36 /* VLC_ControllerTests.h */ = {isa = PBXFileReference; path = VLC_ControllerTests.h; sourceTree = "<group>"; };
+		B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLC_ControllerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7DEDDA2157A468000ADBD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */,
+				B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */,
+				B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DEDDC2157A468100ADBD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEDDC8157A468100ADBD36 /* SenTestingKit.framework in Frameworks */,
+				B7DEDDC9157A468100ADBD36 /* UIKit.framework in Frameworks */,
+				B7DEDDCA157A468100ADBD36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7DEDD9A157A467F00ADBD36 = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDAF157A468000ADBD36 /* VLC Controller */,
+				B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */,
+				B7DEDDA8157A468000ADBD36 /* Frameworks */,
+				B7DEDDA6157A468000ADBD36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7DEDDA6157A468000ADBD36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDA5157A468000ADBD36 /* VLC Controller.app */,
+				B7DEDDC6157A468100ADBD36 /* VLC ControllerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7DEDDA8157A468000ADBD36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDA9157A468000ADBD36 /* UIKit.framework */,
+				B7DEDDAB157A468000ADBD36 /* Foundation.framework */,
+				B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */,
+				B7DEDDC7157A468100ADBD36 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7DEDDAF157A468000ADBD36 /* VLC Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDB8157A468000ADBD36 /* AppDelegate.h */,
+				B7DEDDB9157A468000ADBD36 /* AppDelegate.m */,
+				B7DEDDBB157A468000ADBD36 /* MainStoryboard.storyboard */,
+				B7DEDDBE157A468000ADBD36 /* ViewController.h */,
+				B7DEDDBF157A468000ADBD36 /* ViewController.m */,
+				B7DEDDB0157A468000ADBD36 /* Supporting Files */,
+			);
+			path = "VLC Controller";
+			sourceTree = "<group>";
+		};
+		B7DEDDB0157A468000ADBD36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDB1157A468000ADBD36 /* VLC Controller-Info.plist */,
+				B7DEDDB2157A468000ADBD36 /* InfoPlist.strings */,
+				B7DEDDB5157A468000ADBD36 /* main.m */,
+				B7DEDDB7157A468000ADBD36 /* VLC Controller-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDD3157A468100ADBD36 /* VLC_ControllerTests.h */,
+				B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */,
+				B7DEDDCE157A468100ADBD36 /* Supporting Files */,
+			);
+			path = "VLC ControllerTests";
+			sourceTree = "<group>";
+		};
+		B7DEDDCE157A468100ADBD36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDCF157A468100ADBD36 /* VLC ControllerTests-Info.plist */,
+				B7DEDDD0157A468100ADBD36 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7DEDDA4157A468000ADBD36 /* VLC Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DEDDD8157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC Controller" */;
+			buildPhases = (
+				B7DEDDA1157A468000ADBD36 /* Sources */,
+				B7DEDDA2157A468000ADBD36 /* Frameworks */,
+				B7DEDDA3157A468000ADBD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VLC Controller";
+			productName = "VLC Controller";
+			productReference = B7DEDDA5157A468000ADBD36 /* VLC Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7DEDDC5157A468100ADBD36 /* VLC ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DEDDDB157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC ControllerTests" */;
+			buildPhases = (
+				B7DEDDC1157A468100ADBD36 /* Sources */,
+				B7DEDDC2157A468100ADBD36 /* Frameworks */,
+				B7DEDDC3157A468100ADBD36 /* Resources */,
+				B7DEDDC4157A468100ADBD36 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7DEDDCC157A468100ADBD36 /* PBXTargetDependency */,
+			);
+			name = "VLC ControllerTests";
+			productName = "VLC ControllerTests";
+			productReference = B7DEDDC6157A468100ADBD36 /* VLC ControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7DEDD9C157A467F00ADBD36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B7DEDD9F157A467F00ADBD36 /* Build configuration list for PBXProject "VLC Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B7DEDD9A157A467F00ADBD36;
+			productRefGroup = B7DEDDA6157A468000ADBD36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7DEDDA4157A468000ADBD36 /* VLC Controller */,
+				B7DEDDC5157A468100ADBD36 /* VLC ControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7DEDDA3157A468000ADBD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEDDB4157A468000ADBD36 /* InfoPlist.strings in Resources */,
+				B7DEDDBD157A468000ADBD36 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DEDDC3157A468100ADBD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEDDD2157A468100ADBD36 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B7DEDDC4157A468100ADBD36 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7DEDDA1157A468000ADBD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEDDB6157A468000ADBD36 /* main.m in Sources */,
+				B7DEDDBA157A468000ADBD36 /* AppDelegate.m in Sources */,
+				B7DEDDC0157A468000ADBD36 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7DEDDC1157A468100ADBD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7DEDDCC157A468100ADBD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7DEDDA4157A468000ADBD36 /* VLC Controller */;
+			targetProxy = B7DEDDCB157A468100ADBD36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7DEDDB2157A468000ADBD36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DEDDB3157A468000ADBD36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B7DEDDBB157A468000ADBD36 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DEDDBC157A468000ADBD36 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		B7DEDDD0157A468100ADBD36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7DEDDD1157A468100ADBD36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7DEDDD6157A468100ADBD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B7DEDDD7157A468100ADBD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7DEDDD9157A468100ADBD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
+				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B7DEDDDA157A468100ADBD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
+				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B7DEDDDC157A468100ADBD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
+				INFOPLIST_FILE = "VLC ControllerTests/VLC ControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B7DEDDDD157A468100ADBD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
+				INFOPLIST_FILE = "VLC ControllerTests/VLC ControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7DEDD9F157A467F00ADBD36 /* Build configuration list for PBXProject "VLC Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DEDDD6157A468100ADBD36 /* Debug */,
+				B7DEDDD7157A468100ADBD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DEDDD8157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DEDDD9157A468100ADBD36 /* Debug */,
+				B7DEDDDA157A468100ADBD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B7DEDDDB157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7DEDDDC157A468100ADBD36 /* Debug */,
+				B7DEDDDD157A468100ADBD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7DEDD9C157A467F00ADBD36 /* Project object */;
+}
