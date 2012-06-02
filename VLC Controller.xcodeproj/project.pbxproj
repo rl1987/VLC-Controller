@@ -20,6 +20,13 @@
 		B7DEDDCA157A468100ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
 		B7DEDDD2157A468100ADBD36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7DEDDD0157A468100ADBD36 /* InfoPlist.strings */; };
 		B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */; };
+		B7DEDDE0157A68FF00ADBD36 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDDF157A68FF00ADBD36 /* ConfigViewController.m */; };
+		B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDEB157A6D7000ADBD36 /* AddressValidator.m */; };
+		B7DEDDF3157A6D7000ADBD36 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDED157A6D7000ADBD36 /* InputValidator.m */; };
+		B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDEF157A6D7000ADBD36 /* PortValidator.m */; };
+		B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */; };
+		B7DEDDF8157A7AAA00ADBD36 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDF7157A7AAA00ADBD36 /* XMLReader.m */; };
+		B7DEDDFE157A86C500ADBD36 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDFD157A86C500ADBD36 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +44,34 @@
 		B7DEDDA9157A468000ADBD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7DEDDAB157A468000ADBD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B7DEDDB1157A468000ADBD36 /* VLC Controller-Info.plist */ = {isa = PBXFileReference; path = "VLC Controller-Info.plist"; sourceTree = "<group>"; };
+		B7DEDDB1157A468000ADBD36 /* VLC Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLC Controller-Info.plist"; sourceTree = "<group>"; };
 		B7DEDDB3157A468000ADBD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B7DEDDB5157A468000ADBD36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B7DEDDB7157A468000ADBD36 /* VLC Controller-Prefix.pch */ = {isa = PBXFileReference; path = "VLC Controller-Prefix.pch"; sourceTree = "<group>"; };
-		B7DEDDB8157A468000ADBD36 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B7DEDDB7157A468000ADBD36 /* VLC Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLC Controller-Prefix.pch"; sourceTree = "<group>"; };
+		B7DEDDB8157A468000ADBD36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B7DEDDB9157A468000ADBD36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B7DEDDBC157A468000ADBD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B7DEDDBE157A468000ADBD36 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		B7DEDDBE157A468000ADBD36 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B7DEDDBF157A468000ADBD36 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B7DEDDC6157A468100ADBD36 /* VLC ControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLC ControllerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEDDC7157A468100ADBD36 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B7DEDDCF157A468100ADBD36 /* VLC ControllerTests-Info.plist */ = {isa = PBXFileReference; path = "VLC ControllerTests-Info.plist"; sourceTree = "<group>"; };
+		B7DEDDCF157A468100ADBD36 /* VLC ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLC ControllerTests-Info.plist"; sourceTree = "<group>"; };
 		B7DEDDD1157A468100ADBD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B7DEDDD3157A468100ADBD36 /* VLC_ControllerTests.h */ = {isa = PBXFileReference; path = VLC_ControllerTests.h; sourceTree = "<group>"; };
+		B7DEDDD3157A468100ADBD36 /* VLC_ControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLC_ControllerTests.h; sourceTree = "<group>"; };
 		B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLC_ControllerTests.m; sourceTree = "<group>"; };
+		B7DEDDDE157A68FF00ADBD36 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
+		B7DEDDDF157A68FF00ADBD36 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
+		B7DEDDEA157A6D7000ADBD36 /* AddressValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressValidator.h; sourceTree = "<group>"; };
+		B7DEDDEB157A6D7000ADBD36 /* AddressValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidator.m; sourceTree = "<group>"; };
+		B7DEDDEC157A6D7000ADBD36 /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		B7DEDDED157A6D7000ADBD36 /* InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		B7DEDDEE157A6D7000ADBD36 /* PortValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortValidator.h; sourceTree = "<group>"; };
+		B7DEDDEF157A6D7000ADBD36 /* PortValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortValidator.m; sourceTree = "<group>"; };
+		B7DEDDF0157A6D7000ADBD36 /* ValidatingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatingTextField.h; sourceTree = "<group>"; };
+		B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatingTextField.m; sourceTree = "<group>"; };
+		B7DEDDF6157A7AA900ADBD36 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		B7DEDDF7157A7AAA00ADBD36 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		B7DEDDFD157A86C500ADBD36 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DEDDFE157A86C500ADBD36 /* libxml2.dylib in Frameworks */,
 				B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */,
 				B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */,
 				B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +121,7 @@
 		B7DEDDA8157A468000ADBD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEDDFD157A86C500ADBD36 /* libxml2.dylib */,
 				B7DEDDA9157A468000ADBD36 /* UIKit.framework */,
 				B7DEDDAB157A468000ADBD36 /* Foundation.framework */,
 				B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */,
@@ -111,11 +133,14 @@
 		B7DEDDAF157A468000ADBD36 /* VLC Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEDDE8157A6D1800ADBD36 /* Config */,
 				B7DEDDB8157A468000ADBD36 /* AppDelegate.h */,
 				B7DEDDB9157A468000ADBD36 /* AppDelegate.m */,
 				B7DEDDBB157A468000ADBD36 /* MainStoryboard.storyboard */,
 				B7DEDDBE157A468000ADBD36 /* ViewController.h */,
 				B7DEDDBF157A468000ADBD36 /* ViewController.m */,
+				B7DEDDF6157A7AA900ADBD36 /* XMLReader.h */,
+				B7DEDDF7157A7AAA00ADBD36 /* XMLReader.m */,
 				B7DEDDB0157A468000ADBD36 /* Supporting Files */,
 			);
 			path = "VLC Controller";
@@ -151,6 +176,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B7DEDDE8157A6D1800ADBD36 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDE9157A6D3A00ADBD36 /* Input validation */,
+				B7DEDDDE157A68FF00ADBD36 /* ConfigViewController.h */,
+				B7DEDDDF157A68FF00ADBD36 /* ConfigViewController.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		B7DEDDE9157A6D3A00ADBD36 /* Input validation */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEDDEA157A6D7000ADBD36 /* AddressValidator.h */,
+				B7DEDDEB157A6D7000ADBD36 /* AddressValidator.m */,
+				B7DEDDEC157A6D7000ADBD36 /* InputValidator.h */,
+				B7DEDDED157A6D7000ADBD36 /* InputValidator.m */,
+				B7DEDDEE157A6D7000ADBD36 /* PortValidator.h */,
+				B7DEDDEF157A6D7000ADBD36 /* PortValidator.m */,
+				B7DEDDF0157A6D7000ADBD36 /* ValidatingTextField.h */,
+				B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */,
+			);
+			name = "Input validation";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +211,7 @@
 				B7DEDDA1157A468000ADBD36 /* Sources */,
 				B7DEDDA2157A468000ADBD36 /* Frameworks */,
 				B7DEDDA3157A468000ADBD36 /* Resources */,
+				B7DEDDF9157A7F4A00ADBD36 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +301,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		B7DEDDF9157A7F4A00ADBD36 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,6 +324,12 @@
 				B7DEDDB6157A468000ADBD36 /* main.m in Sources */,
 				B7DEDDBA157A468000ADBD36 /* AppDelegate.m in Sources */,
 				B7DEDDC0157A468000ADBD36 /* ViewController.m in Sources */,
+				B7DEDDE0157A68FF00ADBD36 /* ConfigViewController.m in Sources */,
+				B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */,
+				B7DEDDF3157A6D7000ADBD36 /* InputValidator.m in Sources */,
+				B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */,
+				B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */,
+				B7DEDDF8157A7AAA00ADBD36 /* XMLReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +385,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -329,7 +399,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -340,15 +412,17 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-lxml2";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
