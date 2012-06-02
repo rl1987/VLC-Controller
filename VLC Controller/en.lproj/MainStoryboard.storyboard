@@ -209,6 +209,8 @@
                     <connections>
                         <outlet property="filenameLabel" destination="f4h-ly-EVm" id="jt1-Tz-Hlr"/>
                         <outlet property="timeLabel" destination="CF4-YR-eKN" id="Nxz-IC-OiN"/>
+                        <outlet property="timeSlider" destination="ZJI-Ym-nUe" id="dUR-ns-SpW"/>
+                        <outlet property="volumeSlider" destination="ory-zS-X32" id="n1c-ch-Wtb"/>
                     </connections>
                 </viewController>
             </objects>
@@ -297,38 +299,6 @@
             <point key="canvasLocation" x="615" y="12"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ConfigViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConfigViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelPressed"/>
-                <relationship kind="action" name="okPressed"/>
-                <relationship kind="outlet" name="addressField" candidateClass="ValidatingTextField"/>
-                <relationship kind="outlet" name="portField" candidateClass="ValidatingTextField"/>
-            </relationships>
-        </class>
-        <class className="ValidatingTextField" superclassName="UITextField">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ValidatingTextField.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="browsePressed:"/>
-                <relationship kind="action" name="louderPressed:"/>
-                <relationship kind="action" name="nextPressed:"/>
-                <relationship kind="action" name="playPressed:"/>
-                <relationship kind="action" name="playlistPressed:"/>
-                <relationship kind="action" name="prevPressed:"/>
-                <relationship kind="action" name="seekBackPressed:"/>
-                <relationship kind="action" name="seekForwardPressed:"/>
-                <relationship kind="action" name="softerPressed:"/>
-                <relationship kind="action" name="stopPressed:"/>
-                <relationship kind="action" name="timeSliderValueChanged:"/>
-                <relationship kind="outlet" name="filenameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

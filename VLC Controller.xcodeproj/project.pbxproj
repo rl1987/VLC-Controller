@@ -26,7 +26,6 @@
 		B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDEF157A6D7000ADBD36 /* PortValidator.m */; };
 		B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */; };
 		B7DEDDF8157A7AAA00ADBD36 /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDF7157A7AAA00ADBD36 /* XMLReader.m */; };
-		B7DEDDFE157A86C500ADBD36 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDFD157A86C500ADBD36 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +70,6 @@
 		B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatingTextField.m; sourceTree = "<group>"; };
 		B7DEDDF6157A7AA900ADBD36 /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		B7DEDDF7157A7AAA00ADBD36 /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
-		B7DEDDFD157A86C500ADBD36 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DEDDFE157A86C500ADBD36 /* libxml2.dylib in Frameworks */,
 				B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */,
 				B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */,
 				B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */,
@@ -121,7 +118,6 @@
 		B7DEDDA8157A468000ADBD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B7DEDDFD157A86C500ADBD36 /* libxml2.dylib */,
 				B7DEDDA9157A468000ADBD36 /* UIKit.framework */,
 				B7DEDDAB157A468000ADBD36 /* Foundation.framework */,
 				B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */,
@@ -433,7 +429,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -444,7 +442,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

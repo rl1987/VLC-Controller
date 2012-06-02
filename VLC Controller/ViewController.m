@@ -13,6 +13,8 @@
 
 @synthesize timeLabel = _timeLabel;
 @synthesize filenameLabel = _filenameLabel;
+@synthesize timeSlider = _timeSlider;
+@synthesize volumeSlider = _volumeSlider;
 
 @synthesize connected = _connected;
 @synthesize status = _status;
@@ -21,7 +23,7 @@
 #pragma mark -
 #pragma mark View lifecycle
 
-#define TIMER_INTERVAL 0.1
+#define TIMER_INTERVAL 1.0
 
 - (void)viewDidLoad
 {
@@ -44,6 +46,8 @@
     [self setTimeLabel:nil];
     [self setFilenameLabel:nil];
     
+    [self setTimeSlider:nil];
+    [self setVolumeSlider:nil];
     [super viewDidUnload];
 }
 
@@ -55,7 +59,36 @@
     if (!self.connected)
         return;
     
-    // ...
+    dispatch_queue_t q = dispatch_queue_create("status request q", NULL);
+    
+    dispatch_async(q, ^{
+        NSURL *statusURL = 
+        [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                              @"status.xml"]];
+        
+        NSData *xmlData = [NSData dataWithContentsOfURL:statusURL];
+        
+        NSError *error = nil;
+        
+        NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLData:xmlData 
+                                                                error:error];
+        
+        if (xmlDictionary) {
+            self.connected = YES;
+            
+            self.status = xmlDictionary;
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self refreshGUI];
+            });
+        } else
+            NSLog(@"%@",[NSString stringWithCString:[xmlData bytes] 
+                                           encoding:NSASCIIStringEncoding]);
+        
+    });
+    
+    dispatch_release(q);
+    
 }
 
 #pragma mark -
@@ -142,6 +175,34 @@
 {
     NSLog(@"ViewController refreshGUI");
     NSLog(@"%@",self.status);
+    
+    self.filenameLabel.text = 
+    [self.status valueForKeyPath:@"root.information.meta-information.title.text"];
+    
+    int totalSeconds = 
+    [[self.status valueForKeyPath:@"root.length.text"] intValue];
+    
+    int secondsSoFar = 
+    [[self.status valueForKeyPath:@"root.time.text"] intValue];
+    
+    self.timeSlider.value = 
+    (secondsSoFar * self.timeSlider.maximumValue)/totalSeconds;
+    
+    int seconds1 = secondsSoFar % 60;
+    int minutes1 = secondsSoFar / 60;
+    int hours1 = minutes1 / 60;
+    minutes1 -= hours1*60;
+    
+    int seconds2 = totalSeconds % 60;
+    int minutes2 = totalSeconds / 60;
+    int hours2 = minutes2 / 60;
+    minutes2 -= hours2*60;
+    
+    self.timeLabel.text=
+    [NSString stringWithFormat:@"%1d%1d:%1d%1d:%1d%1d / %1d%1d:%1d%1d:%1d%1d",
+     hours1/10,hours1%10,minutes1/10,minutes1%10,seconds1/10,seconds1%10,
+     hours2/10,hours2%10,minutes2/10,minutes2%10,seconds2/10,seconds2%10];  
+    
 }
 
 #pragma mark -

@@ -10,6 +10,8 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *filenameLabel;
+@property (strong, nonatomic) IBOutlet UISlider *timeSlider;
+@property (strong, nonatomic) IBOutlet UISlider *volumeSlider;
 
 - (IBAction)timeSliderValueChanged:(id)sender;
 - (IBAction)seekBackPressed:(id)sender;
