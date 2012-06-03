@@ -24,5 +24,6 @@
 - (IBAction)louderPressed:(id)sender;
 - (IBAction)playlistPressed:(id)sender;
 - (IBAction)browsePressed:(id)sender;
+- (IBAction)volumeSliderValueChanged:(UISlider *)sender;
 
 @end

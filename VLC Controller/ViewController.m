@@ -209,6 +209,22 @@
 - (IBAction)browsePressed:(id)sender {
 }
 
+- (IBAction)volumeSliderValueChanged:(UISlider *)sender 
+{
+    NSURL *requestURL = 
+    [NSURL URLWithString:
+     [self.vlcAddress stringByAppendingFormat:@"status.xml?command=volume&val=%f",
+      sender.value]];
+    
+    dispatch_queue_t q = dispatch_queue_create("louder request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);    
+}
+
 #pragma mark -
 #pragma mark Networking stuff
 
@@ -290,12 +306,13 @@
     int hours2 = minutes2 / 60;
     minutes2 -= hours2*60;
     
-    self.timeLabel.text=
+    self.timeLabel.text =
     [NSString stringWithFormat:@"%1d%1d:%1d%1d:%1d%1d / %1d%1d:%1d%1d:%1d%1d",
      hours1/10,hours1%10,minutes1/10,minutes1%10,seconds1/10,seconds1%10,
      hours2/10,hours2%10,minutes2/10,minutes2%10,seconds2/10,seconds2%10];  
     
-    
+    self.volumeSlider.value =
+    [[self.status valueForKeyPath:@"root.volume.text"] floatValue];
     
 }
 
