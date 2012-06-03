@@ -16,6 +16,7 @@
 @synthesize filenameLabel = _filenameLabel;
 @synthesize timeSlider = _timeSlider;
 @synthesize volumeSlider = _volumeSlider;
+@synthesize playButton = _playButton;
 
 @synthesize connected = _connected;
 @synthesize status = _status;
@@ -52,6 +53,7 @@
     
     [self setTimeSlider:nil];
     [self setVolumeSlider:nil];
+    [self setPlayButton:nil];
     [super viewDidUnload];
 }
 
@@ -313,6 +315,13 @@
     
     self.volumeSlider.value =
     [[self.status valueForKeyPath:@"root.volume.text"] floatValue];
+    
+    NSString *state = [self.status valueForKeyPath:@"root.state.text"];
+    
+    if ([state isEqualToString:@"playing"])
+        self.playButton.titleLabel.text = @"Pause";
+    else
+        self.playButton.titleLabel.text = @"Play";   
     
 }
 

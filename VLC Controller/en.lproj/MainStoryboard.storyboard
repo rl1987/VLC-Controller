@@ -29,9 +29,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FCh-gp-Yf7">
-                                <rect key="frame" x="84" y="234" width="72" height="37"/>
+                                <rect key="frame" x="66" y="234" width="90" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="Prev">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,9 +44,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bTO-1H-jOn">
-                                <rect key="frame" x="164" y="234" width="72" height="37"/>
+                                <rect key="frame" x="164" y="234" width="90" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -58,11 +58,11 @@
                                     <action selector="nextPressed:" destination="2" eventType="touchUpInside" id="9Lt-vt-1Hl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1nN-fq-Xmm">
-                                <rect key="frame" x="84" y="189" width="72" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" id="1nN-fq-Xmm">
+                                <rect key="frame" x="66" y="189" width="90" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Play">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                <state key="normal" title="Pause">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -74,9 +74,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cjh-g0-pWo">
-                                <rect key="frame" x="164" y="189" width="72" height="37"/>
+                                <rect key="frame" x="164" y="189" width="90" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <state key="normal" title="Stop">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,7 +132,7 @@
                                     <action selector="seekForwardPressed:" destination="2" eventType="touchUpInside" id="8u9-1a-m4P"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="200" id="ory-zS-X32">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" id="ory-zS-X32">
                                 <rect key="frame" x="18" y="376" width="284" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
@@ -211,6 +211,7 @@
                     </view>
                     <connections>
                         <outlet property="filenameLabel" destination="f4h-ly-EVm" id="jt1-Tz-Hlr"/>
+                        <outlet property="playButton" destination="1nN-fq-Xmm" id="ogN-Kr-MnD"/>
                         <outlet property="timeLabel" destination="CF4-YR-eKN" id="Nxz-IC-OiN"/>
                         <outlet property="timeSlider" destination="ZJI-Ym-nUe" id="dUR-ns-SpW"/>
                         <outlet property="volumeSlider" destination="ory-zS-X32" id="n1c-ch-Wtb"/>
@@ -302,6 +303,42 @@
             <point key="canvasLocation" x="615" y="12"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="ConfigViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConfigViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelPressed"/>
+                <relationship kind="action" name="okPressed"/>
+                <relationship kind="outlet" name="addressField" candidateClass="ValidatingTextField"/>
+                <relationship kind="outlet" name="portField" candidateClass="ValidatingTextField"/>
+            </relationships>
+        </class>
+        <class className="ValidatingTextField" superclassName="UITextField">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ValidatingTextField.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="browsePressed:"/>
+                <relationship kind="action" name="louderPressed:"/>
+                <relationship kind="action" name="nextPressed:"/>
+                <relationship kind="action" name="playPressed:"/>
+                <relationship kind="action" name="playlistPressed:"/>
+                <relationship kind="action" name="prevPressed:"/>
+                <relationship kind="action" name="seekBackPressed:"/>
+                <relationship kind="action" name="seekForwardPressed:"/>
+                <relationship kind="action" name="softerPressed:"/>
+                <relationship kind="action" name="stopPressed:"/>
+                <relationship kind="action" name="timeSliderValueChanged:"/>
+                <relationship kind="action" name="volumeSliderValueChanged:" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="filenameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeSlider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="volumeSlider" candidateClass="UISlider"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
