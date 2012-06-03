@@ -6,6 +6,7 @@
 @property (nonatomic,strong) NSString *vlcAddress;
 
 - (void)refreshGUI;
+- (void)refreshStatusWithURL:(NSURL *)statusURL;
 
 @end
 
@@ -24,6 +25,9 @@
 #pragma mark View lifecycle
 
 #define TIMER_INTERVAL 1.0
+#define MAX_VOLUME  200
+#define MAX_VOL_90P 190
+#define MAX_VOL_10P 10
 
 - (void)viewDidLoad
 {
@@ -66,25 +70,7 @@
         [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
                               @"status.xml"]];
         
-        NSData *xmlData = [NSData dataWithContentsOfURL:statusURL];
-        
-        NSError *error = nil;
-        
-        NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLData:xmlData 
-                                                                error:error];
-        
-        if (xmlDictionary) {
-            self.connected = YES;
-            
-            self.status = xmlDictionary;
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self refreshGUI];
-            });
-        } else
-            NSLog(@"%@",[NSString stringWithCString:[xmlData bytes] 
-                                           encoding:NSASCIIStringEncoding]);
-        
+        [self refreshStatusWithURL:statusURL];
     });
     
     dispatch_release(q);
@@ -103,28 +89,150 @@
 - (IBAction)seekForwardPressed:(id)sender {
 }
 
-- (IBAction)playPressed:(id)sender {
+- (IBAction)playPressed:(id)sender 
+{
+    NSURL *requestURL;
+    
+    if ([[self.status valueForKeyPath:@"root.state.text"] 
+         isEqualToString:@"stop"])
+        requestURL =
+        [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                              @"status.xml?command=pl_play"]];
+    else
+        requestURL =
+        [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                              @"status.xml?command=pl_pause"]];
+    
+    dispatch_queue_t q = dispatch_queue_create("play/pause request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
-- (IBAction)stopPressed:(id)sender {
+- (IBAction)stopPressed:(id)sender 
+{
+    
+    NSURL *requestURL = 
+    [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                          @"status.xml?command=pl_stop"]];
+    
+    dispatch_queue_t q = dispatch_queue_create("stop request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
-- (IBAction)prevPressed:(id)sender {
+- (IBAction)prevPressed:(id)sender 
+{
+    NSURL *requestURL = 
+    [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                          @"status.xml?command=pl_previous"]];
+    
+    dispatch_queue_t q = dispatch_queue_create("prev request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
-- (IBAction)nextPressed:(id)sender {
+- (IBAction)nextPressed:(id)sender 
+{
+    NSURL *requestURL = 
+    [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                          @"status.xml?command=pl_next"]];
+    
+    dispatch_queue_t q = dispatch_queue_create("next request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
-- (IBAction)softerPressed:(id)sender {
+- (IBAction)softerPressed:(id)sender 
+{
+    NSURL *requestURL; 
+    
+    if ([[self.status valueForKeyPath:@"root.volume.text"] intValue] > MAX_VOL_10P)
+        requestURL =
+        [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                              @"status.xml?command=volume&val=-10%25"]];
+    else
+        requestURL =
+        [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                              @"status.xml?command=volume&val=0"]];
+    
+    dispatch_queue_t q = dispatch_queue_create("softer request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
-- (IBAction)louderPressed:(id)sender {
+- (IBAction)louderPressed:(id)sender 
+{
+    NSString *urlString;
+    
+    if ([[self.status valueForKeyPath:@"root.volume.text"] intValue] < MAX_VOL_90P)
+        urlString = [self.vlcAddress stringByAppendingString:
+                     @"status.xml?command=volume&val=%2B10%25"];
+    else
+        urlString = [self.vlcAddress stringByAppendingFormat:
+                     @"status.xml?command=volume&val=%d",MAX_VOLUME];
+    
+    
+    NSURL *requestURL = [NSURL URLWithString:urlString];
+    
+    dispatch_queue_t q = dispatch_queue_create("louder request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
 - (IBAction)playlistPressed:(id)sender {
 }
 
 - (IBAction)browsePressed:(id)sender {
+}
+
+#pragma mark -
+#pragma mark Networking stuff
+
+- (void)refreshStatusWithURL:(NSURL *)statusURL
+{
+    NSData *xmlData = [NSData dataWithContentsOfURL:statusURL];
+    
+    NSError *error = nil;
+    
+    NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLData:xmlData 
+                                                            error:error];
+    
+    if (xmlDictionary) {
+        self.connected = YES;
+        
+        self.status = xmlDictionary;
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self refreshGUI];
+        });
+    } 
+//    else
+//        NSLog(@"%@",[NSString stringWithCString:[xmlData bytes] 
+//                                       encoding:NSASCIIStringEncoding]);
 }
 
 #pragma mark -
@@ -144,25 +252,7 @@
         [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
                               @"status.xml"]];
         
-        NSData *xmlData = [NSData dataWithContentsOfURL:statusURL];
-        
-        NSError *error = nil;
-        
-        NSDictionary *xmlDictionary = [XMLReader dictionaryForXMLData:xmlData 
-                                                                error:error];
-        
-        if (xmlDictionary) {
-            self.connected = YES;
-            
-            self.status = xmlDictionary;
-            
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [self refreshGUI];
-            });
-        } else
-            NSLog(@"%@",[NSString stringWithCString:[xmlData bytes] 
-                                           encoding:NSASCIIStringEncoding]);
-            
+        [self refreshStatusWithURL:statusURL];        
     });
     
     dispatch_release(q);
@@ -188,6 +278,8 @@
     self.timeSlider.value = 
     (secondsSoFar * self.timeSlider.maximumValue)/totalSeconds;
     
+    [self.timeSlider setNeedsDisplay];
+    
     int seconds1 = secondsSoFar % 60;
     int minutes1 = secondsSoFar / 60;
     int hours1 = minutes1 / 60;
@@ -202,6 +294,8 @@
     [NSString stringWithFormat:@"%1d%1d:%1d%1d:%1d%1d / %1d%1d:%1d%1d:%1d%1d",
      hours1/10,hours1%10,minutes1/10,minutes1%10,seconds1/10,seconds1%10,
      hours2/10,hours2%10,minutes2/10,minutes2%10,seconds2/10,seconds2%10];  
+    
+    
     
 }
 
