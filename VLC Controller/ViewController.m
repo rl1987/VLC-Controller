@@ -85,10 +85,34 @@
 - (IBAction)timeSliderValueChanged:(id)sender {
 }
 
-- (IBAction)seekBackPressed:(id)sender {
+- (IBAction)seekBackPressed:(id)sender 
+{
+    NSURL *requestURL = 
+    [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                          @"status.xml?command=seek&val=-30"]];
+    
+    dispatch_queue_t q = dispatch_queue_create("seek back request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
-- (IBAction)seekForwardPressed:(id)sender {
+- (IBAction)seekForwardPressed:(id)sender 
+{
+    NSURL *requestURL = 
+    [NSURL URLWithString:[self.vlcAddress stringByAppendingString:
+                          @"status.xml?command=seek&val=+"]];
+    
+    dispatch_queue_t q = dispatch_queue_create("seek forward request q", NULL);
+    
+    dispatch_async(q, ^{
+        [self refreshStatusWithURL:requestURL];
+    });
+    
+    dispatch_release(q);
 }
 
 - (IBAction)playPressed:(id)sender 
@@ -296,7 +320,7 @@
     self.timeSlider.value = 
     (secondsSoFar * self.timeSlider.maximumValue)/totalSeconds;
     
-    [self.timeSlider setNeedsDisplay];
+    [self.timeSlider setNeedsLayout];
     
     int seconds1 = secondsSoFar % 60;
     int minutes1 = secondsSoFar / 60;
