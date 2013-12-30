@@ -280,7 +280,7 @@
 #pragma mark -
 #pragma mark Config view controller delegate
 
-- (void)senderViewController:(ConfigViewController *)cvc 
+- (void)configViewController:(ConfigViewController *)cvc 
         didFinishWithAddress:(NSString *)ipAddressString
                      andPort:(int)port
 {

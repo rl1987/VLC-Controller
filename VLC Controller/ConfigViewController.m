@@ -83,7 +83,7 @@
         
         [defaults synchronize];
         
-        [self.delegate senderViewController:self 
+        [self.delegate configViewController:self 
                        didFinishWithAddress:[self.addressField.text copy]
                                     andPort:[self.portField.text intValue]];
     }

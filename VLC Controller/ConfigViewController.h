@@ -6,7 +6,7 @@
 
 @protocol ConfigViewControllerDelegate
 @required
-- (void)senderViewController:(ConfigViewController *)cvc 
+- (void)configViewController:(ConfigViewController *)cvc 
         didFinishWithAddress:(NSString *)ipAddressString
                      andPort:(int)port;
 
