@@ -45,4 +45,28 @@
                    @"%@ should NOT be considered valid input.", textField.text);
 }
 
+- (void)testIncompleteIPv4AddressesAreInvalidated
+{
+    AddressValidator *validator = [[AddressValidator alloc] init];
+    
+    UITextField *textField = [[UITextField alloc] init];
+    
+    textField.text = @"226.168.1.";
+    
+    XCTAssertFalse([validator validate:textField],
+                   @"%@ should NOT be considered valid input.", textField.text);
+}
+
+- (void)testTooLongIPv4AddressesAreInvalidated
+{
+    AddressValidator *validator = [[AddressValidator alloc] init];
+    
+    UITextField *textField = [[UITextField alloc] init];
+    
+    textField.text = @"226.168.1.2.3";
+    
+    XCTAssertFalse([validator validate:textField],
+                   @"%@ should NOT be considered valid input.", textField.text);
+}
+
 @end

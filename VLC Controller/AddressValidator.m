@@ -5,14 +5,14 @@
 - (BOOL)validate:(UITextField *)textField
 {
     
-    __block BOOL answer;
+    __block BOOL answer = YES;
     
     NSArray *numbers = [textField.text componentsSeparatedByString:@"."];
     
-    if ([numbers count] != 4)
+    if ([numbers count] != 4) {
         answer = NO;
-    else
-        answer = YES;
+        return answer;
+    }
     
     [numbers enumerateObjectsUsingBlock:
      ^(id obj, NSUInteger idx, BOOL *stop) {
@@ -24,7 +24,9 @@
              *stop = YES;
          }
          else
+         {
              answer = YES;
+         }
      }];
     
     return answer;
