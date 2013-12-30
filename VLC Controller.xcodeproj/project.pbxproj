@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
+		4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */; };
 		B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
 		B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
 		B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
 		4DC7FEEB1871C75100BAD690 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortValidatorTests.m; sourceTree = "<group>"; };
 		B7DEDDA5157A468000ADBD36 /* VLC Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEDDA9157A468000ADBD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7DEDDAB157A468000ADBD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,6 +164,7 @@
 				B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */,
 				B7DEDDCE157A468100ADBD36 /* Supporting Files */,
 				4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */,
+				4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */,
 			);
 			path = "VLC ControllerTests";
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			files = (
 				B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */,
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
+				4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
