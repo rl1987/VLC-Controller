@@ -207,7 +207,6 @@
 				B7DEDDA1157A468000ADBD36 /* Sources */,
 				B7DEDDA2157A468000ADBD36 /* Frameworks */,
 				B7DEDDA3157A468000ADBD36 /* Resources */,
-				B7DEDDF9157A7F4A00ADBD36 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -244,6 +243,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					B7DEDDA4157A468000ADBD36 = {
+						DevelopmentTeam = YYD9TQB3R8;
+					};
+				};
 			};
 			buildConfigurationList = B7DEDD9F157A467F00ADBD36 /* Build configuration list for PBXProject "VLC Controller" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -296,19 +300,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		B7DEDDF9157A7F4A00ADBD36 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export CODESIGN_ALLOCATE=/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate\nif [ \"${PLATFORM_NAME}\" == \"iphoneos\" ]; then\n/Developer/iphoneentitlements401/gen_entitlements.py \"my.company.${PROJECT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\";\ncodesign -f -s \"iPhone Developer\" --entitlements \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/${PROJECT_NAME}.xcent\" \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}/\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -427,12 +418,15 @@
 		B7DEDDD9157A468100ADBD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FA349642-5B68-4796-800F-F363BEB489AE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -440,12 +434,15 @@
 		B7DEDDDA157A468100ADBD36 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "FA349642-5B68-4796-800F-F363BEB489AE";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -503,6 +500,7 @@
 				B7DEDDDA157A468100ADBD36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7DEDDDB157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +509,7 @@
 				B7DEDDDD157A468100ADBD36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
