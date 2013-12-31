@@ -29,14 +29,6 @@
                                [defaultPort intValue]];
 }
 
-- (void)viewDidUnload
-{
-    [self setAddressField:nil];
-    [self setPortField:nil];
-    
-    [super viewDidUnload];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:
 (UIInterfaceOrientation)interfaceOrientation
 {
