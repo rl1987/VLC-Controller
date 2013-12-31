@@ -10,6 +10,8 @@
 
 #import "ConfigViewController.h"
 #import "FakeConfigPresentingViewController.h"
+#import "AddressValidator.h"
+#import "PortValidator.h"
 
 @interface ConfigViewControllerTests : XCTestCase
 
@@ -45,6 +47,9 @@
     
     [super tearDown];
 }
+
+#pragma mark -
+#pragma mark Delegate related tests
 
 - (void)testTappingCancelClosesConfigWithoutCallingDelegateMethod
 {
@@ -141,5 +146,23 @@
     
 }
 
+#pragma mark -
+#pragma mark View lifecycle related tests
+
+- (void)testViewWillAppearSetsProperValidatorsToTextFields
+{
+    // We have to put view controller on the screen to have its view hierarchy
+    // loaded from storyboard.
+    [[[UIApplication sharedApplication] keyWindow] setRootViewController:
+     self.configViewController];
+    
+    [self.configViewController viewWillAppear:NO];
+    
+    XCTAssertTrue([self.configViewController.addressField.validator isKindOfClass:[AddressValidator class]],
+                   @"viewWillAppear should set AddressValidator to addressField");
+    
+    XCTAssertTrue([self.configViewController.portField.validator isKindOfClass:[PortValidator class]],
+                  @"viewWillAppear should set PortValidator to portField.");
+}
 
 @end
