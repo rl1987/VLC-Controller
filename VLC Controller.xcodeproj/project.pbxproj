@@ -12,6 +12,7 @@
 		4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */; };
 		4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */; };
 		4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */; };
+		4DC7FEF518720F3200BAD690 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */; };
 		B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
 		B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
 		B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */; };
@@ -49,6 +50,7 @@
 		4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewControllerTests.m; sourceTree = "<group>"; };
 		4DC7FEF11871E9ED00BAD690 /* FakeConfigPresentingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeConfigPresentingViewController.h; sourceTree = "<group>"; };
 		4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeConfigPresentingViewController.m; sourceTree = "<group>"; };
+		4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B7DEDDA5157A468000ADBD36 /* VLC Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEDDA9157A468000ADBD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7DEDDAB157A468000ADBD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +110,7 @@
 		B7DEDD9A157A467F00ADBD36 = {
 			isa = PBXGroup;
 			children = (
+				4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */,
 				B7DEDDAF157A468000ADBD36 /* VLC Controller */,
 				B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */,
 				B7DEDDA8157A468000ADBD36 /* Frameworks */,
@@ -288,6 +291,7 @@
 			files = (
 				B7DEDDB4157A468000ADBD36 /* InfoPlist.strings in Resources */,
 				B7DEDDBD157A468000ADBD36 /* MainStoryboard.storyboard in Resources */,
+				4DC7FEF518720F3200BAD690 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
