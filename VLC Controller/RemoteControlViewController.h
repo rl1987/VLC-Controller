@@ -1,12 +1,16 @@
+//
+//  RemoteControlViewController.h
+//  VLC Controller
+//
+//  Created by Rimantas Lukosevicius on 01/01/14.
+//
+//
+
 #import <UIKit/UIKit.h>
 
 #import "ConfigViewController.h"
 
-#import "XMLReader.h"
-
-@interface ViewController : UIViewController <ConfigViewControllerDelegate>
-
-@property (nonatomic,assign) BOOL connected;
+@interface RemoteControlViewController : UIViewController <ConfigViewControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *filenameLabel;
