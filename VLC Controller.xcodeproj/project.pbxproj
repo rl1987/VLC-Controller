@@ -13,6 +13,7 @@
 		4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */; };
 		4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */; };
 		4DC7FEF518720F3200BAD690 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */; };
+		4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FF0418746B5000BAD690 /* TestObserver.m */; };
 		B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
 		B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
 		B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */; };
@@ -51,6 +52,9 @@
 		4DC7FEF11871E9ED00BAD690 /* FakeConfigPresentingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeConfigPresentingViewController.h; sourceTree = "<group>"; };
 		4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeConfigPresentingViewController.m; sourceTree = "<group>"; };
 		4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		4DC7FEF6187328A200BAD690 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		4DC7FF0318746B5000BAD690 /* TestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObserver.h; sourceTree = "<group>"; };
+		4DC7FF0418746B5000BAD690 /* TestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObserver.m; sourceTree = "<group>"; };
 		B7DEDDA5157A468000ADBD36 /* VLC Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEDDA9157A468000ADBD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7DEDDAB157A468000ADBD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +165,7 @@
 				B7DEDDB2157A468000ADBD36 /* InfoPlist.strings */,
 				B7DEDDB5157A468000ADBD36 /* main.m */,
 				B7DEDDB7157A468000ADBD36 /* VLC Controller-Prefix.pch */,
+				4DC7FEF6187328A200BAD690 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,6 +181,8 @@
 				4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */,
 				4DC7FEF11871E9ED00BAD690 /* FakeConfigPresentingViewController.h */,
 				4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */,
+				4DC7FF0318746B5000BAD690 /* TestObserver.h */,
+				4DC7FF0418746B5000BAD690 /* TestObserver.m */,
 			);
 			path = "VLC ControllerTests";
 			sourceTree = "<group>";
@@ -345,6 +352,7 @@
 				4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */,
 				B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */,
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
+				4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */,
 				4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */,
 				4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */,
 			);
@@ -442,6 +450,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
@@ -458,6 +468,8 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";

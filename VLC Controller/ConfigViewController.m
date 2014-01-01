@@ -18,8 +18,8 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    NSString *defaultAddress = [defaults objectForKey:@"address"];
-    NSNumber *defaultPort = [defaults objectForKey:@"port"];
+    NSString *defaultAddress = [defaults objectForKey:kUserDefaultsAddressKey];
+    NSNumber *defaultPort = [defaults objectForKey:kUserDefaultsPortKey];
     
     if (defaultAddress)
         self.addressField.text = defaultAddress;
@@ -69,9 +69,9 @@
         
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         
-        [defaults setValue:self.addressField.text forKey:@"address"];
+        [defaults setValue:self.addressField.text forKey:kUserDefaultsAddressKey];
         
-        [defaults setValue:port forKey:@"port"];
+        [defaults setValue:port forKey:kUserDefaultsPortKey];
         
         [defaults synchronize];
         

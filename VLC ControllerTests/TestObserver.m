@@ -10,4 +10,13 @@
 
 @implementation TestObserver
 
+
+- (void) stopObserving
+{
+    [super stopObserving];
+    
+    [[[UIApplication sharedApplication] delegate] applicationWillTerminate:
+     [UIApplication sharedApplication]];
+}
+
 @end

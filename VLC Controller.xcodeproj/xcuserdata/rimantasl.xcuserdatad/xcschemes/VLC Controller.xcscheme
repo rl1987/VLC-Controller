@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B7DEDDC5157A468100ADBD36"
-               BuildableName = "VLC ControllerTests.octest"
+               BuildableName = "VLC ControllerTests.xctest"
                BlueprintName = "VLC ControllerTests"
                ReferencedContainer = "container:VLC Controller.xcodeproj">
             </BuildableReference>

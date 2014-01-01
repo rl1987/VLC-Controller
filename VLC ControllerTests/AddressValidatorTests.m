@@ -10,6 +10,8 @@
 
 #import "AddressValidator.h"
 
+extern void __gcov_flush(void);
+
 @interface AddressValidatorTests : XCTestCase
 
 @end

@@ -10,6 +10,8 @@
 
 #import "PortValidator.h"
 
+extern void __gcov_flush(void);
+
 @interface PortValidatorTests : XCTestCase
 
 @property (nonatomic, strong) UITextField *textField;
