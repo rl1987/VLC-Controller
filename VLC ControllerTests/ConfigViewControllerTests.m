@@ -13,6 +13,8 @@
 #import "AddressValidator.h"
 #import "PortValidator.h"
 
+extern void __gcov_flush(void);
+
 @interface ConfigViewControllerTests : XCTestCase
 
 @property ConfigViewController *configViewController;
@@ -163,6 +165,63 @@
     
     XCTAssertTrue([self.configViewController.portField.validator isKindOfClass:[PortValidator class]],
                   @"viewWillAppear should set PortValidator to portField.");
+    
+    [[[UIApplication sharedApplication] keyWindow] setRootViewController:nil];
+}
+
+- (void)testViewWillAppearLoadsSetttingFromUserDefaults
+{
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInt:80]
+                                              forKey:kUserDefaultsPortKey];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.2.1"
+                                              forKey:kUserDefaultsAddressKey];
+    
+    // We have to put view controller on the screen to have its view hierarchy
+    // loaded from storyboard.
+    [[[UIApplication sharedApplication] keyWindow] setRootViewController:
+     self.configViewController];
+    
+    [self.configViewController viewWillAppear:NO];
+    
+    XCTAssertEqualObjects(self.configViewController.addressField.text,
+                          @"192.168.2.1", @"IP address should be retrieved from NSUserDefaults");
+    
+    XCTAssertEqualObjects(self.configViewController.portField.text, @"80",
+                          @"Port number should be retrieved from NSUserDefaults");
+    
+    [[[UIApplication sharedApplication] keyWindow] setRootViewController:nil];
+    
+}
+
+- (void)testValidSettingsAreSavedToUserDefaultsWhenConfigCloses
+{
+    [[NSUserDefaults standardUserDefaults] setObject:nil
+                                              forKey:kUserDefaultsAddressKey];
+    [[NSUserDefaults standardUserDefaults] setObject:nil
+                                              forKey:kUserDefaultsPortKey];
+    
+    [self.presentingViewController presentModalViewController:self.configViewController
+                                                     animated:NO];
+    
+    NSString *address = @"192.168.2.1";
+    NSString *port = @"80";
+    
+    self.configViewController.addressField.text = address;
+    self.configViewController.portField.text = port;
+    
+    [self.configViewController okPressed];
+    
+    // Wait for view dismissal animation to finish.
+    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate dateWithTimeIntervalSinceNow: 1.0]];
+    
+    XCTAssertEqualObjects([[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsAddressKey],
+                          address,
+                          @"Valid IP address should be saved to NSUserDefaults when user taps OK");
+    XCTAssertEqual([[[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsPortKey] intValue],
+                   [port intValue],
+                   @"Valid port should be saved to NSUserDefaults when user taps OK");
+    
 }
 
 @end
