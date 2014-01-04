@@ -77,4 +77,14 @@
     
 }
 
+#pragma mark -
+#pragma mark Config view controller delegate
+
+- (void)configViewController:(ConfigViewController *)cvc
+        didFinishWithAddress:(NSString *)ipAddressString
+                     andPort:(int)port
+{
+    
+}
+
 @end

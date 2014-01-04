@@ -15,6 +15,10 @@
 		4DC7FEF518720F3200BAD690 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */; };
 		4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FF0418746B5000BAD690 /* TestObserver.m */; };
 		4DF57FBA18748019007D5F35 /* RemoteControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FB918748019007D5F35 /* RemoteControlViewController.m */; };
+		4DF57FBE18749DEC007D5F35 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FBD18749DEC007D5F35 /* PlayerManager.m */; };
+		4DF57FC118749DFC007D5F35 /* PlayerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC018749DFC007D5F35 /* PlayerCommunicator.m */; };
+		4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */; };
+		4DF57FC718749E22007D5F35 /* PlayerStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC618749E22007D5F35 /* PlayerStatus.m */; };
 		B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
 		B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
 		B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */; };
@@ -56,6 +60,14 @@
 		4DC7FF0418746B5000BAD690 /* TestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObserver.m; sourceTree = "<group>"; };
 		4DF57FB818748019007D5F35 /* RemoteControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControlViewController.h; sourceTree = "<group>"; };
 		4DF57FB918748019007D5F35 /* RemoteControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControlViewController.m; sourceTree = "<group>"; };
+		4DF57FBC18749DEC007D5F35 /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
+		4DF57FBD18749DEC007D5F35 /* PlayerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManager.m; sourceTree = "<group>"; };
+		4DF57FBF18749DFC007D5F35 /* PlayerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommunicator.h; sourceTree = "<group>"; };
+		4DF57FC018749DFC007D5F35 /* PlayerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCommunicator.m; sourceTree = "<group>"; };
+		4DF57FC218749E15007D5F35 /* PlayerStatusBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatusBuilder.h; sourceTree = "<group>"; };
+		4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusBuilder.m; sourceTree = "<group>"; };
+		4DF57FC518749E22007D5F35 /* PlayerStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatus.h; sourceTree = "<group>"; };
+		4DF57FC618749E22007D5F35 /* PlayerStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatus.m; sourceTree = "<group>"; };
 		B7DEDDA5157A468000ADBD36 /* VLC Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEDDA9157A468000ADBD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7DEDDAB157A468000ADBD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -108,6 +120,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DF57FBB18749DC4007D5F35 /* Biz logic */ = {
+			isa = PBXGroup;
+			children = (
+				4DF57FBC18749DEC007D5F35 /* PlayerManager.h */,
+				4DF57FBD18749DEC007D5F35 /* PlayerManager.m */,
+				4DF57FBF18749DFC007D5F35 /* PlayerCommunicator.h */,
+				4DF57FC018749DFC007D5F35 /* PlayerCommunicator.m */,
+				4DF57FC218749E15007D5F35 /* PlayerStatusBuilder.h */,
+				4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */,
+				4DF57FC518749E22007D5F35 /* PlayerStatus.h */,
+				4DF57FC618749E22007D5F35 /* PlayerStatus.m */,
+			);
+			name = "Biz logic";
+			sourceTree = "<group>";
+		};
 		B7DEDD9A157A467F00ADBD36 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +169,7 @@
 		B7DEDDAF157A468000ADBD36 /* VLC Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4DF57FBB18749DC4007D5F35 /* Biz logic */,
 				B7DEDDE8157A6D1800ADBD36 /* Config */,
 				B7DEDDB8157A468000ADBD36 /* AppDelegate.h */,
 				B7DEDDB9157A468000ADBD36 /* AppDelegate.m */,
@@ -329,12 +357,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DEDDB6157A468000ADBD36 /* main.m in Sources */,
+				4DF57FC118749DFC007D5F35 /* PlayerCommunicator.m in Sources */,
 				B7DEDDBA157A468000ADBD36 /* AppDelegate.m in Sources */,
 				B7DEDDE0157A68FF00ADBD36 /* ConfigViewController.m in Sources */,
+				4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */,
 				B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */,
 				B7DEDDF3157A6D7000ADBD36 /* InputValidator.m in Sources */,
+				4DF57FBE18749DEC007D5F35 /* PlayerManager.m in Sources */,
 				B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */,
 				B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */,
+				4DF57FC718749E22007D5F35 /* PlayerStatus.m in Sources */,
 				4DF57FBA18748019007D5F35 /* RemoteControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
