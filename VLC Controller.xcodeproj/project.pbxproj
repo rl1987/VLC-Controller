@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
 		4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusTests.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
 		4DC7FEEB1871C75100BAD690 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortValidatorTests.m; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D05DF4C187894FC008F8DA9 /* Biz logic tests */ = {
+			isa = PBXGroup;
+			children = (
+				4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */,
+			);
+			name = "Biz logic tests";
+			sourceTree = "<group>";
+		};
 		4DF57FBB18749DC4007D5F35 /* Biz logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +206,7 @@
 		B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D05DF4C187894FC008F8DA9 /* Biz logic tests */,
 				B7DEDDD3157A468100ADBD36 /* VLC_ControllerTests.h */,
 				B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */,
 				B7DEDDCE157A468100ADBD36 /* Supporting Files */,
@@ -376,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */,
+				4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */,
 				B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */,
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
 				4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */,
