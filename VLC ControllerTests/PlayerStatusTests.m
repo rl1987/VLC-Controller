@@ -53,4 +53,12 @@
                           @"PlayerStatus should ignore attempts to set filename to invalid value.");
 }
 
+- (void)testPlayerStatusShouldAcceptNilAsFilename
+{
+    self.status.filename = @"movie.avi";
+    self.status.filename = nil;
+    
+    XCTAssertNil(self.status.filename, @"PlayerStatus should accept nil as filename.");
+}
+
 @end

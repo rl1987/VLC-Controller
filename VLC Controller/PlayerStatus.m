@@ -12,6 +12,9 @@
 
 - (void)setFilename:(NSString *)filename
 {
+    if (!filename)
+        _filename = nil;
+    
     if ([filename isKindOfClass:[NSString class]])
         _filename = filename;
     
