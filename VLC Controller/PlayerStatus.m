@@ -20,4 +20,18 @@
     
 }
 
+- (void)setTime:(NSTimeInterval)time
+{
+    if (time > _length) {
+        NSException *exception =
+        [[NSException alloc] initWithName:@"TimeSetterSanityCheckFailure"
+                                   reason:@"Time MUST NOT be larger than length"
+                                 userInfo:nil];
+        
+        [exception raise];
+    }
+    
+    time = _time;
+}
+
 @end
