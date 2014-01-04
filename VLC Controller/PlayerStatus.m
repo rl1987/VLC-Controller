@@ -20,9 +20,9 @@
     
 }
 
-- (void)setTime:(NSTimeInterval)time
+- (void)setCurrentTime:(NSTimeInterval)time
 {
-    if (time > _length) {
+    if (time > _duration) {
         NSException *exception =
         [[NSException alloc] initWithName:@"TimeSetterSanityCheckFailure"
                                    reason:@"Time MUST NOT be larger than length"
@@ -31,7 +31,7 @@
         [exception raise];
     }
     
-    time = _time;
+    time = _currentTime;
 }
 
 @end

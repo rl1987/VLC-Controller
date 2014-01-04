@@ -63,10 +63,10 @@
 
 - (void)testTimeCannotBeLargerThanLength
 {
-    self.status.time = 0;
-    self.status.length = 0;
+    self.status.currentTime = 0;
+    self.status.duration = 0;
     
-    self.status.length = 200;
+    self.status.duration = 200;
     
     XCTAssertThrows(self.status.time = 300, @"Time cannot be larger than length.");
 }
