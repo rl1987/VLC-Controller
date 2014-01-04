@@ -10,7 +10,11 @@
 
 @implementation PlayerStatus
 
-
-
+- (void)setFilename:(NSString *)filename
+{
+    if ([filename isKindOfClass:[NSString class]])
+        _filename = filename;
+    
+}
 
 @end
