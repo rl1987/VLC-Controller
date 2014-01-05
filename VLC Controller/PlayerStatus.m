@@ -24,8 +24,8 @@
 {
     if (time > _duration) {
         NSException *exception =
-        [[NSException alloc] initWithName:@"TimeSetterSanityCheckFailure"
-                                   reason:@"Time MUST NOT be larger than length"
+        [[NSException alloc] initWithName:NSInternalInconsistencyException
+                                   reason:@"currentTime MUST NOT be larger than duration"
                                  userInfo:nil];
         
         [exception raise];
