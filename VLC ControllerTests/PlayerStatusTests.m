@@ -61,14 +61,31 @@
     XCTAssertNil(self.status.filename, @"PlayerStatus should accept nil as filename.");
 }
 
-- (void)testTimeCannotBeLargerThanLength
+- (void)testCurrentTimeCannotBeLargerThanDuration
 {
     self.status.currentTime = 0;
     self.status.duration = 0;
     
     self.status.duration = 200;
     
-    XCTAssertThrows(self.status.currentTime = 300, @"Time cannot be larger than length.");
+    XCTAssertThrows(self.status.currentTime = 300, @"currentTime cannot be larger than duration.");
+}
+
+- (void)testCurrentTimeLessOrEqualToDurationMustBeAccepted
+{
+    self.status.duration = 300.0;
+    
+    XCTAssertNoThrow(self.status.currentTime = 299.0,
+                     @"currentTime less than duration should not cause exception.");
+    
+    XCTAssertEqual(self.status.currentTime, 299.0,
+                   @"currentTime less than duration should be settable.");
+    
+    XCTAssertNoThrow(self.status.currentTime = 300.0,
+                     @"currentTime equal to duration should not cause exception.");
+    
+    XCTAssertEqual(self.status.currentTime, 300.0,
+                   @"currentTime equal to duration should be settable.");
 }
 
 @end

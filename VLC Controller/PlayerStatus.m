@@ -31,7 +31,7 @@
         [exception raise];
     }
     
-    time = _currentTime;
+    _currentTime = time;
 }
 
 @end
