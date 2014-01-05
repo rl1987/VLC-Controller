@@ -68,7 +68,7 @@
     
     self.status.duration = 200;
     
-    XCTAssertThrows(self.status.time = 300, @"Time cannot be larger than length.");
+    XCTAssertThrows(self.status.currentTime = 300, @"Time cannot be larger than length.");
 }
 
 @end
