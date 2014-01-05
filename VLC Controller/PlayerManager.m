@@ -10,4 +10,54 @@
 
 @implementation PlayerManager
 
++ (instancetype)defaultManager
+{
+    return nil;
+}
+
+- (void)pause
+{
+    
+}
+
+- (void)play
+{
+    
+}
+
+- (void)stop
+{
+    
+}
+
+- (void)seekTo:(NSTimeInterval)secondsFromStart
+{
+    
+}
+
+- (void)changeVolumeTo:(NSUInteger)volume
+{
+    
+}
+
+- (void)goToNextItem
+{
+    
+}
+
+- (void)goToPreviousItem
+{
+    
+}
+
+- (void)startReceivingStatusUpdates
+{
+    
+}
+
+- (void)stopReceivingStatusUpdates
+{
+    
+}
+
 @end
