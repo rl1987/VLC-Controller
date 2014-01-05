@@ -53,6 +53,34 @@ extern void __gcov_flush(void);
 #pragma mark -
 #pragma mark Delegate related tests
 
+- (void)testNonConformingObjectCannotBeDelegate
+{
+    ConfigViewController *cvc = [[ConfigViewController alloc] init];
+    
+    XCTAssertThrows(cvc.delegate = (id <ConfigViewControllerDelegate>)[NSNull null],
+                    @"Object that doesn't implement ConfigViewController protocol cannot be delegate.");
+}
+
+- (void)testConformingObjectCanBeDelegate
+{
+    ConfigViewController *cvc = [[ConfigViewController alloc] init];
+    
+    XCTAssertNoThrow(cvc.delegate = self.presentingViewController,
+                     @"Object conforming to ConfigViewDelegate protocol should be used as delegate.");
+}
+
+- (void)testNilCanBeSetAsDelegate
+{
+    ConfigViewController *cvc = [[ConfigViewController alloc] init];
+    
+    cvc.delegate = self.presentingViewController;
+    
+    XCTAssertNoThrow(cvc.delegate = nil, @"Exception should not be thrown when setting nil as delegate.");
+    
+    XCTAssertNil(cvc.delegate, @"ConfigViewController should allow unsetting delegate");
+    
+}
+
 - (void)testTappingCancelClosesConfigWithoutCallingDelegateMethod
 {
     self.presentingViewController.delegateMethodCalled = NO;

@@ -7,6 +7,20 @@
 
 @synthesize delegate = _delegate;
 
+#pragma mark -
+#pragma mark Accessors
+
+- (void)setDelegate:(id<ConfigViewControllerDelegate>)delegate
+{
+    if (!delegate || [(NSObject *)delegate conformsToProtocol:@protocol(ConfigViewControllerDelegate)])
+        _delegate = delegate;
+    else {
+        NSException *exception = [NSException exceptionWithName:NSInvalidArgumentException reason:@"Delegate object does not conform to the delegate protocol" userInfo:nil];
+        
+        [exception raise];
+    }
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewWillAppear:(BOOL)animated
