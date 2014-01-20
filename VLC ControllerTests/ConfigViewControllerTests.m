@@ -116,6 +116,7 @@ extern void __gcov_flush(void);
     
     self.configViewController.addressField.text = addressString;
     self.configViewController.portField.text = portString;
+    self.configViewController.passwordField.text = password;
     
     [self.configViewController okPressed];
     

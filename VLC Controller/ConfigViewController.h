@@ -18,7 +18,7 @@
 @property (strong, nonatomic) IBOutlet ValidatingTextField *addressField;
 @property (strong, nonatomic) IBOutlet ValidatingTextField *portField;
 @property (nonatomic, strong) id <ConfigViewControllerDelegate> delegate;
-@property (strong, nonatomic) IBOutlet UITextField *passwordField;
+@property (strong, nonatomic) IBOutlet ValidatingTextField *passwordField;
 
 - (IBAction)okPressed;
 - (IBAction)cancelPressed;

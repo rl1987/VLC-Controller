@@ -2,6 +2,7 @@
 
 #import "AddressValidator.h"
 #import "PortValidator.h"
+#import "PasswordValidator.h"
 
 @interface ValidatingTextField : UITextField
 

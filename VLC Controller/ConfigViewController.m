@@ -31,6 +31,7 @@
     
     self.addressField.validator = [[AddressValidator alloc] init];
     self.portField.validator = [[PortValidator alloc] init];
+    self.passwordField.validator = [[PasswordValidator alloc] init];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
@@ -83,7 +84,7 @@
 {
     
     if ((self.delegate) && [self.addressField isValid] && 
-        [self.portField isValid])
+        [self.portField isValid] && [self.passwordField isValid])
     {
         NSNumber *port = [NSNumber numberWithInt:[self.portField.text intValue]];
         
@@ -92,6 +93,8 @@
         [defaults setValue:self.addressField.text forKey:kUserDefaultsAddressKey];
         
         [defaults setValue:port forKey:kUserDefaultsPortKey];
+        
+        [defaults setValue:self.passwordField.text forKey:kUserDefaultsPassword];
         
         [defaults synchronize];
         
