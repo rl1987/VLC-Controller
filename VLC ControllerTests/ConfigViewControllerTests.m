@@ -12,6 +12,7 @@
 #import "FakeConfigPresentingViewController.h"
 #import "AddressValidator.h"
 #import "PortValidator.h"
+#import "PasswordValidator.h"
 
 extern void __gcov_flush(void);
 
@@ -111,6 +112,7 @@ extern void __gcov_flush(void);
     
     NSString *addressString = @"192.168.2.1";
     NSString *portString = @"8080";
+    NSString *password = @"trustno1";
     
     self.configViewController.addressField.text = addressString;
     self.configViewController.portField.text = portString;
@@ -129,6 +131,9 @@ extern void __gcov_flush(void);
     XCTAssertEqual(self.presentingViewController.port, [portString intValue],
                   @"ConfigViewController should tell the delegate port number user entered");
     
+    XCTAssertEqualObjects(self.presentingViewController.password,
+                          password, @"ConfigViewController should tell the delegate a password user entered.");
+    
     XCTAssertNil(self.presentingViewController.presentedViewController,
                  @"ConfigViewController should be dismissed after OK is tapped");
     
@@ -143,6 +148,7 @@ extern void __gcov_flush(void);
     
     self.configViewController.addressField.text = @"192.168.2.1";
     self.configViewController.portField.text = @"INVALID PORT INPUT";
+    self.configViewController.passwordField.text = @"a";
     
     [self.configViewController okPressed];
     
@@ -162,6 +168,7 @@ extern void __gcov_flush(void);
     
     self.configViewController.addressField.text = @"INVALID IP ADDR";
     self.configViewController.portField.text = @"80";
+    self.configViewController.passwordField.text = @"a";
     
     [self.configViewController okPressed];
     
@@ -170,6 +177,21 @@ extern void __gcov_flush(void);
     
     XCTAssertFalse(self.presentingViewController.delegateMethodCalled,
                    @"ConfigViewController should not call delegate if invalid IP is entered.");
+    
+    XCTAssertNil(self.presentingViewController.presentedViewController,
+                 @"ConfigViewController should be dismissed after OK is tapped");
+    
+    self.configViewController.addressField.text = @"192.168.2.1";
+    self.configViewController.portField.text = @"80";
+    self.configViewController.passwordField.text = @"";
+    
+    [self.configViewController okPressed];
+    
+    // Wait for view dismissal animation to finish.
+    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate dateWithTimeIntervalSinceNow: 1.0]];
+    
+    XCTAssertFalse(self.presentingViewController.delegateMethodCalled,
+                   @"ConfigViewController should not call delegate if invalid password is entered.");
     
     XCTAssertNil(self.presentingViewController.presentedViewController,
                  @"ConfigViewController should be dismissed after OK is tapped");
@@ -193,6 +215,9 @@ extern void __gcov_flush(void);
     
     XCTAssertTrue([self.configViewController.portField.validator isKindOfClass:[PortValidator class]],
                   @"viewWillAppear should set PortValidator to portField.");
+    
+    XCTAssertTrue([self.configViewController.passwordField.validator isKindOfClass:[PasswordValidator class]],
+                  @"viewWillAppear should set PasswordValidator to passwordField");
     
     [[[UIApplication sharedApplication] keyWindow] setRootViewController:nil];
 }
@@ -240,9 +265,11 @@ extern void __gcov_flush(void);
     
     NSString *address = @"192.168.2.1";
     NSString *port = @"80";
+    NSString *password = @"trustno1";
     
     self.configViewController.addressField.text = address;
     self.configViewController.portField.text = port;
+    self.configViewController.passwordField.text = password;
     
     [self.configViewController okPressed];
     
@@ -255,6 +282,8 @@ extern void __gcov_flush(void);
     XCTAssertEqual([[[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsPortKey] intValue],
                    [port intValue],
                    @"Valid port should be saved to NSUserDefaults when user taps OK");
+    XCTAssertEqualObjects([[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsPassword],
+                          password, @"Valid password should be saved to NSUserDefaults when user taps OK.");
     
 }
 
