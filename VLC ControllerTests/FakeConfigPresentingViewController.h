@@ -17,6 +17,7 @@
 
 @property (nonatomic, strong) NSString *ipAddressString;
 @property (nonatomic, assign) int port;
+@property (nonatomic, strong) NSString *password;
 
 @property (nonatomic, assign) BOOL delegateMethodCalled;
 

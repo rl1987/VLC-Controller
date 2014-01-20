@@ -205,6 +205,9 @@ extern void __gcov_flush(void);
     [[NSUserDefaults standardUserDefaults] setObject:@"192.168.2.1"
                                               forKey:kUserDefaultsAddressKey];
     
+    [[NSUserDefaults standardUserDefaults] setObject:@"trustno1"
+                                              forKey:kUserDefaultsPassword];
+    
     // We have to put view controller on the screen to have its view hierarchy
     // loaded from storyboard.
     [[[UIApplication sharedApplication] keyWindow] setRootViewController:
@@ -217,6 +220,9 @@ extern void __gcov_flush(void);
     
     XCTAssertEqualObjects(self.configViewController.portField.text, @"80",
                           @"Port number should be retrieved from NSUserDefaults");
+    
+    XCTAssertEqualObjects(self.configViewController.passwordField.text,
+                          @"trustno1", @"Password should be retrieved from NSUserDefaults");
     
     [[[UIApplication sharedApplication] keyWindow] setRootViewController:nil];
     

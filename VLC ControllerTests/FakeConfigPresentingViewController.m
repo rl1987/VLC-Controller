@@ -23,10 +23,12 @@
 - (void)configViewController:(ConfigViewController *)cvc
         didFinishWithAddress:(NSString *)ipAddressString
                      andPort:(int)port
+                    password:(NSString *)password
 {
     self.configViewControllerFromDelegate = cvc;
     self.ipAddressString = ipAddressString;
     self.port = port;
+    self.password = password;
 
     self.delegateMethodCalled = YES;
 }

@@ -15,7 +15,9 @@
     if (!delegate || [(NSObject *)delegate conformsToProtocol:@protocol(ConfigViewControllerDelegate)])
         _delegate = delegate;
     else {
-        NSException *exception = [NSException exceptionWithName:NSInvalidArgumentException reason:@"Delegate object does not conform to the delegate protocol" userInfo:nil];
+        NSException *exception = [NSException exceptionWithName:NSInvalidArgumentException
+                                                         reason:@"Delegate object does not conform to the delegate protocol"
+                                                       userInfo:nil];
         
         [exception raise];
     }
@@ -34,6 +36,7 @@
     
     NSString *defaultAddress = [defaults objectForKey:kUserDefaultsAddressKey];
     NSNumber *defaultPort = [defaults objectForKey:kUserDefaultsPortKey];
+    NSString *defaultPassword = [defaults objectForKey:kUserDefaultsPassword];
     
     if (defaultAddress)
         self.addressField.text = defaultAddress;
@@ -41,6 +44,9 @@
     if (defaultPort)
         self.portField.text = [NSString stringWithFormat:@"%d",
                                [defaultPort intValue]];
+    
+    if (defaultPassword)
+        self.passwordField.text = defaultPassword;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:
@@ -91,7 +97,8 @@
         
         [self.delegate configViewController:self 
                        didFinishWithAddress:[self.addressField.text copy]
-                                    andPort:[self.portField.text intValue]];
+                                    andPort:[self.portField.text intValue]
+                                   password:self.passwordField.text];
     }
     
     [self dismissModalViewControllerAnimated:YES];

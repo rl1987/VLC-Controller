@@ -8,7 +8,8 @@
 @required
 - (void)configViewController:(ConfigViewController *)cvc 
         didFinishWithAddress:(NSString *)ipAddressString
-                     andPort:(int)port;
+                     andPort:(int)port
+                    password:(NSString *)password;
 
 @end
 
@@ -17,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet ValidatingTextField *addressField;
 @property (strong, nonatomic) IBOutlet ValidatingTextField *portField;
 @property (nonatomic, strong) id <ConfigViewControllerDelegate> delegate;
+@property (strong, nonatomic) IBOutlet UITextField *passwordField;
 
 - (IBAction)okPressed;
 - (IBAction)cancelPressed;

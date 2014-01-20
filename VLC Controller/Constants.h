@@ -9,7 +9,8 @@
 #ifndef VLC_Controller_Constants_h
 #define VLC_Controller_Constants_h
 
-#define kUserDefaultsPortKey     @"port"
-#define kUserDefaultsAddressKey  @"address"
+#define kUserDefaultsPortKey     @"user.defaults.port"
+#define kUserDefaultsAddressKey  @"user.defaults.address"
+#define kUserDefaultsPassword    @"user.defaults.password"
 
 #endif
