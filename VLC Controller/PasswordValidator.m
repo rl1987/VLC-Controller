@@ -12,7 +12,7 @@
 
 - (BOOL)validate:(UITextField *)textField
 {
-    if ([textField.text length])
+    if ([textField.text length] > 0)
         return YES;
     
     return NO;
