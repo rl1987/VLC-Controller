@@ -10,4 +10,12 @@
 
 @implementation PasswordValidator
 
+- (BOOL)validate:(UITextField *)textField
+{
+    if ([textField.text length])
+        return YES;
+    
+    return NO;
+}
+
 @end
