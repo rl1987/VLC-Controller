@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D004683188DC0A100636F50 /* PasswordValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004682188DC0A100636F50 /* PasswordValidator.m */; };
+		4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004684188DC0D700636F50 /* PasswordValidatorTests.m */; };
 		4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
@@ -49,6 +51,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D004681188DC0A100636F50 /* PasswordValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordValidator.h; sourceTree = "<group>"; };
+		4D004682188DC0A100636F50 /* PasswordValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidator.m; sourceTree = "<group>"; };
+		4D004684188DC0D700636F50 /* PasswordValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidatorTests.m; sourceTree = "<group>"; };
 		4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusTests.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
 		4DC7FEEB1871C75100BAD690 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -217,6 +222,7 @@
 				4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */,
 				4DC7FF0318746B5000BAD690 /* TestObserver.h */,
 				4DC7FF0418746B5000BAD690 /* TestObserver.m */,
+				4D004684188DC0D700636F50 /* PasswordValidatorTests.m */,
 			);
 			path = "VLC ControllerTests";
 			sourceTree = "<group>";
@@ -251,6 +257,8 @@
 				B7DEDDEF157A6D7000ADBD36 /* PortValidator.m */,
 				B7DEDDF0157A6D7000ADBD36 /* ValidatingTextField.h */,
 				B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */,
+				4D004681188DC0A100636F50 /* PasswordValidator.h */,
+				4D004682188DC0A100636F50 /* PasswordValidator.m */,
 			);
 			name = "Input validation";
 			sourceTree = "<group>";
@@ -378,6 +386,7 @@
 				B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */,
 				B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */,
 				4DF57FC718749E22007D5F35 /* PlayerStatus.m in Sources */,
+				4D004683188DC0A100636F50 /* PasswordValidator.m in Sources */,
 				4DF57FBA18748019007D5F35 /* RemoteControlViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +402,7 @@
 				4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */,
 				4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */,
 				4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */,
+				4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
