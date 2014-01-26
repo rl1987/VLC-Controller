@@ -8,6 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+#import "PlayerCommand.h"
+
+@class PlayerCommunicator;
+
+@protocol PlayerCommunicatorDelegate <NSObject>
+
+- (void)retrievedStatusJSON:(NSString *)json;
+- (void)requestFailedWithError:(NSError *)error;
+
+@end
+
 @interface PlayerCommunicator : NSObject
+
+- (void)retrieveCurrentStatus;
+- (void)sendCommand:(PlayerCommand *)command;
 
 @end

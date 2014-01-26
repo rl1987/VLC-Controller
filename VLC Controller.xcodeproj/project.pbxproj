@@ -10,6 +10,7 @@
 		4D004683188DC0A100636F50 /* PasswordValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004682188DC0A100636F50 /* PasswordValidator.m */; };
 		4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004684188DC0D700636F50 /* PasswordValidatorTests.m */; };
 		4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */; };
+		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
 		4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */; };
@@ -55,6 +56,8 @@
 		4D004682188DC0A100636F50 /* PasswordValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidator.m; sourceTree = "<group>"; };
 		4D004684188DC0D700636F50 /* PasswordValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidatorTests.m; sourceTree = "<group>"; };
 		4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusTests.m; sourceTree = "<group>"; };
+		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
+		4DAA17151895707600D41033 /* PlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCommand.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
 		4DC7FEEB1871C75100BAD690 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortValidatorTests.m; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 				4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */,
 				4DF57FC518749E22007D5F35 /* PlayerStatus.h */,
 				4DF57FC618749E22007D5F35 /* PlayerStatus.m */,
+				4DAA17141895707600D41033 /* PlayerCommand.h */,
+				4DAA17151895707600D41033 /* PlayerCommand.m */,
 			);
 			name = "Biz logic";
 			sourceTree = "<group>";
@@ -379,6 +384,7 @@
 				4DF57FC118749DFC007D5F35 /* PlayerCommunicator.m in Sources */,
 				B7DEDDBA157A468000ADBD36 /* AppDelegate.m in Sources */,
 				B7DEDDE0157A68FF00ADBD36 /* ConfigViewController.m in Sources */,
+				4DAA17161895707600D41033 /* PlayerCommand.m in Sources */,
 				4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */,
 				B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */,
 				B7DEDDF3157A6D7000ADBD36 /* InputValidator.m in Sources */,
