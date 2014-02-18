@@ -10,6 +10,7 @@
 
 #import "PlayerManager.h"
 #import "MockPlayerCommunicator.h"
+#import "MockPlayerManagerDelegate.h"
 
 @interface PlayerManagerTests : XCTestCase
 
@@ -106,7 +107,29 @@
                    @"Manager should assign the correct value for PlayerCommandSetVolume command");
 }
 
-// TODO: delegate tests
+#pragma mark -
+#pragma mark delegate tests
+
+- (void)testNonConformingObjectCannotBeDelegate
+{
+    MockPlayerManagerDelegate *delegate = [[MockPlayerManagerDelegate alloc] init];
+    
+    XCTAssertThrows(self.playerManager.delegate = delegate,
+                     @"Objects that conform to PlayerManagerDelegate can be used as delegate.");
+}
+
+- (void)testConformingObjectCanBeDelegate
+{
+    XCTAssertNoThrow(self.playerManager.delegate = (id <PlayerManagerDelegate>)[NSNull null],
+                    @"Objects that don't conform to PlayerManagerDelegate protocol cannnot be assigned as delegate");
+}
+
+- (void)testPlayerManagerAcceptsNilAsDelegate
+{
+    XCTAssertNoThrow(self.playerManager.delegate = nil,
+                     @"Objects that conform to PlayerManagerDelegate can be used as delegate.");
+}
+
 // TODO: status retrieval test cases
 
 @end

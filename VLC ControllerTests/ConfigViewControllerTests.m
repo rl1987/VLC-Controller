@@ -189,7 +189,7 @@ extern void __gcov_flush(void);
     [self.configViewController okPressed];
     
     // Wait for view dismissal animation to finish.
-    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate dateWithTimeIntervalSinceNow: 1.0]];
+    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
     
     XCTAssertFalse(self.presentingViewController.delegateMethodCalled,
                    @"ConfigViewController should not call delegate if invalid password is entered.");

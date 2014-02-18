@@ -22,6 +22,8 @@
 
 @interface PlayerManager : NSObject
 
+@property (nonatomic, assign) id<PlayerManagerDelegate> delegate;
+
 @property (nonatomic, strong) PlayerCommunicator *communicator;
 
 @property (strong, atomic) PlayerStatus *status;
