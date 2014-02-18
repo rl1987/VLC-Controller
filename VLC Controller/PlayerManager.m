@@ -12,7 +12,7 @@
 
 - (void)setDelegate:(id<PlayerManagerDelegate>)delegate
 {
-    if (![delegate conformsToProtocol:@protocol(PlayerManagerDelegate)]) {
+    if (delegate && ![delegate conformsToProtocol:@protocol(PlayerManagerDelegate)]) {
         NSException *exception =
         [NSException exceptionWithName:NSInvalidArgumentException
                                 reason:@"delegate object does not conform to PlayerManagerDelegate"

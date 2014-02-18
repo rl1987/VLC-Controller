@@ -112,7 +112,7 @@
 
 - (void)testNonConformingObjectCannotBeDelegate
 {
-    XCTAssertNoThrow(self.playerManager.delegate = (id <PlayerManagerDelegate>)[NSNull null],
+    XCTAssertThrows(self.playerManager.delegate = (id <PlayerManagerDelegate>)[NSNull null],
                     @"Objects that don't conform to PlayerManagerDelegate protocol cannnot be assigned as delegate");
 }
 
