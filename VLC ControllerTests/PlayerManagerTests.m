@@ -74,7 +74,7 @@
 
 - (void)testPrevious
 {
-    [self.playerManager goToNextItem];
+    [self.playerManager goToPreviousItem];
     
     XCTAssertEqual(self.playerCommunicator.lastCommand.commandType,
                    PlayerCommandPreviousEntry, @"Manager should tell the communicator to send PlayerCommandPreviousEntry command");
@@ -102,7 +102,7 @@
     XCTAssertEqual(self.playerCommunicator.lastCommand.commandType,
                    PlayerCommandSetVolume, @"Manager should tell the communicator to send PlayerCommandSetVolume command");
     
-    XCTAssertEqual(self.playerCommunicator.lastCommand.value, volumeToSet,
+    XCTAssertEqual(self.playerCommunicator.lastCommand.value, (double)volumeToSet,
                    @"Manager should assign the correct value for PlayerCommandSetVolume command");
 }
 

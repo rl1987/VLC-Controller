@@ -22,6 +22,6 @@ typedef enum {
 @interface PlayerCommand : NSObject
 
 @property (nonatomic, assign) PlayerCommandType commandType;
-@property (nonatomic, assign) NSUInteger value;
+@property (nonatomic, assign) double value;
 
 @end
