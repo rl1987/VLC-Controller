@@ -112,16 +112,16 @@
 
 - (void)testNonConformingObjectCannotBeDelegate
 {
-    MockPlayerManagerDelegate *delegate = [[MockPlayerManagerDelegate alloc] init];
-    
-    XCTAssertThrows(self.playerManager.delegate = delegate,
-                     @"Objects that conform to PlayerManagerDelegate can be used as delegate.");
+    XCTAssertNoThrow(self.playerManager.delegate = (id <PlayerManagerDelegate>)[NSNull null],
+                    @"Objects that don't conform to PlayerManagerDelegate protocol cannnot be assigned as delegate");
 }
 
 - (void)testConformingObjectCanBeDelegate
 {
-    XCTAssertNoThrow(self.playerManager.delegate = (id <PlayerManagerDelegate>)[NSNull null],
-                    @"Objects that don't conform to PlayerManagerDelegate protocol cannnot be assigned as delegate");
+    MockPlayerManagerDelegate *delegate = [[MockPlayerManagerDelegate alloc] init];
+    
+    XCTAssertNoThrow(self.playerManager.delegate = delegate,
+                     @"Objects that conform to PlayerManagerDelegate can be used as delegate.");
 }
 
 - (void)testPlayerManagerAcceptsNilAsDelegate

@@ -10,6 +10,21 @@
 
 @implementation PlayerManager
 
+- (void)setDelegate:(id<PlayerManagerDelegate>)delegate
+{
+    if (![delegate conformsToProtocol:@protocol(PlayerManagerDelegate)]) {
+        NSException *exception =
+        [NSException exceptionWithName:NSInvalidArgumentException
+                                reason:@"delegate object does not conform to PlayerManagerDelegate"
+                              userInfo:nil];
+        
+        [exception raise];
+        return;
+    }
+    
+    _delegate = delegate;
+}
+
 #pragma mark -
 #pragma mark Public API
 
