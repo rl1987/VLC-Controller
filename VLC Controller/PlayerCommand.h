@@ -11,6 +11,7 @@
 typedef enum {
     PlayerCommandPlay,
     PlayerCommandPause,
+    PlayerCommandStop,
     PlayerCommandNextEntry,
     PlayerCommandPreviousEntry,
     PlayerCommandFullscreen,

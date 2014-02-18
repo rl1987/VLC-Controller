@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class PlayerStatus;
+
 @interface PlayerStatusBuilder : NSObject
+
+- (PlayerStatus *)statusFromJSON:(NSString *)json;
 
 @end

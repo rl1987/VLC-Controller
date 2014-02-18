@@ -10,6 +10,8 @@
 		4D004683188DC0A100636F50 /* PasswordValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004682188DC0A100636F50 /* PasswordValidator.m */; };
 		4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004684188DC0D700636F50 /* PasswordValidatorTests.m */; };
 		4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */; };
+		4D15B7F31896F994002A8294 /* MockPlayerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */; };
+		4D15B7F51896FA94002A8294 /* PlayerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D15B7F41896FA94002A8294 /* PlayerManagerTests.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
@@ -56,6 +58,9 @@
 		4D004682188DC0A100636F50 /* PasswordValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidator.m; sourceTree = "<group>"; };
 		4D004684188DC0D700636F50 /* PasswordValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidatorTests.m; sourceTree = "<group>"; };
 		4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusTests.m; sourceTree = "<group>"; };
+		4D15B7F11896F994002A8294 /* MockPlayerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerCommunicator.h; sourceTree = "<group>"; };
+		4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerCommunicator.m; sourceTree = "<group>"; };
+		4D15B7F41896FA94002A8294 /* PlayerManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManagerTests.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
 		4DAA17151895707600D41033 /* PlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCommand.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
@@ -228,6 +233,9 @@
 				4DC7FF0318746B5000BAD690 /* TestObserver.h */,
 				4DC7FF0418746B5000BAD690 /* TestObserver.m */,
 				4D004684188DC0D700636F50 /* PasswordValidatorTests.m */,
+				4D15B7F11896F994002A8294 /* MockPlayerCommunicator.h */,
+				4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */,
+				4D15B7F41896FA94002A8294 /* PlayerManagerTests.m */,
 			);
 			path = "VLC ControllerTests";
 			sourceTree = "<group>";
@@ -403,7 +411,9 @@
 			files = (
 				4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */,
 				4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */,
+				4D15B7F31896F994002A8294 /* MockPlayerCommunicator.m in Sources */,
 				B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */,
+				4D15B7F51896FA94002A8294 /* PlayerManagerTests.m in Sources */,
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
 				4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */,
 				4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */,

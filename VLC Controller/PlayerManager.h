@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "PlayerStatus.h"
+#import "PlayerCommunicator.h"
 
 @class PlayerManager;
 
@@ -20,6 +21,8 @@
 @end
 
 @interface PlayerManager : NSObject
+
+@property (nonatomic, strong) PlayerCommunicator *communicator;
 
 @property (strong, atomic) PlayerStatus *status;
 
