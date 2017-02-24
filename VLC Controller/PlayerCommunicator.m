@@ -25,6 +25,8 @@
     if (self)
     {
         self.httpSessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:nil];
+        self.httpSessionManager.responseSerializer.acceptableContentTypes =
+        [self.httpSessionManager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/plain"];
     }
     
     return self;
