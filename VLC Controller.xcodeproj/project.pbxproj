@@ -20,7 +20,6 @@
 		4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */; };
 		4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */; };
 		4DC7FEF518720F3200BAD690 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */; };
-		4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FF0418746B5000BAD690 /* TestObserver.m */; };
 		4DF57FBA18748019007D5F35 /* RemoteControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FB918748019007D5F35 /* RemoteControlViewController.m */; };
 		4DF57FBE18749DEC007D5F35 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FBD18749DEC007D5F35 /* PlayerManager.m */; };
 		4DF57FC118749DFC007D5F35 /* PlayerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC018749DFC007D5F35 /* PlayerCommunicator.m */; };
@@ -74,8 +73,6 @@
 		4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeConfigPresentingViewController.m; sourceTree = "<group>"; };
 		4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4DC7FEF6187328A200BAD690 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		4DC7FF0318746B5000BAD690 /* TestObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObserver.h; sourceTree = "<group>"; };
-		4DC7FF0418746B5000BAD690 /* TestObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObserver.m; sourceTree = "<group>"; };
 		4DF57FB818748019007D5F35 /* RemoteControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControlViewController.h; sourceTree = "<group>"; };
 		4DF57FB918748019007D5F35 /* RemoteControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteControlViewController.m; sourceTree = "<group>"; };
 		4DF57FBC18749DEC007D5F35 /* PlayerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerManager.h; sourceTree = "<group>"; };
@@ -233,8 +230,6 @@
 				4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */,
 				4DC7FEF11871E9ED00BAD690 /* FakeConfigPresentingViewController.h */,
 				4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */,
-				4DC7FF0318746B5000BAD690 /* TestObserver.h */,
-				4DC7FF0418746B5000BAD690 /* TestObserver.m */,
 				4D004684188DC0D700636F50 /* PasswordValidatorTests.m */,
 				4D15B7F11896F994002A8294 /* MockPlayerCommunicator.h */,
 				4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */,
@@ -409,7 +404,6 @@
 				B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */,
 				4D15B7F51896FA94002A8294 /* PlayerManagerTests.m in Sources */,
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
-				4DC7FF0618746B5000BAD690 /* TestObserver.m in Sources */,
 				4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */,
 				4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */,
 				4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */,
