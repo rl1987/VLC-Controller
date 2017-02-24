@@ -12,7 +12,7 @@
     
     NSUInteger numberOfMatches = 
     [regex numberOfMatchesInString:textField.text 
-                           options:NSRegularExpressionAnchorsMatchLines 
+                           options:0
                              range:NSMakeRange(0, [textField.text length])];
     
     if (numberOfMatches != 1)

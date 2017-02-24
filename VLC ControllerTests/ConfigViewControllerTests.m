@@ -84,8 +84,9 @@
 {
     self.presentingViewController.delegateMethodCalled = NO;
     
-    [self.presentingViewController presentModalViewController:self.configViewController
-                                                     animated:NO];
+    [self.presentingViewController presentViewController:self.configViewController
+                                                animated:NO
+                                              completion:NULL];
     
     [self.configViewController cancelPressed];
     
@@ -105,8 +106,9 @@
     self.presentingViewController.ipAddressString = nil;
     self.presentingViewController.port = 0;
     
-    [self.presentingViewController presentModalViewController:self.configViewController
-                                                     animated:NO];
+    [self.presentingViewController presentViewController:self.configViewController
+                                                animated:NO
+                                              completion:NULL];
     
     NSString *addressString = @"192.168.2.1";
     NSString *portString = @"8080";
@@ -142,8 +144,9 @@
 {
     self.presentingViewController.delegateMethodCalled = NO;
     
-    [self.presentingViewController presentModalViewController:self.configViewController
-                                                     animated:NO];
+    [self.presentingViewController presentViewController:self.configViewController
+                                                animated:NO
+                                              completion:NULL];
     
     self.configViewController.addressField.text = @"192.168.2.1";
     self.configViewController.portField.text = @"INVALID PORT INPUT";
@@ -162,8 +165,9 @@
     
     self.presentingViewController.delegateMethodCalled = NO;
     
-    [self.presentingViewController presentModalViewController:self.configViewController
-                                                     animated:NO];
+    [self.presentingViewController presentViewController:self.configViewController
+                                                animated:NO
+                                              completion:NULL];
     
     self.configViewController.addressField.text = @"INVALID IP ADDR";
     self.configViewController.portField.text = @"80";
@@ -259,8 +263,9 @@
     [[NSUserDefaults standardUserDefaults] setObject:nil
                                               forKey:kUserDefaultsPortKey];
     
-    [self.presentingViewController presentModalViewController:self.configViewController
-                                                     animated:NO];
+    [self.presentingViewController presentViewController:self.configViewController
+                                                animated:NO
+                                              completion:NULL];
     
     NSString *address = @"192.168.2.1";
     NSString *port = @"80";
