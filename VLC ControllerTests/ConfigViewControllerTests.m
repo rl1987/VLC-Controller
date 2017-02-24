@@ -14,8 +14,6 @@
 #import "PortValidator.h"
 #import "PasswordValidator.h"
 
-extern void __gcov_flush(void);
-
 @interface ConfigViewControllerTests : XCTestCase
 
 @property ConfigViewController *configViewController;
