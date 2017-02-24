@@ -24,7 +24,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="7DJ-QM-eA9" kind="modal" id="7ek-Zh-KS1"/>
+                                    <segue destination="7DJ-QM-eA9" kind="modal" identifier="to_config" id="7ek-Zh-KS1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FCh-gp-Yf7">
