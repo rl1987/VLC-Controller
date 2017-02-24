@@ -41,6 +41,14 @@
     self.playerCommunicator = nil;
 }
 
+- (void)testDefaultManager
+{
+    PlayerManager *defaultManager = [PlayerManager defaultManager];
+    
+    XCTAssertNotNil(defaultManager);
+    XCTAssert([defaultManager isKindOfClass:[PlayerManager class]]);
+}
+
 - (void)testPause
 {
     [self.playerManager pause];

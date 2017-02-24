@@ -28,9 +28,16 @@
 #pragma mark -
 #pragma mark Public API
 
+static PlayerManager *_defaultManager;
+
 + (instancetype)defaultManager
 {
-    return nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _defaultManager = [[self alloc] init];
+    });
+    
+    return _defaultManager;
 }
 
 - (void)pause
