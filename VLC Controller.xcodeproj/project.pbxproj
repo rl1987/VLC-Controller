@@ -308,7 +308,6 @@
 				B7DEDDC1157A468100ADBD36 /* Sources */,
 				B7DEDDC2157A468100ADBD36 /* Frameworks */,
 				B7DEDDC3157A468100ADBD36 /* Resources */,
-				B7DEDDC4157A468100ADBD36 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -329,6 +328,10 @@
 				LastUpgradeCheck = 0820;
 				TargetAttributes = {
 					B7DEDDA4157A468000ADBD36 = {
+						DevelopmentTeam = 9DJ2VKZ2UF;
+						ProvisioningStyle = Automatic;
+					};
+					B7DEDDC5157A468100ADBD36 = {
 						DevelopmentTeam = 9DJ2VKZ2UF;
 						ProvisioningStyle = Automatic;
 					};
@@ -372,22 +375,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B7DEDDC4157A468100ADBD36 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7DEDDA1157A468000ADBD36 /* Sources */ = {
@@ -590,6 +577,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -608,6 +597,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
