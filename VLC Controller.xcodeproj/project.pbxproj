@@ -25,6 +25,7 @@
 		4DF57FC118749DFC007D5F35 /* PlayerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC018749DFC007D5F35 /* PlayerCommunicator.m */; };
 		4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */; };
 		4DF57FC718749E22007D5F35 /* PlayerStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC618749E22007D5F35 /* PlayerStatus.m */; };
+		A66AE5063AAB830897A4D301 /* libPods-VLC Controller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE14EEB507E701C09411869 /* libPods-VLC Controller.a */; };
 		B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
 		B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
 		B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 		B7DEDDF3157A6D7000ADBD36 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDED157A6D7000ADBD36 /* InputValidator.m */; };
 		B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDEF157A6D7000ADBD36 /* PortValidator.m */; };
 		B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */; };
+		F30BAF6BD5B76F9A2488C922 /* libPods-VLC ControllerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B889C6FAEF6FF87095F958C4 /* libPods-VLC ControllerTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3448BC77BD47053B1BCFBCA4 /* Pods-VLC Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLC Controller.release.xcconfig"; path = "Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller.release.xcconfig"; sourceTree = "<group>"; };
 		4D004681188DC0A100636F50 /* PasswordValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordValidator.h; sourceTree = "<group>"; };
 		4D004682188DC0A100636F50 /* PasswordValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidator.m; sourceTree = "<group>"; };
 		4D004684188DC0D700636F50 /* PasswordValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidatorTests.m; sourceTree = "<group>"; };
@@ -83,6 +86,9 @@
 		4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatusBuilder.m; sourceTree = "<group>"; };
 		4DF57FC518749E22007D5F35 /* PlayerStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerStatus.h; sourceTree = "<group>"; };
 		4DF57FC618749E22007D5F35 /* PlayerStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerStatus.m; sourceTree = "<group>"; };
+		64F13636DEC9E3CFA2BBEC82 /* Pods-VLC ControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLC ControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VLC ControllerTests/Pods-VLC ControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7FFF1C17A46D7A94CA8B1414 /* Pods-VLC ControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLC ControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VLC ControllerTests/Pods-VLC ControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		A810F5F1A654890A2D80961E /* Pods-VLC Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLC Controller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller.debug.xcconfig"; sourceTree = "<group>"; };
 		B7DEDDA5157A468000ADBD36 /* VLC Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEDDA9157A468000ADBD36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B7DEDDAB157A468000ADBD36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -109,6 +115,8 @@
 		B7DEDDEF157A6D7000ADBD36 /* PortValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortValidator.m; sourceTree = "<group>"; };
 		B7DEDDF0157A6D7000ADBD36 /* ValidatingTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidatingTextField.h; sourceTree = "<group>"; };
 		B7DEDDF1157A6D7000ADBD36 /* ValidatingTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidatingTextField.m; sourceTree = "<group>"; };
+		B889C6FAEF6FF87095F958C4 /* libPods-VLC ControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VLC ControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE14EEB507E701C09411869 /* libPods-VLC Controller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VLC Controller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 				B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */,
 				B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */,
 				B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */,
+				A66AE5063AAB830897A4D301 /* libPods-VLC Controller.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +138,7 @@
 				4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */,
 				B7DEDDC9157A468100ADBD36 /* UIKit.framework in Frameworks */,
 				B7DEDDCA157A468100ADBD36 /* Foundation.framework in Frameworks */,
+				F30BAF6BD5B76F9A2488C922 /* libPods-VLC ControllerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +170,17 @@
 			name = "Biz logic";
 			sourceTree = "<group>";
 		};
+		A6FDA9128858486B833B2D4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A810F5F1A654890A2D80961E /* Pods-VLC Controller.debug.xcconfig */,
+				3448BC77BD47053B1BCFBCA4 /* Pods-VLC Controller.release.xcconfig */,
+				64F13636DEC9E3CFA2BBEC82 /* Pods-VLC ControllerTests.debug.xcconfig */,
+				7FFF1C17A46D7A94CA8B1414 /* Pods-VLC ControllerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B7DEDD9A157A467F00ADBD36 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +189,7 @@
 				B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */,
 				B7DEDDA8157A468000ADBD36 /* Frameworks */,
 				B7DEDDA6157A468000ADBD36 /* Products */,
+				A6FDA9128858486B833B2D4C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,6 +209,8 @@
 				B7DEDDA9157A468000ADBD36 /* UIKit.framework */,
 				B7DEDDAB157A468000ADBD36 /* Foundation.framework */,
 				B7DEDDAD157A468000ADBD36 /* CoreGraphics.framework */,
+				CFE14EEB507E701C09411869 /* libPods-VLC Controller.a */,
+				B889C6FAEF6FF87095F958C4 /* libPods-VLC ControllerTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -283,9 +307,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7DEDDD8157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC Controller" */;
 			buildPhases = (
+				C6DA6A51166CFD7EA525D172 /* [CP] Check Pods Manifest.lock */,
 				B7DEDDA1157A468000ADBD36 /* Sources */,
 				B7DEDDA2157A468000ADBD36 /* Frameworks */,
 				B7DEDDA3157A468000ADBD36 /* Resources */,
+				27EEF215D7943CE458AA74C9 /* [CP] Embed Pods Frameworks */,
+				3729756C16770CC2753985DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,9 +327,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7DEDDDB157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC ControllerTests" */;
 			buildPhases = (
+				552745EF07E40DB2FBDE2852 /* [CP] Check Pods Manifest.lock */,
 				B7DEDDC1157A468100ADBD36 /* Sources */,
 				B7DEDDC2157A468100ADBD36 /* Frameworks */,
 				B7DEDDC3157A468100ADBD36 /* Resources */,
+				BB8889755B3B7227983B8764 /* [CP] Embed Pods Frameworks */,
+				E7FAC516DAAD438F4790B426 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -370,6 +400,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27EEF215D7943CE458AA74C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3729756C16770CC2753985DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		552745EF07E40DB2FBDE2852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8889755B3B7227983B8764 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC ControllerTests/Pods-VLC ControllerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6DA6A51166CFD7EA525D172 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7FAC516DAAD438F4790B426 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC ControllerTests/Pods-VLC ControllerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B7DEDDA1157A468000ADBD36 /* Sources */ = {
@@ -529,6 +652,7 @@
 		};
 		B7DEDDD9157A468100ADBD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A810F5F1A654890A2D80961E /* Pods-VLC Controller.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -537,9 +661,9 @@
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -549,6 +673,7 @@
 		};
 		B7DEDDDA157A468100ADBD36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3448BC77BD47053B1BCFBCA4 /* Pods-VLC Controller.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -557,9 +682,9 @@
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -569,6 +694,7 @@
 		};
 		B7DEDDDC157A468100ADBD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F13636DEC9E3CFA2BBEC82 /* Pods-VLC ControllerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
@@ -590,6 +716,7 @@
 		};
 		B7DEDDDD157A468100ADBD36 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FFF1C17A46D7A94CA8B1414 /* Pods-VLC ControllerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
