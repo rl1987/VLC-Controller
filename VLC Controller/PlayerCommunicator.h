@@ -21,6 +21,10 @@
 
 @interface PlayerCommunicator : NSObject
 
+@property (nonatomic, strong) NSString *hostname;
+@property (nonatomic, assign) uint16_t port;
+@property (nonatomic, strong) NSString *password;
+
 - (void)retrieveCurrentStatus;
 - (void)sendCommand:(PlayerCommand *)command;
 

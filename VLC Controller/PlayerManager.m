@@ -8,6 +8,16 @@
 
 #import "PlayerManager.h"
 
+#import "PlayerStatusBuilder.h"
+#import "PlayerCommunicator.h"
+
+@interface PlayerManager()
+
+@property (nonatomic, strong) PlayerCommunicator *communicator;
+@property (nonatomic, strong) PlayerStatusBuilder *playerStatusBuilder;
+
+@end
+
 @implementation PlayerManager
 
 - (void)setDelegate:(id<PlayerManagerDelegate>)delegate
@@ -29,6 +39,28 @@
 #pragma mark Public API
 
 static PlayerManager *_defaultManager;
+
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        self.communicator = [[PlayerCommunicator alloc] init];
+        [self updatedCommunicatorSettings];
+        
+        self.playerStatusBuilder = [[PlayerStatusBuilder alloc] init];
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification
+                                                          object:nil
+                                                           queue:[NSOperationQueue mainQueue]
+                                                      usingBlock:^(NSNotification * _Nonnull note) {
+                                                            [self updatedCommunicatorSettings];
+                                                          }];
+    }
+    
+    return self;
+}
 
 + (instancetype)defaultManager
 {
@@ -106,6 +138,13 @@ static PlayerManager *_defaultManager;
     command.value = value;
     
     return command;
+}
+
+- (void)updatedCommunicatorSettings
+{
+    self.communicator.hostname = [[NSUserDefaults standardUserDefaults] stringForKey:kUserDefaultsAddressKey];
+    self.communicator.password = [[NSUserDefaults standardUserDefaults] stringForKey:kUserDefaultsPassword];
+    self.communicator.port = [[NSUserDefaults standardUserDefaults] integerForKey:kUserDefaultsPortKey];
 }
 
 @end

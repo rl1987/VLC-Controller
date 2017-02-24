@@ -12,6 +12,12 @@
 #import "MockPlayerCommunicator.h"
 #import "MockPlayerManagerDelegate.h"
 
+@interface PlayerManager()
+
+@property (nonatomic, strong) PlayerCommunicator *communicator;
+
+@end
+
 @interface PlayerManagerTests : XCTestCase
 
 @property (nonatomic, strong) PlayerManager *playerManager;
