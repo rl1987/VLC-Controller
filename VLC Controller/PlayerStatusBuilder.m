@@ -20,7 +20,7 @@
     status.duration = [jsonDictionary[@"length"] doubleValue];
     status.currentTime = [jsonDictionary[@"time"] doubleValue];
     status.playing = [jsonDictionary[@"state"] isEqualToString:@"playing"];
-    status.filename = [jsonDictionary valueForKeyPath:@"information.meta.filename"];
+    status.filename = [jsonDictionary valueForKeyPath:@"information.category.meta.filename"];
     status.volume = [jsonDictionary[@"volume"] integerValue];
     
     return status;
