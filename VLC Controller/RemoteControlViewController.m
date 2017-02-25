@@ -63,7 +63,10 @@
 
 - (IBAction)playPressed:(id)sender
 {
-    [self.playerManager play];
+    if (self.playerManager.status.playing)
+        [self.playerManager pause];
+    else
+        [self.playerManager play];
 }
 
 - (IBAction)stopPressed:(id)sender
@@ -123,7 +126,23 @@
 - (void)playerManager:(PlayerManager *)manager
        receivedStatus:(PlayerStatus *)status
 {
-    // TODO: update UI
+    [self.playButton setTitle:status.playing ? @"Pause" : @"Play"
+                     forState:UIControlStateNormal];
+
+    self.filenameLabel.text = status.filename;
+    self.timeSlider.maximumValue = status.duration;
+    self.timeSlider.value = status.currentTime;
+    self.volumeSlider.value = status.volume;
+    
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    [timeFormatter setDateFormat:@"HH:mm:ss"];
+    
+    NSDate *d1 = [NSDate dateWithTimeIntervalSinceReferenceDate:status.duration];
+    NSDate *d2 = [NSDate dateWithTimeIntervalSinceReferenceDate:status.currentTime];
+    
+    self.timeLabel.text = [NSString stringWithFormat:@"%@ / %@",
+                           [timeFormatter stringFromDate:d2],
+                           [timeFormatter stringFromDate:d1]];
 }
 
 #pragma mark -
