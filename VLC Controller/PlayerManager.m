@@ -11,7 +11,7 @@
 #import "PlayerStatusBuilder.h"
 #import "PlayerCommunicator.h"
 
-@interface PlayerManager()
+@interface PlayerManager() <PlayerCommunicatorDelegate>
 
 @property (nonatomic, strong) PlayerCommunicator *communicator;
 @property (nonatomic, strong) PlayerStatusBuilder *playerStatusBuilder;
@@ -47,6 +47,7 @@ static PlayerManager *_defaultManager;
     if (self)
     {
         self.communicator = [[PlayerCommunicator alloc] init];
+        self.communicator.delegate = self;
         [self updatedCommunicatorSettings];
         
         self.playerStatusBuilder = [[PlayerStatusBuilder alloc] init];
@@ -120,6 +121,22 @@ static PlayerManager *_defaultManager;
 }
 
 #pragma mark -
+#pragma mark Player communicator delegate
+
+- (void)playerCommunicator:(PlayerCommunicator *)communicator retrievedStatusJSONDictionary:(NSDictionary *)jsonDictionary
+{
+    self.status = [self.playerStatusBuilder statusFromJSONDictionary:jsonDictionary];
+    
+    if (self.delegate)
+        [self.delegate playerManager:self receivedStatus:self.status];
+}
+
+- (void)playerCommunicator:(PlayerCommunicator *)communicator failedWithError:(NSError *)error
+{
+    NSLog(@"%@",error);
+}
+
+#pragma mark -
 #pragma mark Private helper methods
 
 - (PlayerCommand *)commandWithType:(PlayerCommandType)type
@@ -146,5 +163,7 @@ static PlayerManager *_defaultManager;
     self.communicator.password = [[NSUserDefaults standardUserDefaults] stringForKey:kUserDefaultsPassword];
     self.communicator.port = [[NSUserDefaults standardUserDefaults] integerForKey:kUserDefaultsPortKey];
 }
+
+
 
 @end

@@ -86,8 +86,14 @@
                         progress:nil
                          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                              NSLog(@"%@",responseObject);
+                             
+                             if (self.delegate)
+                                [self.delegate playerCommunicator:self retrievedStatusJSONDictionary:responseObject];
                          } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                              NSLog(@"%@",error);
+                             
+                             if (self.delegate)
+                                [self.delegate playerCommunicator:self failedWithError:error];
                          }];
 }
 

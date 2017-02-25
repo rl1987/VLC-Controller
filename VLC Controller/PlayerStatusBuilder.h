@@ -12,6 +12,6 @@
 
 @interface PlayerStatusBuilder : NSObject
 
-- (PlayerStatus *)statusFromJSON:(NSString *)json;
+- (PlayerStatus *)statusFromJSONDictionary:(NSDictionary *)jsonDictionary;
 
 @end
