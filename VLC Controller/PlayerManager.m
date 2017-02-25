@@ -16,6 +16,8 @@
 @property (nonatomic, strong) PlayerCommunicator *communicator;
 @property (nonatomic, strong) PlayerStatusBuilder *playerStatusBuilder;
 
+@property (nonatomic, strong) NSTimer *statusUpdateTimer;
+
 @end
 
 @implementation PlayerManager
@@ -112,12 +114,21 @@ static PlayerManager *_defaultManager;
 
 - (void)startReceivingStatusUpdates
 {
-    
+    if (!self.statusUpdateTimer.isValid)
+    {
+        self.statusUpdateTimer = [NSTimer scheduledTimerWithTimeInterval:kStatusUpdateInterval
+                                                                 repeats:YES
+                                                                   block:^(NSTimer * _Nonnull timer) {
+                                                                       [self.communicator retrieveCurrentStatus];
+                                                                   }];
+    }
 }
 
 - (void)stopReceivingStatusUpdates
 {
+    [self.statusUpdateTimer invalidate];
     
+    self.statusUpdateTimer = nil;
 }
 
 #pragma mark -

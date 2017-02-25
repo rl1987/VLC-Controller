@@ -13,4 +13,6 @@
 #define kUserDefaultsAddressKey  @"user.defaults.address"
 #define kUserDefaultsPassword    @"user.defaults.password"
 
+#define kStatusUpdateInterval (1.0)
+
 #endif
