@@ -54,7 +54,7 @@
             case PlayerCommandNextEntry:
             arguments = @{ @"command" : @"pl_next" };
             case PlayerCommandPreviousEntry:
-            arguments = @{ @"command" : @"pl_prev" };
+            arguments = @{ @"command" : @"pl_previous" };
             break;
             case PlayerCommandFullscreen:
             arguments = @{ @"command" : @"fullscreen" };
