@@ -126,9 +126,10 @@
 - (void)playerManager:(PlayerManager *)manager
        receivedStatus:(PlayerStatus *)status
 {
-    [self.playButton setTitle:status.playing ? @"Pause" : @"Play"
-                     forState:UIControlStateNormal];
-
+    UIImage *image = status.playing ? [UIImage imageNamed:@"Pause"] :[UIImage imageNamed:@"Play"];
+    
+    [self.playButton setImage:image forState:UIControlStateNormal];
+    
     self.filenameLabel.text = status.filename;
     self.timeSlider.maximumValue = status.duration;
     self.timeSlider.value = status.currentTime;
