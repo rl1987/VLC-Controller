@@ -12,6 +12,7 @@
 		4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */; };
 		4D15B7F31896F994002A8294 /* MockPlayerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */; };
 		4D15B7F51896FA94002A8294 /* PlayerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D15B7F41896FA94002A8294 /* PlayerManagerTests.m */; };
+		4D2161DD1E61EEEB00042045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
@@ -64,6 +65,7 @@
 		4D15B7F11896F994002A8294 /* MockPlayerCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerCommunicator.h; sourceTree = "<group>"; };
 		4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerCommunicator.m; sourceTree = "<group>"; };
 		4D15B7F41896FA94002A8294 /* PlayerManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManagerTests.m; sourceTree = "<group>"; };
+		4D2161DC1E61EEEA00042045 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "VLC Controller/Images.xcassets"; sourceTree = "<group>"; };
 		4D292EA618B3949500B5D3CA /* MockPlayerManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerManagerDelegate.h; sourceTree = "<group>"; };
 		4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerManagerDelegate.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
@@ -153,6 +155,14 @@
 			name = "Biz logic tests";
 			sourceTree = "<group>";
 		};
+		4D2161DB1E61EE9200042045 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4D2161DC1E61EEEA00042045 /* Images.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		4DF57FBB18749DC4007D5F35 /* Biz logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 		B7DEDD9A157A467F00ADBD36 = {
 			isa = PBXGroup;
 			children = (
+				4D2161DB1E61EE9200042045 /* Assets */,
 				4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */,
 				B7DEDDAF157A468000ADBD36 /* VLC Controller */,
 				B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */,
@@ -386,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7DEDDB4157A468000ADBD36 /* InfoPlist.strings in Resources */,
+				4D2161DD1E61EEEB00042045 /* Images.xcassets in Resources */,
 				B7DEDDBD157A468000ADBD36 /* MainStoryboard.storyboard in Resources */,
 				4DC7FEF518720F3200BAD690 /* Default-568h@2x.png in Resources */,
 			);
