@@ -1,5 +1,7 @@
 #import "ConfigViewController.h"
 
+#import "PlayerManager.h"
+
 @implementation ConfigViewController
 
 @synthesize addressField;

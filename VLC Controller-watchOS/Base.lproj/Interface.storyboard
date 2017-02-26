@@ -19,14 +19,23 @@
                                 <button width="2" height="100" alignment="left" backgroundImage="Rewind" id="iuC-lv-3RD">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="rewindTapped" destination="AgC-eL-Hgc" id="0ta-5n-sbv"/>
+                                    </connections>
                                 </button>
                                 <button width="2" height="100" alignment="left" backgroundImage="Play" id="X2v-9j-Box">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="playPauseTapped" destination="AgC-eL-Hgc" id="7u8-xJ-dza"/>
+                                    </connections>
                                 </button>
                                 <button width="2" height="100" alignment="left" backgroundImage="FastForward" id="RW8-6D-m9C">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="fastForwardTapped" destination="AgC-eL-Hgc" id="tZC-8i-LtD"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -35,6 +44,9 @@
                                 <button width="2" height="100" alignment="left" backgroundImage="Previous" id="kLj-VK-X54">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="prevIousTapped" destination="AgC-eL-Hgc" id="a1h-lq-EuW"/>
+                                    </connections>
                                 </button>
                                 <button width="2" height="100" alignment="left" id="SGC-wR-4BJ">
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -44,6 +56,9 @@
                                 <button width="2" height="100" alignment="left" backgroundImage="Next" id="AqO-rf-mQe">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="nextTapped" destination="AgC-eL-Hgc" id="gYh-Lv-Rp5"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -52,14 +67,23 @@
                                 <button width="2" height="100" alignment="left" backgroundImage="Softer" id="Ztx-Ef-OxU">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="softerTapped" destination="AgC-eL-Hgc" id="DtK-zZ-AD6"/>
+                                    </connections>
                                 </button>
                                 <button width="2" height="100" alignment="left" backgroundImage="Stop" id="Yhw-n0-sgw">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="stopTapped" destination="AgC-eL-Hgc" id="ySL-0z-Qdp"/>
+                                    </connections>
                                 </button>
                                 <button width="2" height="100" alignment="left" backgroundImage="Louder" id="Q0o-Hj-ElM">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
+                                    <connections>
+                                        <action selector="louderTapped" destination="AgC-eL-Hgc" id="yvY-Zg-6RO"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>

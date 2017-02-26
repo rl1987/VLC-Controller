@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#define kUserDefaultsPortKey     @"user.defaults.port"
+#define kUserDefaultsAddressKey  @"user.defaults.address"
+#define kUserDefaultsPassword    @"user.defaults.password"
+
+#define kStatusUpdateInterval (1.0)
+
 #import "PlayerStatus.h"
 
 @class PlayerManager;

@@ -14,3 +14,7 @@ target 'VLC Controller' do
   end
 
 end
+
+target 'VLC Controller-watchOS Extension' do
+  pod 'AFNetworking'
+end
