@@ -32,22 +32,6 @@
     
 }
 
-- (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
-    [super willActivate];
-    
-    [self.playerManager startReceivingStatusUpdates];
-    // XXX: we should avoid polling to conserver energy on the watch.
-    // Better way to go about this is to request the PlayerStatus on as-needed basis.
-}
-
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    [self.playerManager stopReceivingStatusUpdates];
-    
-    [super didDeactivate];
-}
-
 - (IBAction)rewindTapped {
     [self.playerManager seekBy:-10.0];
 }
