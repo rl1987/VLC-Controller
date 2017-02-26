@@ -23,7 +23,7 @@
                                         <action selector="rewindTapped" destination="AgC-eL-Hgc" id="0ta-5n-sbv"/>
                                     </connections>
                                 </button>
-                                <button width="2" height="100" alignment="left" backgroundImage="Play" id="X2v-9j-Box">
+                                <button width="2" height="100" alignment="left" backgroundImage="Resume" id="X2v-9j-Box">
                                     <variation key="device=watch38mm" height="45" width="45"/>
                                     <variation key="device=watch42mm" height="52" width="52"/>
                                     <connections>
