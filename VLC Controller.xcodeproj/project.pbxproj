@@ -13,6 +13,15 @@
 		4D15B7F31896F994002A8294 /* MockPlayerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */; };
 		4D15B7F51896FA94002A8294 /* PlayerManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D15B7F41896FA94002A8294 /* PlayerManagerTests.m */; };
 		4D2161DD1E61EEEB00042045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
+		4D2161E41E62FB4C00042045 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161E21E62FB4C00042045 /* Interface.storyboard */; };
+		4D2161E61E62FB4D00042045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161E51E62FB4D00042045 /* Assets.xcassets */; };
+		4D2161ED1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4D2161EC1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4D2161F51E62FB4F00042045 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2161F41E62FB4F00042045 /* InterfaceController.m */; };
+		4D2161F81E62FB4F00042045 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2161F71E62FB4F00042045 /* ExtensionDelegate.m */; };
+		4D2161FB1E62FB4F00042045 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2161FA1E62FB4F00042045 /* NotificationController.m */; };
+		4D2161FE1E62FB4F00042045 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2161FD1E62FB4F00042045 /* ComplicationController.m */; };
+		4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161FF1E62FB4F00042045 /* Assets.xcassets */; };
+		4D2162041E62FB4F00042045 /* VLC Controller-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4D2161E01E62FB4B00042045 /* VLC Controller-watchOS.app */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
@@ -47,6 +56,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4D2161EE1E62FB4E00042045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DEDD9C157A467F00ADBD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D2161EB1E62FB4E00042045;
+			remoteInfo = "VLC Controller-watchOS Extension";
+		};
+		4D2162021E62FB4F00042045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DEDD9C157A467F00ADBD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D2161DF1E62FB4A00042045;
+			remoteInfo = "VLC Controller-watchOS";
+		};
 		B7DEDDCB157A468100ADBD36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7DEDD9C157A467F00ADBD36 /* Project object */;
@@ -55,6 +78,31 @@
 			remoteInfo = "VLC Controller";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4D2162081E62FB4F00042045 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4D2161ED1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D21620C1E62FB4F00042045 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4D2162041E62FB4F00042045 /* VLC Controller-watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3448BC77BD47053B1BCFBCA4 /* Pods-VLC Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VLC Controller.release.xcconfig"; path = "Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +114,22 @@
 		4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerCommunicator.m; sourceTree = "<group>"; };
 		4D15B7F41896FA94002A8294 /* PlayerManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerManagerTests.m; sourceTree = "<group>"; };
 		4D2161DC1E61EEEA00042045 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "VLC Controller/Images.xcassets"; sourceTree = "<group>"; };
+		4D2161E01E62FB4B00042045 /* VLC Controller-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Controller-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2161E31E62FB4C00042045 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4D2161E51E62FB4D00042045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D2161E71E62FB4D00042045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D2161EC1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "VLC Controller-watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D2161F21E62FB4E00042045 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4D2161F31E62FB4F00042045 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		4D2161F41E62FB4F00042045 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		4D2161F61E62FB4F00042045 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		4D2161F71E62FB4F00042045 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		4D2161F91E62FB4F00042045 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		4D2161FA1E62FB4F00042045 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		4D2161FC1E62FB4F00042045 /* ComplicationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplicationController.h; sourceTree = "<group>"; };
+		4D2161FD1E62FB4F00042045 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
+		4D2161FF1E62FB4F00042045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D2162011E62FB4F00042045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D292EA618B3949500B5D3CA /* MockPlayerManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerManagerDelegate.h; sourceTree = "<group>"; };
 		4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerManagerDelegate.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
@@ -122,6 +186,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4D2161E91E62FB4E00042045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7DEDDA2157A468000ADBD36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +234,42 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		4D2161E11E62FB4C00042045 /* VLC Controller-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				4D2161E21E62FB4C00042045 /* Interface.storyboard */,
+				4D2161E51E62FB4D00042045 /* Assets.xcassets */,
+				4D2161E71E62FB4D00042045 /* Info.plist */,
+			);
+			path = "VLC Controller-watchOS";
+			sourceTree = "<group>";
+		};
+		4D2161F01E62FB4E00042045 /* VLC Controller-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D2161F31E62FB4F00042045 /* InterfaceController.h */,
+				4D2161F41E62FB4F00042045 /* InterfaceController.m */,
+				4D2161F61E62FB4F00042045 /* ExtensionDelegate.h */,
+				4D2161F71E62FB4F00042045 /* ExtensionDelegate.m */,
+				4D2161F91E62FB4F00042045 /* NotificationController.h */,
+				4D2161FA1E62FB4F00042045 /* NotificationController.m */,
+				4D2161FC1E62FB4F00042045 /* ComplicationController.h */,
+				4D2161FD1E62FB4F00042045 /* ComplicationController.m */,
+				4D2161FF1E62FB4F00042045 /* Assets.xcassets */,
+				4D2162011E62FB4F00042045 /* Info.plist */,
+				4D2161F11E62FB4E00042045 /* Supporting Files */,
+			);
+			path = "VLC Controller-watchOS Extension";
+			sourceTree = "<group>";
+		};
+		4D2161F11E62FB4E00042045 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D2161F21E62FB4E00042045 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		4DF57FBB18749DC4007D5F35 /* Biz logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +305,8 @@
 				4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */,
 				B7DEDDAF157A468000ADBD36 /* VLC Controller */,
 				B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */,
+				4D2161E11E62FB4C00042045 /* VLC Controller-watchOS */,
+				4D2161F01E62FB4E00042045 /* VLC Controller-watchOS Extension */,
 				B7DEDDA8157A468000ADBD36 /* Frameworks */,
 				B7DEDDA6157A468000ADBD36 /* Products */,
 				A6FDA9128858486B833B2D4C /* Pods */,
@@ -209,6 +318,8 @@
 			children = (
 				B7DEDDA5157A468000ADBD36 /* VLC Controller.app */,
 				B7DEDDC6157A468100ADBD36 /* VLC ControllerTests.xctest */,
+				4D2161E01E62FB4B00042045 /* VLC Controller-watchOS.app */,
+				4D2161EC1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,6 +425,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4D2161DF1E62FB4A00042045 /* VLC Controller-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D2162091E62FB4F00042045 /* Build configuration list for PBXNativeTarget "VLC Controller-watchOS" */;
+			buildPhases = (
+				4D2161DE1E62FB4A00042045 /* Resources */,
+				4D2162081E62FB4F00042045 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D2161EF1E62FB4E00042045 /* PBXTargetDependency */,
+			);
+			name = "VLC Controller-watchOS";
+			productName = "VLC Controller-watchOS";
+			productReference = 4D2161E01E62FB4B00042045 /* VLC Controller-watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4D2161EB1E62FB4E00042045 /* VLC Controller-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D2162051E62FB4F00042045 /* Build configuration list for PBXNativeTarget "VLC Controller-watchOS Extension" */;
+			buildPhases = (
+				4D2161E81E62FB4E00042045 /* Sources */,
+				4D2161E91E62FB4E00042045 /* Frameworks */,
+				4D2161EA1E62FB4E00042045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VLC Controller-watchOS Extension";
+			productName = "VLC Controller-watchOS Extension";
+			productReference = 4D2161EC1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		B7DEDDA4157A468000ADBD36 /* VLC Controller */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7DEDDD8157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC Controller" */;
@@ -324,10 +469,12 @@
 				B7DEDDA3157A468000ADBD36 /* Resources */,
 				27EEF215D7943CE458AA74C9 /* [CP] Embed Pods Frameworks */,
 				3729756C16770CC2753985DF /* [CP] Copy Pods Resources */,
+				4D21620C1E62FB4F00042045 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4D2162031E62FB4F00042045 /* PBXTargetDependency */,
 			);
 			name = "VLC Controller";
 			productName = "VLC Controller";
@@ -363,6 +510,16 @@
 			attributes = {
 				LastUpgradeCheck = 0820;
 				TargetAttributes = {
+					4D2161DF1E62FB4A00042045 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9DJ2VKZ2UF;
+						ProvisioningStyle = Automatic;
+					};
+					4D2161EB1E62FB4E00042045 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9DJ2VKZ2UF;
+						ProvisioningStyle = Automatic;
+					};
 					B7DEDDA4157A468000ADBD36 = {
 						DevelopmentTeam = 9DJ2VKZ2UF;
 						ProvisioningStyle = Automatic;
@@ -379,6 +536,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B7DEDD9A157A467F00ADBD36;
 			productRefGroup = B7DEDDA6157A468000ADBD36 /* Products */;
@@ -387,11 +545,30 @@
 			targets = (
 				B7DEDDA4157A468000ADBD36 /* VLC Controller */,
 				B7DEDDC5157A468100ADBD36 /* VLC ControllerTests */,
+				4D2161DF1E62FB4A00042045 /* VLC Controller-watchOS */,
+				4D2161EB1E62FB4E00042045 /* VLC Controller-watchOS Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4D2161DE1E62FB4A00042045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2161E61E62FB4D00042045 /* Assets.xcassets in Resources */,
+				4D2161E41E62FB4C00042045 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D2161EA1E62FB4E00042045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7DEDDA3157A468000ADBD36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,6 +684,17 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4D2161E81E62FB4E00042045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2161F81E62FB4F00042045 /* ExtensionDelegate.m in Sources */,
+				4D2161FE1E62FB4F00042045 /* ComplicationController.m in Sources */,
+				4D2161F51E62FB4F00042045 /* InterfaceController.m in Sources */,
+				4D2161FB1E62FB4F00042045 /* NotificationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7DEDDA1157A468000ADBD36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +736,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4D2161EF1E62FB4E00042045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D2161EB1E62FB4E00042045 /* VLC Controller-watchOS Extension */;
+			targetProxy = 4D2161EE1E62FB4E00042045 /* PBXContainerItemProxy */;
+		};
+		4D2162031E62FB4F00042045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D2161DF1E62FB4A00042045 /* VLC Controller-watchOS */;
+			targetProxy = 4D2162021E62FB4F00042045 /* PBXContainerItemProxy */;
+		};
 		B7DEDDCC157A468100ADBD36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B7DEDDA4157A468000ADBD36 /* VLC Controller */;
@@ -556,6 +754,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4D2161E21E62FB4C00042045 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D2161E31E62FB4C00042045 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		B7DEDDB2157A468000ADBD36 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -583,6 +789,122 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		4D2162061E62FB4F00042045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "VLC Controller-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		4D2162071E62FB4F00042045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "VLC Controller-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		4D21620A1E62FB4F00042045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = VLC_Controller_watchOS_Extension;
+				INFOPLIST_FILE = "VLC Controller-watchOS/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		4D21620B1E62FB4F00042045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				IBSC_MODULE = VLC_Controller_watchOS_Extension;
+				INFOPLIST_FILE = "VLC Controller-watchOS/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 		B7DEDDD6157A468100ADBD36 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -751,6 +1073,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4D2162051E62FB4F00042045 /* Build configuration list for PBXNativeTarget "VLC Controller-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D2162061E62FB4F00042045 /* Debug */,
+				4D2162071E62FB4F00042045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4D2162091E62FB4F00042045 /* Build configuration list for PBXNativeTarget "VLC Controller-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D21620A1E62FB4F00042045 /* Debug */,
+				4D21620B1E62FB4F00042045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B7DEDD9F157A467F00ADBD36 /* Build configuration list for PBXProject "VLC Controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
