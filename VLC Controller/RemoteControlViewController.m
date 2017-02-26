@@ -137,6 +137,7 @@
     
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
     [timeFormatter setDateFormat:@"HH:mm:ss"];
+    [timeFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
     
     NSDate *d1 = [NSDate dateWithTimeIntervalSinceReferenceDate:status.duration];
     NSDate *d2 = [NSDate dateWithTimeIntervalSinceReferenceDate:status.currentTime];
