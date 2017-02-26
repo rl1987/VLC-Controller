@@ -50,28 +50,36 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36q-ke-PG8">
-                                <rect key="frame" x="194.66666666666666" y="322.66666666666669" width="25" height="25"/>
+                                <rect key="frame" x="182.66666666666666" y="294.66666666666669" width="49" height="49"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="DCa-wz-RIX"/>
+                                    <constraint firstAttribute="width" constant="49" id="rIX-Nl-GKJ"/>
+                                </constraints>
                                 <state key="normal" image="Play"/>
                                 <connections>
                                     <action selector="playPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="VaJ-hz-mAo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyB-Zr-9AU">
-                                <rect key="frame" x="194.66666666666666" y="387.66666666666669" width="25" height="25"/>
+                                <rect key="frame" x="183.33333333333334" y="392.66666666666669" width="48.333333333333314" height="49"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="ivg-TA-KWW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAh-Gb-QkG">
-                                <rect key="frame" x="227.66666666666666" y="355.66666666666669" width="25" height="25"/>
+                                <rect key="frame" x="231.66666666666669" y="343.66666666666669" width="49.000000000000057" height="49"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Next"/>
                                 <connections>
                                     <action selector="nextPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="6l6-OE-e9g"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr8-Vc-EhX">
-                                <rect key="frame" x="161.66666666666666" y="355.66666666666669" width="25" height="25"/>
+                                <rect key="frame" x="133.66666666666666" y="343.66666666666669" width="49" height="49"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Previous"/>
                                 <connections>
                                     <action selector="prevPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="0OR-Nt-FsK"/>
@@ -141,14 +149,18 @@
                             <constraint firstItem="N61-A0-zHg" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IpX-Mz-Xh7" secondAttribute="trailing" id="0hb-gN-3wc"/>
                             <constraint firstItem="N61-A0-zHg" firstAttribute="top" secondItem="C9T-zK-6er" secondAttribute="bottom" id="5rL-hc-0rO"/>
                             <constraint firstItem="mr8-Vc-EhX" firstAttribute="centerY" secondItem="phA-qE-0GQ" secondAttribute="centerY" id="650-bV-1ay"/>
-                            <constraint firstItem="36q-ke-PG8" firstAttribute="leading" secondItem="mr8-Vc-EhX" secondAttribute="trailing" constant="8" id="8dy-A5-GI9"/>
+                            <constraint firstItem="36q-ke-PG8" firstAttribute="leading" secondItem="mr8-Vc-EhX" secondAttribute="trailing" id="8dy-A5-GI9"/>
                             <constraint firstItem="CAh-Gb-QkG" firstAttribute="top" secondItem="mr8-Vc-EhX" secondAttribute="top" id="9DP-Kq-9bS"/>
-                            <constraint firstItem="CAh-Gb-QkG" firstAttribute="leading" secondItem="36q-ke-PG8" secondAttribute="trailing" constant="8" id="A4t-zs-CHh"/>
-                            <constraint firstItem="CAh-Gb-QkG" firstAttribute="top" secondItem="36q-ke-PG8" secondAttribute="bottom" constant="8" id="Gkc-mA-PHD"/>
-                            <constraint firstItem="CAh-Gb-QkG" firstAttribute="leading" secondItem="UyB-Zr-9AU" secondAttribute="trailing" constant="8" id="LW1-Xi-JVv"/>
+                            <constraint firstItem="CAh-Gb-QkG" firstAttribute="leading" secondItem="36q-ke-PG8" secondAttribute="trailing" id="A4t-zs-CHh"/>
+                            <constraint firstItem="36q-ke-PG8" firstAttribute="height" secondItem="UyB-Zr-9AU" secondAttribute="height" id="CNR-J8-tmQ"/>
+                            <constraint firstItem="CAh-Gb-QkG" firstAttribute="top" secondItem="36q-ke-PG8" secondAttribute="bottom" id="Gkc-mA-PHD"/>
+                            <constraint firstItem="36q-ke-PG8" firstAttribute="height" secondItem="mr8-Vc-EhX" secondAttribute="height" id="JnM-2N-TZp"/>
+                            <constraint firstItem="CAh-Gb-QkG" firstAttribute="leading" secondItem="UyB-Zr-9AU" secondAttribute="trailing" id="LW1-Xi-JVv"/>
                             <constraint firstItem="I8T-jh-nY2" firstAttribute="centerY" secondItem="ewH-9P-gT4" secondAttribute="centerY" id="Mde-bf-fjp"/>
                             <constraint firstItem="CAh-Gb-QkG" firstAttribute="bottom" secondItem="mr8-Vc-EhX" secondAttribute="bottom" id="P3a-uu-Kfd"/>
-                            <constraint firstItem="UyB-Zr-9AU" firstAttribute="top" secondItem="mr8-Vc-EhX" secondAttribute="bottom" constant="7" id="PXU-6P-txu"/>
+                            <constraint firstItem="UyB-Zr-9AU" firstAttribute="top" secondItem="mr8-Vc-EhX" secondAttribute="bottom" id="PXU-6P-txu"/>
+                            <constraint firstItem="36q-ke-PG8" firstAttribute="width" secondItem="mr8-Vc-EhX" secondAttribute="width" id="Y78-0M-fbK"/>
+                            <constraint firstItem="36q-ke-PG8" firstAttribute="width" secondItem="CAh-Gb-QkG" secondAttribute="width" id="ZWc-Gq-1yY"/>
                             <constraint firstItem="IpX-Mz-Xh7" firstAttribute="top" secondItem="YNP-tN-gX3" secondAttribute="bottom" constant="-26" id="ZbD-Bc-HgJ"/>
                             <constraint firstItem="Fy3-gX-YpY" firstAttribute="top" secondItem="YNP-tN-gX3" secondAttribute="bottom" constant="-26" id="ZvT-Um-zAa"/>
                             <constraint firstItem="uLG-PH-9qN" firstAttribute="top" secondItem="ewH-9P-gT4" secondAttribute="bottom" constant="54" id="aFl-XW-rpy"/>
@@ -296,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtX-eJ-uLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="668" y="12"/>
+            <point key="canvasLocation" x="727" y="12"/>
         </scene>
     </scenes>
     <resources>
