@@ -16,7 +16,9 @@ typedef enum {
     PlayerCommandPreviousEntry,
     PlayerCommandFullscreen,
     PlayerCommandSetVolume,
-    PlayerCommandSeek
+    PlayerCommandSetVolumeRelative,
+    PlayerCommandSeek,
+    PlayerCommandSeekRelative
 } PlayerCommandType;
 
 @interface PlayerCommand : NSObject

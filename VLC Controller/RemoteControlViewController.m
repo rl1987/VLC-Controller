@@ -53,12 +53,12 @@
 
 - (IBAction)seekBackPressed:(id)sender
 {
-    [self.playerManager seekTo:MAX(self.playerManager.status.currentTime - 10.0, 0.0)];
+    [self.playerManager seekBy:-10.0];
 }
 
 - (IBAction)seekForwardPressed:(id)sender
 {
-    [self.playerManager seekTo:MIN(self.playerManager.status.currentTime + 10.0, self.playerManager.status.duration)];
+    [self.playerManager seekBy:10.0];
 }
 
 - (IBAction)playPressed:(id)sender
@@ -86,12 +86,12 @@
 
 - (IBAction)softerPressed:(id)sender
 {
-    [self.playerManager changeVolumeTo:MAX(self.playerManager.status.volume - 10, 0)];
+    [self.playerManager changeVolumeBy:-10];
 }
 
 - (IBAction)louderPressed:(id)sender
 {
-    [self.playerManager changeVolumeTo:MIN(self.playerManager.status.volume + 10, 200)];
+    [self.playerManager changeVolumeBy:10];
 }
 
 - (IBAction)playlistPressed:(id)sender

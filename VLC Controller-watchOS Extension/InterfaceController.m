@@ -49,7 +49,7 @@
 }
 
 - (IBAction)rewindTapped {
-    [self.playerManager seekTo:MAX(self.playerManager.status.currentTime - 10.0, 0.0)];
+    [self.playerManager seekBy:-10.0];
 }
 
 - (IBAction)playPauseTapped {
@@ -60,7 +60,7 @@
 }
 
 - (IBAction)fastForwardTapped {
-    [self.playerManager seekTo:MIN(self.playerManager.status.currentTime + 10.0, self.playerManager.status.duration)];
+    [self.playerManager seekBy:10.0];
 }
 
 - (IBAction)prevIousTapped {
@@ -72,7 +72,7 @@
 }
 
 - (IBAction)softerTapped {
-    [self.playerManager changeVolumeTo:MAX(self.playerManager.status.volume - 10, 0)];
+    [self.playerManager changeVolumeBy:-10];
 }
 
 - (IBAction)stopTapped {
@@ -80,7 +80,7 @@
 }
 
 - (IBAction)louderTapped {
-    [self.playerManager changeVolumeTo:MIN(self.playerManager.status.volume + 10, 200)];
+    [self.playerManager changeVolumeBy:10];
 }
 
 @end

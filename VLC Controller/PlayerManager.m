@@ -90,6 +90,12 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:[self commandWithType:PlayerCommandStop]];
 }
 
+- (void)seekBy:(NSTimeInterval)offset
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandSeekRelative
+                                                andValue:(double)offset]];
+}
+
 - (void)seekTo:(NSTimeInterval)secondsFromStart
 {
     [self.communicator sendCommand:[self commandWithType:PlayerCommandSeek
@@ -100,6 +106,12 @@ static PlayerManager *_defaultManager;
 {
     [self.communicator sendCommand:[self commandWithType:PlayerCommandSetVolume
                                                 andValue:(double)volume]];
+}
+
+- (void)changeVolumeBy:(NSInteger)difference
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandSetVolumeRelative
+                                                andValue:(double)difference]];
 }
 
 - (void)goToNextItem

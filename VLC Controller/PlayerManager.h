@@ -36,8 +36,10 @@
 - (void)pause;
 - (void)play;
 - (void)stop;
+- (void)seekBy:(NSTimeInterval)offset;
 - (void)seekTo:(NSTimeInterval)secondsFromStart;
-- (void)changeVolumeTo:(NSUInteger)volume;
+- (void)changeVolumeTo:(NSInteger)volume;
+- (void)changeVolumeBy:(NSUInteger)difference;
 - (void)goToNextItem;
 - (void)goToPreviousItem;
 

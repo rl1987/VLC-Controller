@@ -62,8 +62,17 @@
             case PlayerCommandSetVolume:
             arguments = @{ @"command" : @"volume", @"val" : [NSString stringWithFormat:@"%.0f", command.value] };
             break;
+            case PlayerCommandSetVolumeRelative:
+            arguments = @{ @"command" : @"volume", @"val" : [NSString stringWithFormat:@"%s%.0f",
+                                                             command.value > 0.0 ? "+" : "-" ,fabs(command.value)] };
+            break;
             case PlayerCommandSeek:
             arguments = @{ @"command" : @"seek", @"val" : [NSString stringWithFormat:@"%.0f", command.value] };
+            break;
+            case PlayerCommandSeekRelative:
+            arguments = @{ @"command" : @"seek", @"val" : [NSString stringWithFormat:@"%s%.0fS",
+                                                           command.value > 0.0 ? "+" : "-" ,fabs(command.value)] };
+            break;
         default:
             break;
     }
