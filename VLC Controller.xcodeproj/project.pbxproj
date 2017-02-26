@@ -22,6 +22,8 @@
 		4D2161FE1E62FB4F00042045 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2161FD1E62FB4F00042045 /* ComplicationController.m */; };
 		4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161FF1E62FB4F00042045 /* Assets.xcassets */; };
 		4D2162041E62FB4F00042045 /* VLC Controller-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4D2161E01E62FB4B00042045 /* VLC Controller-watchOS.app */; };
+		4D21620D1E6326CD00042045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
+		4D21620E1E6326CE00042045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
@@ -556,6 +558,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D21620D1E6326CD00042045 /* Images.xcassets in Resources */,
 				4D2161E61E62FB4D00042045 /* Assets.xcassets in Resources */,
 				4D2161E41E62FB4C00042045 /* Interface.storyboard in Resources */,
 			);
@@ -566,6 +569,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */,
+				4D21620E1E6326CE00042045 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
