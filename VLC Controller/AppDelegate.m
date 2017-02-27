@@ -17,14 +17,44 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
     [[WCSession defaultSession] setDelegate:self];
-    [[WCSession defaultSession] activateSession];
     
     return YES;
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+    [[WCSession defaultSession] activateSession];
+}
+
 - (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error
 {
+    // FIXME: refactor to reduce code duplication.
     
+    if ([[WCSession defaultSession] activationState] != WCSessionActivationStateActivated)
+        return;
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    
+    NSMutableDictionary *currentSettings = [[NSMutableDictionary alloc] init];
+    
+    currentSettings[@"UUID"] = [[NSUUID UUID] UUIDString];
+    
+    if ([ud stringForKey:kUserDefaultsAddressKey]) {
+        [currentSettings setObject:[ud stringForKey:kUserDefaultsAddressKey]
+                            forKey:kUserDefaultsAddressKey];
+    }
+    
+    if ([ud integerForKey:kUserDefaultsPortKey]) {
+        [currentSettings setObject:@([ud integerForKey:kUserDefaultsPortKey])
+                            forKey:kUserDefaultsPortKey];
+    }
+    
+    if ([ud stringForKey:kUserDefaultsPassword]) {
+        [currentSettings setObject:[ud stringForKey:kUserDefaultsPassword]
+                            forKey:kUserDefaultsPassword];
+    }
+    
+    [[WCSession defaultSession] updateApplicationContext:currentSettings error:NULL];
 }
 
 - (void)sessionDidBecomeInactive:(WCSession *)session
@@ -45,6 +75,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     
     NSMutableDictionary *currentSettings = [[NSMutableDictionary alloc] init];
+    
+    currentSettings[@"UUID"] = [[NSUUID UUID] UUIDString];
     
     if ([ud stringForKey:kUserDefaultsAddressKey]) {
         [currentSettings setObject:[ud stringForKey:kUserDefaultsAddressKey]

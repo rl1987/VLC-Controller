@@ -113,7 +113,7 @@
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController"/>
             </objects>
-            <point key="canvasLocation" x="380" y="591"/>
+            <point key="canvasLocation" x="397" y="591"/>
         </scene>
     </scenes>
 </document>

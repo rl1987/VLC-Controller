@@ -27,6 +27,8 @@
     
     NSMutableDictionary *currentSettings = [[NSMutableDictionary alloc] init];
     
+    currentSettings[@"UUID"] = [[NSUUID UUID] UUIDString];
+    
     if ([ud stringForKey:kUserDefaultsAddressKey]) {
         [currentSettings setObject:[ud stringForKey:kUserDefaultsAddressKey]
                             forKey:kUserDefaultsAddressKey];
@@ -112,6 +114,7 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
     NSLog(@"%@",applicationContext);
     
     [[NSUserDefaults standardUserDefaults] setValuesForKeysWithDictionary:applicationContext];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

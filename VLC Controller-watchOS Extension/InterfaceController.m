@@ -21,15 +21,9 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-
-    // FIXME: User WatchConnectivity.framework to request address and password from iOS app
-    [[NSUserDefaults standardUserDefaults] setObject:@"192.168.1.227" forKey:kUserDefaultsAddressKey];
-    [[NSUserDefaults standardUserDefaults] setInteger:8080 forKey:kUserDefaultsPortKey];
-    [[NSUserDefaults standardUserDefaults] setObject:@"123" forKey:kUserDefaultsPassword];
     
     // Configure interface objects here.
     self.playerManager = [[PlayerManager alloc] init];
-    
 }
 
 - (IBAction)rewindTapped {
