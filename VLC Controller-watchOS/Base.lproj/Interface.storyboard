@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <group width="1" alignment="left" id="hec-Ie-TLh">
+                        <group width="1" alignment="left" spacing="0.0" id="hec-Ie-TLh">
                             <items>
                                 <button width="2" height="100" alignment="left" backgroundImage="Rewind" id="iuC-lv-3RD">
                                     <variation key="device=watch38mm" height="45" width="45"/>
@@ -32,14 +32,14 @@
                                 </button>
                                 <button width="2" height="100" alignment="left" backgroundImage="FastForward" id="RW8-6D-m9C">
                                     <variation key="device=watch38mm" height="45" width="45"/>
-                                    <variation key="device=watch42mm" height="52" width="52"/>
+                                    <variation key="device=watch42mm" height="52" width="49"/>
                                     <connections>
                                         <action selector="fastForwardTapped" destination="AgC-eL-Hgc" id="tZC-8i-LtD"/>
                                     </connections>
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="2di-Qo-Pb1">
+                        <group width="1" alignment="left" spacing="0.0" id="2di-Qo-Pb1">
                             <items>
                                 <button width="2" height="100" alignment="left" backgroundImage="Previous" id="kLj-VK-X54">
                                     <variation key="device=watch38mm" height="45" width="45"/>
@@ -62,25 +62,25 @@
                                 </button>
                             </items>
                         </group>
-                        <group width="1" alignment="left" id="Iqe-Hf-UU4">
+                        <group width="1" alignment="left" spacing="0.0" id="Iqe-Hf-UU4">
                             <items>
                                 <button width="2" height="100" alignment="left" backgroundImage="Softer" id="Ztx-Ef-OxU">
                                     <variation key="device=watch38mm" height="45" width="45"/>
-                                    <variation key="device=watch42mm" height="52" width="52"/>
+                                    <variation key="device=watch42mm" height="50" width="50"/>
                                     <connections>
                                         <action selector="softerTapped" destination="AgC-eL-Hgc" id="DtK-zZ-AD6"/>
                                     </connections>
                                 </button>
                                 <button width="2" height="100" alignment="left" backgroundImage="Stop" id="Yhw-n0-sgw">
                                     <variation key="device=watch38mm" height="45" width="45"/>
-                                    <variation key="device=watch42mm" height="52" width="52"/>
+                                    <variation key="device=watch42mm" height="52" width="50"/>
                                     <connections>
                                         <action selector="stopTapped" destination="AgC-eL-Hgc" id="ySL-0z-Qdp"/>
                                     </connections>
                                 </button>
                                 <button width="2" height="100" alignment="left" backgroundImage="Louder" id="Q0o-Hj-ElM">
                                     <variation key="device=watch38mm" height="45" width="45"/>
-                                    <variation key="device=watch42mm" height="52" width="52"/>
+                                    <variation key="device=watch42mm" height="50" width="49"/>
                                     <connections>
                                         <action selector="louderTapped" destination="AgC-eL-Hgc" id="yvY-Zg-6RO"/>
                                     </connections>
