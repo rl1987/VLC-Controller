@@ -2,6 +2,8 @@
 
 #import "PlayerManager.h"
 
+#import <WatchConnectivity/WatchConnectivity.h>
+
 @implementation ConfigViewController
 
 @synthesize addressField;
@@ -109,6 +111,14 @@
                        didFinishWithAddress:[self.addressField.text copy]
                                     andPort:[self.portField.text intValue]
                                    password:self.passwordField.text];
+        
+        if ([[WCSession defaultSession] activationState] == WCSessionActivationStateActivated) {
+            NSDictionary *dict = @{ kUserDefaultsAddressKey : self.addressField.text,
+                                    kUserDefaultsPortKey : @([self.portField.text integerValue]),
+                                    kUserDefaultsPassword : self.passwordField.text };
+            
+            [[WCSession defaultSession] updateApplicationContext:dict error:NULL];
+        }
     }
     
     [self dismissViewControllerAnimated:YES completion:NULL];

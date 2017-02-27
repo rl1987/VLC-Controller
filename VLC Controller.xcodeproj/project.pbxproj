@@ -29,6 +29,8 @@
 		4D2162111E632A4B00042045 /* PlayerStatusBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */; };
 		4D2162121E632A5600042045 /* PlayerStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC618749E22007D5F35 /* PlayerStatus.m */; };
 		4D2162131E632A5800042045 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
+		4D2162201E643B1600042045 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2162181E643ACD00042045 /* WatchConnectivity.framework */; };
+		4D2162211E64443100042045 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2162181E643ACD00042045 /* WatchConnectivity.framework */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
@@ -138,6 +140,7 @@
 		4D2161FD1E62FB4F00042045 /* ComplicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComplicationController.m; sourceTree = "<group>"; };
 		4D2161FF1E62FB4F00042045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2162011E62FB4F00042045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D2162181E643ACD00042045 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		4D292EA618B3949500B5D3CA /* MockPlayerManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerManagerDelegate.h; sourceTree = "<group>"; };
 		4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerManagerDelegate.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				948E22690E7EC3E3A6FB8BF1 /* libPods-VLC Controller-watchOS Extension.a in Frameworks */,
+				4D2162201E643B1600042045 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2162211E64443100042045 /* WatchConnectivity.framework in Frameworks */,
 				B7DEDDAA157A468000ADBD36 /* UIKit.framework in Frameworks */,
 				B7DEDDAC157A468000ADBD36 /* Foundation.framework in Frameworks */,
 				B7DEDDAE157A468000ADBD36 /* CoreGraphics.framework in Frameworks */,
@@ -349,6 +354,7 @@
 		B7DEDDA8157A468000ADBD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D2162181E643ACD00042045 /* WatchConnectivity.framework */,
 				4DC7FEEB1871C75100BAD690 /* XCTest.framework */,
 				B7DEDDA9157A468000ADBD36 /* UIKit.framework */,
 				B7DEDDAB157A468000ADBD36 /* Foundation.framework */,
@@ -1079,6 +1085,7 @@
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1100,6 +1107,7 @@
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1162,6 +1170,7 @@
 				4D2162071E62FB4F00042045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D2162091E62FB4F00042045 /* Build configuration list for PBXNativeTarget "VLC Controller-watchOS" */ = {
 			isa = XCConfigurationList;
@@ -1170,6 +1179,7 @@
 				4D21620B1E62FB4F00042045 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B7DEDD9F157A467F00ADBD36 /* Build configuration list for PBXProject "VLC Controller" */ = {
 			isa = XCConfigurationList;

@@ -8,14 +8,57 @@
 
 #import "ExtensionDelegate.h"
 
+#import <WatchConnectivity/WatchConnectivity.h>
+
+#import "PlayerManager.h"
+
+@interface ExtensionDelegate() <WCSessionDelegate>
+
+@end
+
 @implementation ExtensionDelegate
+
+- (void)requestSettingsUpdate
+{
+    if ([[WCSession defaultSession] activationState] != WCSessionActivationStateActivated)
+        return;
+    
+    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
+    
+    NSMutableDictionary *currentSettings = [[NSMutableDictionary alloc] init];
+    
+    if ([ud stringForKey:kUserDefaultsAddressKey]) {
+        [currentSettings setObject:[ud stringForKey:kUserDefaultsAddressKey]
+                            forKey:kUserDefaultsAddressKey];
+    }
+    
+    if ([ud integerForKey:kUserDefaultsPortKey]) {
+        [currentSettings setObject:@([ud integerForKey:kUserDefaultsPortKey])
+                            forKey:kUserDefaultsPortKey];
+    }
+    
+    if ([ud stringForKey:kUserDefaultsPassword]) {
+        [currentSettings setObject:[ud stringForKey:kUserDefaultsPassword]
+                            forKey:kUserDefaultsPassword];
+    }
+    
+    [[WCSession defaultSession] updateApplicationContext:currentSettings error:NULL];
+}
 
 - (void)applicationDidFinishLaunching {
     // Perform any final initialization of your application.
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [[WCSession defaultSession] setDelegate:self];
+        [[WCSession defaultSession] activateSession];
+    });
 }
 
 - (void)applicationDidBecomeActive {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    [self requestSettingsUpdate];
 }
 
 - (void)applicationWillResignActive {
@@ -48,6 +91,27 @@
             [task setTaskCompleted];
         }
     }
+}
+
+#pragma mark -
+#pragma mark WCSessionDelegate
+
+- (void)session:(WCSession *)session
+activationDidCompleteWithState:(WCSessionActivationState)activationState
+          error:(nullable NSError *)error
+{
+    if (error)
+        NSLog(@"%@",error);
+    
+    [self requestSettingsUpdate];
+}
+
+- (void)session:(WCSession *)session didReceiveApplicationContext:(NSDictionary<NSString *,id> *)applicationContext
+{
+    NSLog(@"ExtensionDelegate session:didReceiveApplicationContext:");
+    NSLog(@"%@",applicationContext);
+    
+    [[NSUserDefaults standardUserDefaults] setValuesForKeysWithDictionary:applicationContext];
 }
 
 @end
