@@ -106,7 +106,7 @@
                                     <barButtonItem image="Config" style="plain" id="ky7-XS-CdC">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="7DJ-QM-eA9" kind="modal" modalTransitionStyle="flipHorizontal" id="Avy-N4-HZ9"/>
+                                            <segue destination="7DJ-QM-eA9" kind="modal" identifier="to_config" modalTransitionStyle="flipHorizontal" id="Avy-N4-HZ9"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
