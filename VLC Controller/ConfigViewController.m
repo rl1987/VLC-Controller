@@ -2,7 +2,7 @@
 
 #import "PlayerManager.h"
 
-#import <WatchConnectivity/WatchConnectivity.h>
+#import "WCSession+Settings.h"
 
 @implementation ConfigViewController
 
@@ -112,13 +112,7 @@
                                     andPort:[self.portField.text intValue]
                                    password:self.passwordField.text];
         
-        if ([[WCSession defaultSession] activationState] == WCSessionActivationStateActivated) {
-            NSDictionary *dict = @{ kUserDefaultsAddressKey : self.addressField.text,
-                                    kUserDefaultsPortKey : @([self.portField.text integerValue]),
-                                    kUserDefaultsPassword : self.passwordField.text };
-            
-            [[WCSession defaultSession] updateApplicationContext:dict error:NULL];
-        }
+        [[WCSession defaultSession] sendSettingsToPeer];
     }
     
     [self dismissViewControllerAnimated:YES completion:NULL];

@@ -3,6 +3,7 @@
 #import <WatchConnectivity/WatchConnectivity.h>
 
 #import "PlayerManager.h"
+#import "WCSession+Settings.h"
 
 @interface AppDelegate() <WCSessionDelegate>
 
@@ -28,33 +29,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 
 - (void)session:(WCSession *)session activationDidCompleteWithState:(WCSessionActivationState)activationState error:(nullable NSError *)error
 {
-    // FIXME: refactor to reduce code duplication.
-    
-    if ([[WCSession defaultSession] activationState] != WCSessionActivationStateActivated)
-        return;
-    
-    NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-    
-    NSMutableDictionary *currentSettings = [[NSMutableDictionary alloc] init];
-    
-    currentSettings[@"UUID"] = [[NSUUID UUID] UUIDString];
-    
-    if ([ud stringForKey:kUserDefaultsAddressKey]) {
-        [currentSettings setObject:[ud stringForKey:kUserDefaultsAddressKey]
-                            forKey:kUserDefaultsAddressKey];
-    }
-    
-    if ([ud integerForKey:kUserDefaultsPortKey]) {
-        [currentSettings setObject:@([ud integerForKey:kUserDefaultsPortKey])
-                            forKey:kUserDefaultsPortKey];
-    }
-    
-    if ([ud stringForKey:kUserDefaultsPassword]) {
-        [currentSettings setObject:[ud stringForKey:kUserDefaultsPassword]
-                            forKey:kUserDefaultsPassword];
-    }
-    
-    [[WCSession defaultSession] updateApplicationContext:currentSettings error:NULL];
+    [[WCSession defaultSession] sendSettingsToPeer];
 }
 
 - (void)sessionDidBecomeInactive:(WCSession *)session

@@ -31,6 +31,8 @@
 		4D2162131E632A5800042045 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4D2162201E643B1600042045 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2162181E643ACD00042045 /* WatchConnectivity.framework */; };
 		4D2162211E64443100042045 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D2162181E643ACD00042045 /* WatchConnectivity.framework */; };
+		4D2162241E64863800042045 /* WCSession+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2162231E64863500042045 /* WCSession+Settings.m */; };
+		4D2162251E64863A00042045 /* WCSession+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2162231E64863500042045 /* WCSession+Settings.m */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
@@ -141,6 +143,8 @@
 		4D2161FF1E62FB4F00042045 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D2162011E62FB4F00042045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D2162181E643ACD00042045 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.1.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		4D2162221E64863500042045 /* WCSession+Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WCSession+Settings.h"; sourceTree = "<group>"; };
+		4D2162231E64863500042045 /* WCSession+Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WCSession+Settings.m"; sourceTree = "<group>"; };
 		4D292EA618B3949500B5D3CA /* MockPlayerManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerManagerDelegate.h; sourceTree = "<group>"; };
 		4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerManagerDelegate.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
@@ -431,6 +435,8 @@
 				B7DEDDE9157A6D3A00ADBD36 /* Input validation */,
 				B7DEDDDE157A68FF00ADBD36 /* ConfigViewController.h */,
 				B7DEDDDF157A68FF00ADBD36 /* ConfigViewController.m */,
+				4D2162221E64863500042045 /* WCSession+Settings.h */,
+				4D2162231E64863500042045 /* WCSession+Settings.m */,
 			);
 			name = Config;
 			sourceTree = "<group>";
@@ -772,6 +778,7 @@
 				4D21620F1E632A4300042045 /* PlayerManager.m in Sources */,
 				4D2162101E632A4800042045 /* PlayerCommunicator.m in Sources */,
 				4D2162121E632A5600042045 /* PlayerStatus.m in Sources */,
+				4D2162251E64863A00042045 /* WCSession+Settings.m in Sources */,
 				4D2162131E632A5800042045 /* PlayerCommand.m in Sources */,
 				4D2161F81E62FB4F00042045 /* ExtensionDelegate.m in Sources */,
 				4D2161FE1E62FB4F00042045 /* ComplicationController.m in Sources */,
@@ -788,6 +795,7 @@
 				B7DEDDB6157A468000ADBD36 /* main.m in Sources */,
 				4DF57FC118749DFC007D5F35 /* PlayerCommunicator.m in Sources */,
 				B7DEDDBA157A468000ADBD36 /* AppDelegate.m in Sources */,
+				4D2162241E64863800042045 /* WCSession+Settings.m in Sources */,
 				B7DEDDE0157A68FF00ADBD36 /* ConfigViewController.m in Sources */,
 				4DAA17161895707600D41033 /* PlayerCommand.m in Sources */,
 				4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */,
