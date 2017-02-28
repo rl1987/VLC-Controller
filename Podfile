@@ -7,6 +7,7 @@ target 'VLC Controller' do
 
   # Pods for VLC Controller
   pod 'AFNetworking'
+  pod 'CocoaLumberjack'
 
   target 'VLC ControllerTests' do
     inherit! :search_paths
@@ -17,4 +18,5 @@ end
 
 target 'VLC Controller-watchOS Extension' do
   pod 'AFNetworking'
+  pod 'CocoaLumberjack'
 end

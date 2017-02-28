@@ -1,6 +1,7 @@
 #import "AppDelegate.h"
 
 #import <WatchConnectivity/WatchConnectivity.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 #import "PlayerManager.h"
 #import "WCSession+Settings.h"
@@ -17,6 +18,8 @@
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
     [[WCSession defaultSession] setDelegate:self];
     
     return YES;
@@ -44,8 +47,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 
 - (void)session:(WCSession *)session didReceiveApplicationContext:(NSDictionary<NSString *,id> *)applicationContext
 {
-    NSLog(@"AppDelegate session:didReceiveApplicationContext:");
-    NSLog(@"%@",applicationContext);
+    DDLogInfo(@"AppDelegate session:didReceiveApplicationContext:");
+    DDLogInfo(@"%@",applicationContext);
     
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     

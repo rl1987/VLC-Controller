@@ -117,7 +117,7 @@
                      andPort:(int)port
                     password:(NSString *)password
 {
-    NSLog(@"configViewController:didFinishWithAddress:andPort:password:");
+    DDLogInfo(@"configViewController:didFinishWithAddress:andPort:password:");
 }
 
 #pragma mark -

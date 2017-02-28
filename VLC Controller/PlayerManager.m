@@ -156,7 +156,7 @@ static PlayerManager *_defaultManager;
 
 - (void)playerCommunicator:(PlayerCommunicator *)communicator failedWithError:(NSError *)error
 {
-    NSLog(@"%@",error);
+    DDLogError(@"%@",error);
 }
 
 #pragma mark -

@@ -80,15 +80,15 @@ activationDidCompleteWithState:(WCSessionActivationState)activationState
           error:(nullable NSError *)error
 {
     if (error)
-        NSLog(@"%@",error);
+        DDLogError(@"%@",error);
     
     [self requestSettingsUpdate];
 }
 
 - (void)session:(WCSession *)session didReceiveApplicationContext:(NSDictionary<NSString *,id> *)applicationContext
 {
-    NSLog(@"ExtensionDelegate session:didReceiveApplicationContext:");
-    NSLog(@"%@",applicationContext);
+    DDLogInfo(@"ExtensionDelegate session:didReceiveApplicationContext:");
+    DDLogInfo(@"%@",applicationContext);
     
     [[NSUserDefaults standardUserDefaults] setValuesForKeysWithDictionary:applicationContext];
     [[NSUserDefaults standardUserDefaults] synchronize];
