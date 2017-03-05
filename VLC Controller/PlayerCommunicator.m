@@ -53,6 +53,7 @@
             break;
             case PlayerCommandNextEntry:
             arguments = @{ @"command" : @"pl_next" };
+            break;
             case PlayerCommandPreviousEntry:
             arguments = @{ @"command" : @"pl_previous" };
             break;
