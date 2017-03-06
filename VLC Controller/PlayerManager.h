@@ -44,6 +44,7 @@
 - (void)goToPreviousItem;
 - (void)toggleShuffle;
 - (void)toggleRepeat;
+- (void)toggleFullscreen;
 
 - (void)startReceivingStatusUpdates;
 - (void)stopReceivingStatusUpdates;

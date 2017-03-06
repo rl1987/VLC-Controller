@@ -134,6 +134,11 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:[self commandWithType:PlayerCommandToggleRepeat]];
 }
 
+- (void)toggleFullscreen
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandFullscreen]];
+}
+
 - (void)startReceivingStatusUpdates
 {
     if (!self.statusUpdateTimer.isValid)

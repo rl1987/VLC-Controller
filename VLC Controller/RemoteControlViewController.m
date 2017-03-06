@@ -119,6 +119,11 @@
     [self.playerManager changeVolumeTo:(NSUInteger)sender.value];
 }
 
+- (IBAction)fullscreenButtonTapped:(id)sender
+{
+    [self.playerManager toggleFullscreen];
+}
+
 #pragma mark -
 #pragma mark Config view controller delegate
 
@@ -158,6 +163,7 @@
     
     self.shuffleButton.alpha = status.randomized ? 1.0 : 0.5;
     self.repeatButton.alpha = status.repeating ? 1.0 : 0.5;
+    self.fullscreenButton.alpha = status.fullscreen ? 1.0 : 0.5;
 }
 
 #pragma mark -
