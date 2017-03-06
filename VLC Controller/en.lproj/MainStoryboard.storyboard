@@ -149,6 +149,9 @@
                                 <rect key="frame" x="280.66666666666669" y="442" width="49" height="49"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Repeat"/>
+                                <connections>
+                                    <action selector="shuffleButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="wO2-13-34K"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -201,6 +204,7 @@
                     <connections>
                         <outlet property="filenameLabel" destination="N61-A0-zHg" id="XCU-sd-Vho"/>
                         <outlet property="playButton" destination="36q-ke-PG8" id="t4s-kh-HgS"/>
+                        <outlet property="shuffleButton" destination="WF3-kS-T02" id="86x-hA-3nc"/>
                         <outlet property="timeLabel" destination="Wgx-Jp-ENr" id="uK9-PN-wfU"/>
                         <outlet property="timeSlider" destination="YNP-tN-gX3" id="8zm-Ix-vUY"/>
                         <outlet property="volumeSlider" destination="I8T-jh-nY2" id="flJ-FO-3ZF"/>

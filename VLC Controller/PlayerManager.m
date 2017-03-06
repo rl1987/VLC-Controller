@@ -124,6 +124,11 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:[self commandWithType:PlayerCommandPreviousEntry]];
 }
 
+- (void)toggleShuffle
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandToggleShuffle]];
+}
+
 - (void)startReceivingStatusUpdates
 {
     if (!self.statusUpdateTimer.isValid)

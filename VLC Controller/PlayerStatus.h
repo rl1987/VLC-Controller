@@ -16,5 +16,6 @@
 @property (nonatomic, assign) NSTimeInterval duration;
 @property (nonatomic, assign) BOOL playing;
 @property (nonatomic, strong) NSString *filename;
+@property (nonatomic, assign) BOOL randomized;
 
 @end

@@ -17,6 +17,7 @@
 @property (strong, nonatomic) IBOutlet UISlider *timeSlider;
 @property (strong, nonatomic) IBOutlet UISlider *volumeSlider;
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
+@property (strong, nonatomic) IBOutlet UIButton *shuffleButton;
 
 - (IBAction)timeSliderValueChanged:(id)sender;
 - (IBAction)seekBackPressed:(id)sender;
@@ -30,5 +31,6 @@
 - (IBAction)playlistPressed:(id)sender;
 - (IBAction)browsePressed:(id)sender;
 - (IBAction)volumeSliderValueChanged:(UISlider *)sender;
+- (IBAction)shuffleButtonTapped:(id)sender;
 
 @end

@@ -42,6 +42,7 @@
 - (void)changeVolumeBy:(NSInteger)difference;
 - (void)goToNextItem;
 - (void)goToPreviousItem;
+- (void)toggleShuffle;
 
 - (void)startReceivingStatusUpdates;
 - (void)stopReceivingStatusUpdates;

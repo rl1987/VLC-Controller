@@ -22,6 +22,7 @@
     status.playing = [jsonDictionary[@"state"] isEqualToString:@"playing"];
     status.filename = [jsonDictionary valueForKeyPath:@"information.category.meta.filename"];
     status.volume = [jsonDictionary[@"volume"] integerValue];
+    status.randomized = [jsonDictionary[@"random"] boolValue];
     
     return status;
 }

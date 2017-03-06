@@ -104,6 +104,11 @@
     // TODO
 }
 
+- (IBAction)shuffleButtonTapped:(id)sender
+{
+    [self.playerManager toggleShuffle];
+}
+
 - (IBAction)volumeSliderValueChanged:(UISlider *)sender
 {
     [self.playerManager changeVolumeTo:(NSUInteger)sender.value];
@@ -126,7 +131,7 @@
 - (void)playerManager:(PlayerManager *)manager
        receivedStatus:(PlayerStatus *)status
 {
-    UIImage *image = status.playing ? [UIImage imageNamed:@"Pause"] :[UIImage imageNamed:@"Play"];
+    UIImage *image = status.playing ? [UIImage imageNamed:@"Pause"] : [UIImage imageNamed:@"Play"];
     
     [self.playButton setImage:image forState:UIControlStateNormal];
     
@@ -145,6 +150,8 @@
     self.timeLabel.text = [NSString stringWithFormat:@"%@ / %@",
                            [timeFormatter stringFromDate:d2],
                            [timeFormatter stringFromDate:d1]];
+    
+    self.shuffleButton.alpha = status.randomized ? 1.0 : 0.5;
 }
 
 #pragma mark -

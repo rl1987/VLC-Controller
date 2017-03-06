@@ -74,6 +74,9 @@
             arguments = @{ @"command" : @"seek", @"val" : [NSString stringWithFormat:@"%s%.0fS",
                                                            command.value > 0.0 ? "+" : "-" ,fabs(command.value)] };
             break;
+            case PlayerCommandToggleShuffle:
+            arguments = @{ @"command" : @"pl_random" };
+            break;
         default:
             break;
     }
