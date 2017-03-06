@@ -88,7 +88,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KH-91-xZe">
                                 <rect key="frame" x="84.666666666666657" y="441.66666666666669" width="48.999999999999972" height="49"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="Shuffle"/>
+                                <state key="normal" image="Repeat"/>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="UwK-a1-7zV">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
@@ -148,7 +148,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WF3-kS-T02">
                                 <rect key="frame" x="280.66666666666669" y="442" width="49" height="49"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="Repeat"/>
+                                <state key="normal" image="Shuffle"/>
                                 <connections>
                                     <action selector="shuffleButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="wO2-13-34K"/>
                                 </connections>
