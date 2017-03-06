@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UISlider *volumeSlider;
 @property (strong, nonatomic) IBOutlet UIButton *playButton;
 @property (strong, nonatomic) IBOutlet UIButton *shuffleButton;
+@property (strong, nonatomic) IBOutlet UIButton *repeatButton;
 
 - (IBAction)timeSliderValueChanged:(id)sender;
 - (IBAction)seekBackPressed:(id)sender;
@@ -32,5 +33,6 @@
 - (IBAction)browsePressed:(id)sender;
 - (IBAction)volumeSliderValueChanged:(UISlider *)sender;
 - (IBAction)shuffleButtonTapped:(id)sender;
+- (IBAction)repeatButtonTapped:(id)sender;
 
 @end

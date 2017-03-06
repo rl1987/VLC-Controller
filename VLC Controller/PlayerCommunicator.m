@@ -77,6 +77,9 @@
             case PlayerCommandToggleShuffle:
             arguments = @{ @"command" : @"pl_random" };
             break;
+            case PlayerCommandToggleRepeat:
+            arguments = @{ @"command" : @"pl_repeat" };
+            break;
         default:
             break;
     }

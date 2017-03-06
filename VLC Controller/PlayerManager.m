@@ -129,6 +129,11 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:[self commandWithType:PlayerCommandToggleShuffle]];
 }
 
+- (void)toggleRepeat
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandToggleRepeat]];
+}
+
 - (void)startReceivingStatusUpdates
 {
     if (!self.statusUpdateTimer.isValid)

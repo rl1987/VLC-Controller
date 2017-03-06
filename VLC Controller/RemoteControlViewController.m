@@ -109,6 +109,11 @@
     [self.playerManager toggleShuffle];
 }
 
+- (IBAction)repeatButtonTapped:(id)sender
+{
+    [self.playerManager toggleRepeat];
+}
+
 - (IBAction)volumeSliderValueChanged:(UISlider *)sender
 {
     [self.playerManager changeVolumeTo:(NSUInteger)sender.value];
@@ -152,6 +157,7 @@
                            [timeFormatter stringFromDate:d1]];
     
     self.shuffleButton.alpha = status.randomized ? 1.0 : 0.5;
+    self.repeatButton.alpha = status.repeating ? 1.0 : 0.5;
 }
 
 #pragma mark -

@@ -62,7 +62,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyB-Zr-9AU">
-                                <rect key="frame" x="183.33333333333334" y="392.66666666666669" width="48.333333333333314" height="49"/>
+                                <rect key="frame" x="182.66666666666666" y="392.66666666666669" width="49" height="49"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Stop"/>
                                 <connections>
@@ -89,6 +89,9 @@
                                 <rect key="frame" x="84.666666666666657" y="441.66666666666669" width="48.999999999999972" height="49"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Repeat"/>
+                                <connections>
+                                    <action selector="repeatButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="P85-zt-KPh"/>
+                                </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="UwK-a1-7zV">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
@@ -204,6 +207,7 @@
                     <connections>
                         <outlet property="filenameLabel" destination="N61-A0-zHg" id="XCU-sd-Vho"/>
                         <outlet property="playButton" destination="36q-ke-PG8" id="t4s-kh-HgS"/>
+                        <outlet property="repeatButton" destination="8KH-91-xZe" id="cBs-Ir-2oy"/>
                         <outlet property="shuffleButton" destination="WF3-kS-T02" id="86x-hA-3nc"/>
                         <outlet property="timeLabel" destination="Wgx-Jp-ENr" id="uK9-PN-wfU"/>
                         <outlet property="timeSlider" destination="YNP-tN-gX3" id="8zm-Ix-vUY"/>
@@ -330,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtX-eJ-uLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727" y="12"/>
+            <point key="canvasLocation" x="660" y="12"/>
         </scene>
     </scenes>
     <resources>

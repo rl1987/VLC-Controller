@@ -43,6 +43,7 @@
 - (void)goToNextItem;
 - (void)goToPreviousItem;
 - (void)toggleShuffle;
+- (void)toggleRepeat;
 
 - (void)startReceivingStatusUpdates;
 - (void)stopReceivingStatusUpdates;
