@@ -1,0 +1,1472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01070D0D3FD191BEF2967E4720D9245E /* CocoaLumberjack-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BE26D1D581C45C5DCB12B840D1E59C /* CocoaLumberjack-watchOS-dummy.m */; };
+		08B0A3769A63D3B9ABF22D93543FDED8 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 17131E20939F6EB24B7933092593851D /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F731E15340A519C53B4697677FB3580 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DFAB4E4CE1DBDC9191CDEDDDBDDA2B /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11FC7025D34BAB9D1149C57831F1659C /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4683A420DB4D2E3F5A0A439283DF1DA2 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1318AF067746AE5D598EC59F2030E806 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A2CF4EBDC2E0DC7D7574DEC3BAF6A3 /* DDFileLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1335E03E68CF20FFB1D3E9410F086C1E /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 3199C092015AB07D500E3BC487932609 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D49E32BBB1A85B6EAA3868A140472E35 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BD07DE136042C41D9AE267EEE7DBAED /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FC4FCBDCB200E2BCC4B200480036 /* DDTTYLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F9B620F63B7C5E7BED4A4DA1F487B61 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C86C7EABBCA914A26F11ADF2BE5300 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20100E29FA63D750A19D91ED61772FFA /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E66E89E49835C6B61F5BA98686905543 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20515EB30B7EF26C91C7369D50718572 /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F0526F721093507410F05D32C86C46D8 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21EC2770DBAA801136F4F20F66C8351B /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 244C71132E56FE8CCFA62C3770BEAD49 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24D3C3BE68A996A49BCC96088010FF6D /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC371867FA86092B8868659B99DEA55 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF4EA45F324E54B81EAF5E3E2E47C25 /* UIActivityIndicatorView+AFNetworking.m */; };
+		27008883A19FAD6A43DD76203AE5E84D /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BA521E9B5C7E924ADA74C2C41D06D4 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2843898C40D365BC1361BF1CD832E9B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAD38D0CE55D5C8184A6307410273439 /* CoreGraphics.framework */; };
+		2BF411533A3617D3B07AF773BC6428B5 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C9061448B95E759E357C4EE593B651CC /* DDAbstractDatabaseLogger.m */; };
+		2E8622D9F98557ED22BD2246389BFAE8 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 828BE7D1DB86C6B381A62352263664F2 /* AFURLResponseSerialization.m */; };
+		2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CF1A1F89EFFEFCAF6922A55BA916D1C8 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FC6D73369887BC8DB884040BE5DFDC3 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59649C542EB0D4FF25A0CD461AEAEC96 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C57C4FF61670E8303588266766AC8C4 /* AFNetworkActivityIndicatorManager.m */; };
+		33804D588D39D88C793590CAC09A5E67 /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE9C883915EBC8332D8E0D47605BBA1 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E66E89E49835C6B61F5BA98686905543 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E945F0C66F19A4970B02A08B703AE22 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BA162BD41E07061E50C964170B824B /* AFHTTPSessionManager.m */; };
+		502536FE8FD9EA36CDC38C48C4D5446A /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = AB45BEA7D638F830A4B42894D44AF14D /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8B1D01C179B30A79DF64625799C19D /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5929D5980A7D63D259156E72C7C96B15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ED9A40966444B70F9624F50901DF16 /* Foundation.framework */; };
+		5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A348B5A92C3C402BB8D46CEE6981916 /* AFURLRequestSerialization.m */; };
+		5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D1751B63940BFE3407D9BBEAEC4492 /* AFImageDownloader.m */; };
+		5C26B227F40950A6BD0A8A4DE9EE8631 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 17131E20939F6EB24B7933092593851D /* DDAbstractDatabaseLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F0BCCF1B0B1F6FE0F5DE61860B426F /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F825661C32B433FE4B19A7D0A3818BE /* DDLog.m */; };
+		66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 244C71132E56FE8CCFA62C3770BEAD49 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		668099D59D20A2CDCF2017B1E2B50B24 /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C31FB32AC51AF83D2BA7016A79C895 /* DDDispatchQueueLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EDF97861C46D891403E8D7F36FD5D9 /* AFSecurityPolicy.m */; };
+		682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B55502870CBBE3BB9FA7B03E90178056 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D3C86C7EABBCA914A26F11ADF2BE5300 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BA846C4E970C425714554A01D7C7798 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5BF9A19D9C3BD2D28C428BE64192D6 /* CoreGraphics.framework */; };
+		6EB98547DCB680EB324D0B7F8DB56A0D /* DDDispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C31FB32AC51AF83D2BA7016A79C895 /* DDDispatchQueueLogFormatter.m */; };
+		707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F8FAF6089FB0643B1EC4D044BABBDEC /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71F3609E6DDB30735066A331D3BFBD3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ED9A40966444B70F9624F50901DF16 /* Foundation.framework */; };
+		73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69BA162BD41E07061E50C964170B824B /* AFHTTPSessionManager.m */; };
+		741BA12FB62E0EDCC3D764C7BD32517F /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 4683A420DB4D2E3F5A0A439283DF1DA2 /* DDTTYLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B77C2851700190F12E487B5D78D790E /* AFAutoPurgingImageCache.m */; };
+		8562381CFBC1C401DC2560CE4A17913E /* CocoaLumberjack.h in Headers */ = {isa = PBXBuildFile; fileRef = AB45BEA7D638F830A4B42894D44AF14D /* CocoaLumberjack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 828BE7D1DB86C6B381A62352263664F2 /* AFURLResponseSerialization.m */; };
+		8891447E742DD1940BC9873583765C06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CB553BC19D0A4B8F8905FF35C60525 /* Foundation.framework */; };
+		8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 64995424B384CC7DA82B2919CA7EFA82 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A54AA272167FFD313DCB982D2AD01F7 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DF6DCC4EA2C704D9BCBA9AD42ADF02AB /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B1E1A45E0B423395CE2A513BB1B1010 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC92A1248015E552139B38E7F7FC657 /* MobileCoreServices.framework */; };
+		8C5ADE416437C3A186225DBFBA4AA6BA /* Pods-VLC Controller-watchOS Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EACF2C0701B82A11B78F419B442C6A /* Pods-VLC Controller-watchOS Extension-dummy.m */; };
+		8D4BBC2BA77981805F027FA9BAAA197C /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = F99FDE94A9DA24813ACF462B95D62468 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90CBFFF47EB693242AC0D8F0E8DEBFBA /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DFAB4E4CE1DBDC9191CDEDDDBDDA2B /* DDFileLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9305334627C93C67BB8183FF644860A0 /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 70CB6ED170ACFA6DC67F9F530EBDF416 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EE367CACB56E22689165FD2B0A244 /* AFNetworking-dummy.m */; };
+		9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 387D63112DACDC913B8412D34E6C88D3 /* AFURLSessionManager.m */; };
+		A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 64777D5349ED846FEDC17D6AD4B2719F /* UIImageView+AFNetworking.m */; };
+		A324A1D709BF4137AFDDD154F445DE2F /* DDContextFilterLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F0526F721093507410F05D32C86C46D8 /* DDContextFilterLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A48DBD5372D999E804F0C6F80D8711E6 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 08BA521E9B5C7E924ADA74C2C41D06D4 /* DDLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5ECA7141F1089578BC392824B1E8C75 /* DDMultiFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 59649C542EB0D4FF25A0CD461AEAEC96 /* DDMultiFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A70DDE7D880F48292970B40B75E926E0 /* Pods-VLC Controller-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F07D9AE25567D61FACADBE1BB6973B1 /* Pods-VLC Controller-dummy.m */; };
+		A76BFEED1774B02E103F567AF3005332 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E965954DFF1026C5498037239F875E8 /* DDASLLogger.m */; };
+		A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 0718DD9A10DDBA77F3431F51FC9C1BEA /* UIWebView+AFNetworking.m */; };
+		A94F44CB633F78B2364C1C6216CBA4A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ED9A40966444B70F9624F50901DF16 /* Foundation.framework */; };
+		AA97703867044FEF5985CB6D211E9C00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CB553BC19D0A4B8F8905FF35C60525 /* Foundation.framework */; };
+		AC13B5F92096C88F9DA915D7BDE12C70 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = C9061448B95E759E357C4EE593B651CC /* DDAbstractDatabaseLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AC7C9AD069F0BDB8D3774766D94843E9 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A348B5A92C3C402BB8D46CEE6981916 /* AFURLRequestSerialization.m */; };
+		ACDCADEDBCA08F1C0B3F549460FA20C3 /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DBC28807EF6505BDC313492E34E121 /* DDMultiFormatter.m */; };
+		AF22F63F33F51114649B72ADB04958F3 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 461405727A0863E3D543FD1CAEF0905D /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFD0634B4D580C7C585C242BE0008A0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ED9A40966444B70F9624F50901DF16 /* Foundation.framework */; };
+		B2039531E8D8B5D8457FAF2E81B3C184 /* CocoaLumberjack-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830C005985525B6CC23B3A52E52B600 /* CocoaLumberjack-iOS-dummy.m */; };
+		B2D5F8D764F9105D9244CEDCA95C7EC8 /* DDLog+LOGV.h in Headers */ = {isa = PBXBuildFile; fileRef = 3199C092015AB07D500E3BC487932609 /* DDLog+LOGV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2FAB18526C83157C7B38EA4609C8789 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 05060A21EBFDDE3DFE77FDDE27FD1426 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B394B1C41668EF8FF3F19BA8C0674483 /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F7705994FE734C1A2A96F1FFFE7205E /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B36F27C5ABF28515DE3BCAA8F9E4568 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B78630EFB31C41B99EC71A6FB16CE8E4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B5EE4C26361A6E382C8FB71685B579 /* MobileCoreServices.framework */; };
+		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 93281D3648D81A4F4CAAB34D4D3A4A3B /* UIRefreshControl+AFNetworking.m */; };
+		BE8F6DE4C06D5479297A6F85D5632B13 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DF6DCC4EA2C704D9BCBA9AD42ADF02AB /* DDASLLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 05060A21EBFDDE3DFE77FDDE27FD1426 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53EE77E4F32960A4A6B8A0B144A033F /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E9A2CF4EBDC2E0DC7D7574DEC3BAF6A3 /* DDFileLogger.m */; };
+		C609D9E849D9757713C8799AC2212872 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F825661C32B433FE4B19A7D0A3818BE /* DDLog.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C9193F7B99B4288B7BC1510B9FCA5FFC /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9FCA8D6F779B42D63709502D1A6BDA /* DDASLLogCapture.m */; };
+		CBC5A0E0567B2B382B91C9FDB26F9B60 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EDF97861C46D891403E8D7F36FD5D9 /* AFSecurityPolicy.m */; };
+		CFCC71D090EB20763DEC15FD4662173E /* DDASLLogCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = AC9FCA8D6F779B42D63709502D1A6BDA /* DDASLLogCapture.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D0796FBBAE3EE0AE8EED285CC6C547FB /* DDDispatchQueueLogFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 70CB6ED170ACFA6DC67F9F530EBDF416 /* DDDispatchQueueLogFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 993404ED2C87E3A62833DF6756289623 /* UIButton+AFNetworking.m */; };
+		D3ABD4E85C234B9135089C3CBC98A2D2 /* DDASLLogCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = F99FDE94A9DA24813ACF462B95D62468 /* DDASLLogCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CD2E039A6A6FE6CE32C339AD1013C2C8 /* UIProgressView+AFNetworking.m */; };
+		D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 461405727A0863E3D543FD1CAEF0905D /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = EA1A92E573E85E6CB2FBFC962140C5C3 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6661D944DA4B5402DA6B57914542DF9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7AB539C13E92BE45994A63D861F136 /* Security.framework */; };
+		D6CE19CBEB69F31D8EDA3453332C220B /* DDLogMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE9C883915EBC8332D8E0D47605BBA1 /* DDLogMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA55B816BBA0E070E2956D21C93C0523 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 387D63112DACDC913B8412D34E6C88D3 /* AFURLSessionManager.m */; };
+		DD856223F29860F0C7CE6E714BD7578B /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C95FC4FCBDCB200E2BCC4B200480036 /* DDTTYLogger.m */; };
+		DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E360BF9321F8F415BF6042327C678DD /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2380D7CD99B37045B73FD1B2CA967F30 /* AFNetworkReachabilityManager.m */; };
+		E738C16AF8020F2D6948D867AA7109EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AE0A3C3BF690B839A6CDEB7A1FBB18 /* SystemConfiguration.framework */; };
+		E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E450985B27FC150F12388862DD030160 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E93F35BE9BF36D6D544F1647E9F9ED78 /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCCEAEA6C15153E4D02A78DC8625F5E /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E986C4A6C082CA004AF6A158F2BC0BFA /* DDMultiFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DBC28807EF6505BDC313492E34E121 /* DDMultiFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EA14A8B889C04E043C34F455EF74E102 /* Pods-VLC ControllerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69832A62947E413BA9024CA633CD2109 /* Pods-VLC ControllerTests-dummy.m */; };
+		EB59E3EA8C079DF7C57B9497BA4AC441 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E965954DFF1026C5498037239F875E8 /* DDASLLogger.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC746753263A8468068E45562071153E /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCCEAEA6C15153E4D02A78DC8625F5E /* DDContextFilterLogFormatter.m */; };
+		EE66FDCF1F712EEDC6A8FAACAB35F3D6 /* DDAssertMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC371867FA86092B8868659B99DEA55 /* DDAssertMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEB34A438AB718971853FE7A8D788C8D /* DDLegacyMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F7705994FE734C1A2A96F1FFFE7205E /* DDLegacyMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E377C6122E63BC1024A7DC2A8897A0 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1C75BC3235B72F1D28B1D5F73EC6EEA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3753580A9ABF3956F29A528F08E2C183 /* Security.framework */; };
+		F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD407C19EFDC53EC9471A418377C1B7 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE1BCFA9E27511B900D6E78F40D9D5A /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F79585962C4CDEBDA22761A928B3E516 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CE1BCFA9E27511B900D6E78F40D9D5A /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F91FF38CC4D7E64ADB1FD9F8A9DDD748 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60CB553BC19D0A4B8F8905FF35C60525 /* Foundation.framework */; };
+		FFF5857B5FC6BB1FE6EB962D35003EAA /* AFNetworking.root-NSURLSession-Security-Serialization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A48D5A07AEE7A16365E94406F45445B6 /* AFNetworking.root-NSURLSession-Security-Serialization-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C4A79A24288AC9F702CECD877D115FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E033EDB5EC0819481B0546434FA577B;
+			remoteInfo = AFNetworking;
+		};
+		6FE7842A05A549CBA25DECC5AD0B2B2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7651BB5BE57A99CCFEDCD429A9D9A66A;
+			remoteInfo = "CocoaLumberjack-watchOS";
+		};
+		98FEBE82C9B33AF20FFD495F275C5364 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C289FFFBA02E90751B75D32C13AD38BE;
+			remoteInfo = "AFNetworking.root-NSURLSession-Security-Serialization";
+		};
+		D5B4798B9EA9AC5B09D428B697611F4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3B64CAF7AD52D5E0B32CABE10E0CCD4;
+			remoteInfo = "CocoaLumberjack-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02A71072DE51439710C6A683219C1989 /* Pods-VLC ControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VLC ControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		05060A21EBFDDE3DFE77FDDE27FD1426 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		0718DD9A10DDBA77F3431F51FC9C1BEA /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		08BA521E9B5C7E924ADA74C2C41D06D4 /* DDLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLog.h; path = Classes/DDLog.h; sourceTree = "<group>"; };
+		12971E5FB05C282E5B2BD1C8ECBFBB2E /* Pods-VLC Controller-watchOS Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VLC Controller-watchOS Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		13657EDD3E8415EAE0C2EAEA87F1A640 /* Pods-VLC Controller-watchOS Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VLC Controller-watchOS Extension-frameworks.sh"; sourceTree = "<group>"; };
+		17131E20939F6EB24B7933092593851D /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAbstractDatabaseLogger.h; path = Classes/DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		1DE9C883915EBC8332D8E0D47605BBA1 /* DDLogMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLogMacros.h; path = Classes/DDLogMacros.h; sourceTree = "<group>"; };
+		1F8FAF6089FB0643B1EC4D044BABBDEC /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		220D7D2FA050FAEC67AD9977F4CEEADC /* CocoaLumberjack-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaLumberjack-iOS-prefix.pch"; sourceTree = "<group>"; };
+		2380D7CD99B37045B73FD1B2CA967F30 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		244C71132E56FE8CCFA62C3770BEAD49 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		2A1821C07602F4C92552C55967DF1CC2 /* libCocoaLumberjack-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libCocoaLumberjack-iOS.a"; path = "libCocoaLumberjack-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FF4EA45F324E54B81EAF5E3E2E47C25 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		30BE26D1D581C45C5DCB12B840D1E59C /* CocoaLumberjack-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CocoaLumberjack-watchOS-dummy.m"; path = "../CocoaLumberjack-watchOS/CocoaLumberjack-watchOS-dummy.m"; sourceTree = "<group>"; };
+		3199C092015AB07D500E3BC487932609 /* DDLog+LOGV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "DDLog+LOGV.h"; path = "Classes/DDLog+LOGV.h"; sourceTree = "<group>"; };
+		32EACF2C0701B82A11B78F419B442C6A /* Pods-VLC Controller-watchOS Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VLC Controller-watchOS Extension-dummy.m"; sourceTree = "<group>"; };
+		34DBC28807EF6505BDC313492E34E121 /* DDMultiFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDMultiFormatter.m; path = Classes/Extensions/DDMultiFormatter.m; sourceTree = "<group>"; };
+		35FED908D6F86CD1C0F89D8BEAD54BF8 /* Pods-VLC ControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VLC ControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3753580A9ABF3956F29A528F08E2C183 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		387D63112DACDC913B8412D34E6C88D3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		3CAB546C6EAC73E926A700D3F15E20EC /* AFNetworking.root-NSURLSession-Security-Serialization.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "AFNetworking.root-NSURLSession-Security-Serialization.xcconfig"; path = "../AFNetworking.root-NSURLSession-Security-Serialization/AFNetworking.root-NSURLSession-Security-Serialization.xcconfig"; sourceTree = "<group>"; };
+		4435C72250A2F082D8129CCFF0F6421E /* Pods-VLC Controller-watchOS Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VLC Controller-watchOS Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		461405727A0863E3D543FD1CAEF0905D /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		4683A420DB4D2E3F5A0A439283DF1DA2 /* DDTTYLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDTTYLogger.h; path = Classes/DDTTYLogger.h; sourceTree = "<group>"; };
+		4958503C474B7F5FC79ED91E32B08AD9 /* Pods-VLC ControllerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VLC ControllerTests-resources.sh"; sourceTree = "<group>"; };
+		4B5BF9A19D9C3BD2D28C428BE64192D6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4C95FC4FCBDCB200E2BCC4B200480036 /* DDTTYLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDTTYLogger.m; path = Classes/DDTTYLogger.m; sourceTree = "<group>"; };
+		4F2024BA4E63572867EB2BAD4B0C8834 /* libCocoaLumberjack-watchOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libCocoaLumberjack-watchOS.a"; path = "libCocoaLumberjack-watchOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F825661C32B433FE4B19A7D0A3818BE /* DDLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDLog.m; path = Classes/DDLog.m; sourceTree = "<group>"; };
+		5296291703B6120FAD78DA6CFEEB3CDA /* Pods-VLC Controller-watchOS Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VLC Controller-watchOS Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		59649C542EB0D4FF25A0CD461AEAEC96 /* DDMultiFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDMultiFormatter.h; path = Classes/Extensions/DDMultiFormatter.h; sourceTree = "<group>"; };
+		5BF0524FBCF89BA739B8F1D5AA6CB4E1 /* AFNetworking.root-NSURLSession-Security-Serialization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AFNetworking.root-NSURLSession-Security-Serialization-prefix.pch"; path = "../AFNetworking.root-NSURLSession-Security-Serialization/AFNetworking.root-NSURLSession-Security-Serialization-prefix.pch"; sourceTree = "<group>"; };
+		5FD8F201306341F2691A2E2E80A50A8C /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		60CB553BC19D0A4B8F8905FF35C60525 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		64777D5349ED846FEDC17D6AD4B2719F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		64995424B384CC7DA82B2919CA7EFA82 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		656DB3930C2D99FBCFC13C9AB6506338 /* Pods-VLC Controller-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VLC Controller-acknowledgements.markdown"; sourceTree = "<group>"; };
+		65D1751B63940BFE3407D9BBEAEC4492 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		65E377C6122E63BC1024A7DC2A8897A0 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		66C31FB32AC51AF83D2BA7016A79C895 /* DDDispatchQueueLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDDispatchQueueLogFormatter.m; path = Classes/Extensions/DDDispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		68BD95ED46F870FC67497F7ECE771DC4 /* libPods-VLC Controller.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VLC Controller.a"; path = "libPods-VLC Controller.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		69832A62947E413BA9024CA633CD2109 /* Pods-VLC ControllerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VLC ControllerTests-dummy.m"; sourceTree = "<group>"; };
+		69BA162BD41E07061E50C964170B824B /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		6B7AB539C13E92BE45994A63D861F136 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		6C57C4FF61670E8303588266766AC8C4 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		6F7705994FE734C1A2A96F1FFFE7205E /* DDLegacyMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDLegacyMacros.h; path = Classes/DDLegacyMacros.h; sourceTree = "<group>"; };
+		70CB6ED170ACFA6DC67F9F530EBDF416 /* DDDispatchQueueLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDDispatchQueueLogFormatter.h; path = Classes/Extensions/DDDispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		722AD1EFDEE43B8610EA9782AF4954AF /* Pods-VLC Controller-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VLC Controller-resources.sh"; sourceTree = "<group>"; };
+		75CE37638EC86D16C6139772630D7751 /* libPods-VLC Controller-watchOS Extension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VLC Controller-watchOS Extension.a"; path = "libPods-VLC Controller-watchOS Extension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7830C005985525B6CC23B3A52E52B600 /* CocoaLumberjack-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaLumberjack-iOS-dummy.m"; sourceTree = "<group>"; };
+		7A348B5A92C3C402BB8D46CEE6981916 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		7B36F27C5ABF28515DE3BCAA8F9E4568 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		7CE1BCFA9E27511B900D6E78F40D9D5A /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		7F07D9AE25567D61FACADBE1BB6973B1 /* Pods-VLC Controller-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VLC Controller-dummy.m"; sourceTree = "<group>"; };
+		820CA53902D43B7B2203C565D64F9E50 /* CocoaLumberjack-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CocoaLumberjack-watchOS-prefix.pch"; path = "../CocoaLumberjack-watchOS/CocoaLumberjack-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		828BE7D1DB86C6B381A62352263664F2 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		86AE0A3C3BF690B839A6CDEB7A1FBB18 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		8BD407C19EFDC53EC9471A418377C1B7 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		8F8B1D01C179B30A79DF64625799C19D /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		91B4903BD0AD8E76AE482CEE59AE625A /* Pods-VLC Controller-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VLC Controller-acknowledgements.plist"; sourceTree = "<group>"; };
+		91ED9A40966444B70F9624F50901DF16 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		93281D3648D81A4F4CAAB34D4D3A4A3B /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		970EE367CACB56E22689165FD2B0A244 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		993404ED2C87E3A62833DF6756289623 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		9B77C2851700190F12E487B5D78D790E /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		9BBBA4351562B44C8F7EB05D88CA1129 /* Pods-VLC ControllerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VLC ControllerTests-frameworks.sh"; sourceTree = "<group>"; };
+		9DC92A1248015E552139B38E7F7FC657 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		9E360BF9321F8F415BF6042327C678DD /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		9E965954DFF1026C5498037239F875E8 /* DDASLLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogger.m; path = Classes/DDASLLogger.m; sourceTree = "<group>"; };
+		A0AA99F91A01C9D78CBDA1E5784413F9 /* Pods-VLC Controller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VLC Controller.debug.xcconfig"; sourceTree = "<group>"; };
+		A48D5A07AEE7A16365E94406F45445B6 /* AFNetworking.root-NSURLSession-Security-Serialization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AFNetworking.root-NSURLSession-Security-Serialization-dummy.m"; path = "../AFNetworking.root-NSURLSession-Security-Serialization/AFNetworking.root-NSURLSession-Security-Serialization-dummy.m"; sourceTree = "<group>"; };
+		A5B5EE4C26361A6E382C8FB71685B579 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		A99DF284CA03FE35C28A79BC7CAB847B /* Pods-VLC ControllerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VLC ControllerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB45BEA7D638F830A4B42894D44AF14D /* CocoaLumberjack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaLumberjack.h; path = Classes/CocoaLumberjack.h; sourceTree = "<group>"; };
+		AC9FCA8D6F779B42D63709502D1A6BDA /* DDASLLogCapture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDASLLogCapture.m; path = Classes/DDASLLogCapture.m; sourceTree = "<group>"; };
+		B4EDF97861C46D891403E8D7F36FD5D9 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		B55502870CBBE3BB9FA7B03E90178056 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		B6FF8C76711F974882E5E272FEEEC917 /* libAFNetworking.root-NSURLSession-Security-Serialization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libAFNetworking.root-NSURLSession-Security-Serialization.a"; path = "libAFNetworking.root-NSURLSession-Security-Serialization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70FF4E1C480102FAFE8CD4C29CE167F /* Pods-VLC ControllerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VLC ControllerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C8AC5DCE4518FA6A4CC79FD15CADFBD3 /* CocoaLumberjack-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "CocoaLumberjack-iOS.xcconfig"; sourceTree = "<group>"; };
+		C9061448B95E759E357C4EE593B651CC /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDAbstractDatabaseLogger.m; path = Classes/DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		CAD38D0CE55D5C8184A6307410273439 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		CD2E039A6A6FE6CE32C339AD1013C2C8 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		CD79566E22330144220B2FE1BA1E70C1 /* Pods-VLC Controller-watchOS Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VLC Controller-watchOS Extension-resources.sh"; sourceTree = "<group>"; };
+		CF1A1F89EFFEFCAF6922A55BA916D1C8 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		D3C86C7EABBCA914A26F11ADF2BE5300 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		D49E32BBB1A85B6EAA3868A140472E35 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		DAB5241D8586345A8CFEA31F5B99E896 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		DDD173EB876772E27CFD9F240A5013DB /* Pods-VLC Controller-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VLC Controller-frameworks.sh"; sourceTree = "<group>"; };
+		DF6DCC4EA2C704D9BCBA9AD42ADF02AB /* DDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogger.h; path = Classes/DDASLLogger.h; sourceTree = "<group>"; };
+		DFCCEAEA6C15153E4D02A78DC8625F5E /* DDContextFilterLogFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDContextFilterLogFormatter.m; path = Classes/Extensions/DDContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		E450985B27FC150F12388862DD030160 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		E66E89E49835C6B61F5BA98686905543 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		E9A2CF4EBDC2E0DC7D7574DEC3BAF6A3 /* DDFileLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDFileLogger.m; path = Classes/DDFileLogger.m; sourceTree = "<group>"; };
+		EA1A92E573E85E6CB2FBFC962140C5C3 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		EFFD419FC3C257CE814ED31491E71640 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0526F721093507410F05D32C86C46D8 /* DDContextFilterLogFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDContextFilterLogFormatter.h; path = Classes/Extensions/DDContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		F2A41D9D0DF0ACAFBAD555630D994E80 /* Pods-VLC Controller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VLC Controller.release.xcconfig"; sourceTree = "<group>"; };
+		F785B33537C8C3CE1594391607A5A02C /* CocoaLumberjack-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "CocoaLumberjack-watchOS.xcconfig"; path = "../CocoaLumberjack-watchOS/CocoaLumberjack-watchOS.xcconfig"; sourceTree = "<group>"; };
+		F8DFAB4E4CE1DBDC9191CDEDDDBDDA2B /* DDFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDFileLogger.h; path = Classes/DDFileLogger.h; sourceTree = "<group>"; };
+		F99FDE94A9DA24813ACF462B95D62468 /* DDASLLogCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDASLLogCapture.h; path = Classes/DDASLLogCapture.h; sourceTree = "<group>"; };
+		FAC371867FA86092B8868659B99DEA55 /* DDAssertMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDAssertMacros.h; path = Classes/DDAssertMacros.h; sourceTree = "<group>"; };
+		FE108FFA678F944DF996A88FE57AC317 /* libPods-VLC ControllerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-VLC ControllerTests.a"; path = "libPods-VLC ControllerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE757B372E54763F5AA18AF1F8D990EB /* Pods-VLC Controller-watchOS Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VLC Controller-watchOS Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A5B9A49A1BF5E2172971936CE98373A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8891447E742DD1940BC9873583765C06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3267F6E2FC4CD9A5611C6A5282DFC2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA846C4E970C425714554A01D7C7798 /* CoreGraphics.framework in Frameworks */,
+				F91FF38CC4D7E64ADB1FD9F8A9DDD748 /* Foundation.framework in Frameworks */,
+				B78630EFB31C41B99EC71A6FB16CE8E4 /* MobileCoreServices.framework in Frameworks */,
+				F1C75BC3235B72F1D28B1D5F73EC6EEA /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4195AE7DCBDC42D062A01C7AE222E145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94F44CB633F78B2364C1C6216CBA4A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58F2EA49B1F99815B81F85A258442229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71F3609E6DDB30735066A331D3BFBD3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A839464BAABE8488B421AD19C51E1B9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA97703867044FEF5985CB6D211E9C00 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA710EE7825C8F62C7445DDC84321C34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5929D5980A7D63D259156E72C7C96B15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2843898C40D365BC1361BF1CD832E9B2 /* CoreGraphics.framework in Frameworks */,
+				AFD0634B4D580C7C585C242BE0008A0E /* Foundation.framework in Frameworks */,
+				8B1E1A45E0B423395CE2A513BB1B1010 /* MobileCoreServices.framework in Frameworks */,
+				D6661D944DA4B5402DA6B57914542DF9 /* Security.framework in Frameworks */,
+				E738C16AF8020F2D6948D867AA7109EF /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0232E5BCC1893F74DECAD9163E78CAFC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8AC5DCE4518FA6A4CC79FD15CADFBD3 /* CocoaLumberjack-iOS.xcconfig */,
+				7830C005985525B6CC23B3A52E52B600 /* CocoaLumberjack-iOS-dummy.m */,
+				220D7D2FA050FAEC67AD9977F4CEEADC /* CocoaLumberjack-iOS-prefix.pch */,
+				F785B33537C8C3CE1594391607A5A02C /* CocoaLumberjack-watchOS.xcconfig */,
+				30BE26D1D581C45C5DCB12B840D1E59C /* CocoaLumberjack-watchOS-dummy.m */,
+				820CA53902D43B7B2203C565D64F9E50 /* CocoaLumberjack-watchOS-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaLumberjack-iOS";
+			sourceTree = "<group>";
+		};
+		075BDA4EA8D06189383987149ED832D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6249CAFB3136C3D64BA48BEC89E5C5FC /* Pods-VLC Controller */,
+				38F0A778A46D36AD4C9E3DBE3D581D18 /* Pods-VLC Controller-watchOS Extension */,
+				40AE5866168FA870AAF3E092C32D4D32 /* Pods-VLC ControllerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1E94024B3A0F59DEBAB27737CA8E27A2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FD8F201306341F2691A2E2E80A50A8C /* AFNetworking.xcconfig */,
+				970EE367CACB56E22689165FD2B0A244 /* AFNetworking-dummy.m */,
+				DAB5241D8586345A8CFEA31F5B99E896 /* AFNetworking-prefix.pch */,
+				3CAB546C6EAC73E926A700D3F15E20EC /* AFNetworking.root-NSURLSession-Security-Serialization.xcconfig */,
+				A48D5A07AEE7A16365E94406F45445B6 /* AFNetworking.root-NSURLSession-Security-Serialization-dummy.m */,
+				5BF0524FBCF89BA739B8F1D5AA6CB4E1 /* AFNetworking.root-NSURLSession-Security-Serialization-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		2C9C26EA5BD1BF9A1EE5E8530CCA2129 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				461405727A0863E3D543FD1CAEF0905D /* AFSecurityPolicy.h */,
+				B4EDF97861C46D891403E8D7F36FD5D9 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		38F0A778A46D36AD4C9E3DBE3D581D18 /* Pods-VLC Controller-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12971E5FB05C282E5B2BD1C8ECBFBB2E /* Pods-VLC Controller-watchOS Extension-acknowledgements.markdown */,
+				5296291703B6120FAD78DA6CFEEB3CDA /* Pods-VLC Controller-watchOS Extension-acknowledgements.plist */,
+				32EACF2C0701B82A11B78F419B442C6A /* Pods-VLC Controller-watchOS Extension-dummy.m */,
+				13657EDD3E8415EAE0C2EAEA87F1A640 /* Pods-VLC Controller-watchOS Extension-frameworks.sh */,
+				CD79566E22330144220B2FE1BA1E70C1 /* Pods-VLC Controller-watchOS Extension-resources.sh */,
+				4435C72250A2F082D8129CCFF0F6421E /* Pods-VLC Controller-watchOS Extension.debug.xcconfig */,
+				FE757B372E54763F5AA18AF1F8D990EB /* Pods-VLC Controller-watchOS Extension.release.xcconfig */,
+			);
+			name = "Pods-VLC Controller-watchOS Extension";
+			path = "Target Support Files/Pods-VLC Controller-watchOS Extension";
+			sourceTree = "<group>";
+		};
+		3B2ECBC524CF78FA71F4278A1CF90559 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E66E89E49835C6B61F5BA98686905543 /* AFNetworking.h */,
+				A25AEB1454CBD2C8678A51D5393327DC /* NSURLSession */,
+				84F57F3AF9D6FD14948BE2405BE4BEFA /* Reachability */,
+				2C9C26EA5BD1BF9A1EE5E8530CCA2129 /* Security */,
+				9FE768890A409C2B9328C9710EC71995 /* Serialization */,
+				1E94024B3A0F59DEBAB27737CA8E27A2 /* Support Files */,
+				E52DA07B734F18D215349BD337170F1B /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		40AE5866168FA870AAF3E092C32D4D32 /* Pods-VLC ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C70FF4E1C480102FAFE8CD4C29CE167F /* Pods-VLC ControllerTests-acknowledgements.markdown */,
+				A99DF284CA03FE35C28A79BC7CAB847B /* Pods-VLC ControllerTests-acknowledgements.plist */,
+				69832A62947E413BA9024CA633CD2109 /* Pods-VLC ControllerTests-dummy.m */,
+				9BBBA4351562B44C8F7EB05D88CA1129 /* Pods-VLC ControllerTests-frameworks.sh */,
+				4958503C474B7F5FC79ED91E32B08AD9 /* Pods-VLC ControllerTests-resources.sh */,
+				02A71072DE51439710C6A683219C1989 /* Pods-VLC ControllerTests.debug.xcconfig */,
+				35FED908D6F86CD1C0F89D8BEAD54BF8 /* Pods-VLC ControllerTests.release.xcconfig */,
+			);
+			name = "Pods-VLC ControllerTests";
+			path = "Target Support Files/Pods-VLC ControllerTests";
+			sourceTree = "<group>";
+		};
+		4331D049869AC9A69B5CA5C388CB0828 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				AB45BEA7D638F830A4B42894D44AF14D /* CocoaLumberjack.h */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		4C74FC1D2666982A709F81DE6AC78EE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B2ECBC524CF78FA71F4278A1CF90559 /* AFNetworking */,
+				DC8BD5A38ED9CB102089AC1579F4E023 /* CocoaLumberjack */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		53D869C53CBED8532EFF68961122449E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F0526F721093507410F05D32C86C46D8 /* DDContextFilterLogFormatter.h */,
+				DFCCEAEA6C15153E4D02A78DC8625F5E /* DDContextFilterLogFormatter.m */,
+				70CB6ED170ACFA6DC67F9F530EBDF416 /* DDDispatchQueueLogFormatter.h */,
+				66C31FB32AC51AF83D2BA7016A79C895 /* DDDispatchQueueLogFormatter.m */,
+				59649C542EB0D4FF25A0CD461AEAEC96 /* DDMultiFormatter.h */,
+				34DBC28807EF6505BDC313492E34E121 /* DDMultiFormatter.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		6249CAFB3136C3D64BA48BEC89E5C5FC /* Pods-VLC Controller */ = {
+			isa = PBXGroup;
+			children = (
+				656DB3930C2D99FBCFC13C9AB6506338 /* Pods-VLC Controller-acknowledgements.markdown */,
+				91B4903BD0AD8E76AE482CEE59AE625A /* Pods-VLC Controller-acknowledgements.plist */,
+				7F07D9AE25567D61FACADBE1BB6973B1 /* Pods-VLC Controller-dummy.m */,
+				DDD173EB876772E27CFD9F240A5013DB /* Pods-VLC Controller-frameworks.sh */,
+				722AD1EFDEE43B8610EA9782AF4954AF /* Pods-VLC Controller-resources.sh */,
+				A0AA99F91A01C9D78CBDA1E5784413F9 /* Pods-VLC Controller.debug.xcconfig */,
+				F2A41D9D0DF0ACAFBAD555630D994E80 /* Pods-VLC Controller.release.xcconfig */,
+			);
+			name = "Pods-VLC Controller";
+			path = "Target Support Files/Pods-VLC Controller";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F7DA180559D3C329C566B2609C68FF7D /* Frameworks */,
+				4C74FC1D2666982A709F81DE6AC78EE1 /* Pods */,
+				A393ABEE9B70B2340241A1E4791E70F7 /* Products */,
+				075BDA4EA8D06189383987149ED832D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84F57F3AF9D6FD14948BE2405BE4BEFA /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				9E360BF9321F8F415BF6042327C678DD /* AFNetworkReachabilityManager.h */,
+				2380D7CD99B37045B73FD1B2CA967F30 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		9FE768890A409C2B9328C9710EC71995 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				05060A21EBFDDE3DFE77FDDE27FD1426 /* AFURLRequestSerialization.h */,
+				7A348B5A92C3C402BB8D46CEE6981916 /* AFURLRequestSerialization.m */,
+				244C71132E56FE8CCFA62C3770BEAD49 /* AFURLResponseSerialization.h */,
+				828BE7D1DB86C6B381A62352263664F2 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		A25AEB1454CBD2C8678A51D5393327DC /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				D3C86C7EABBCA914A26F11ADF2BE5300 /* AFHTTPSessionManager.h */,
+				69BA162BD41E07061E50C964170B824B /* AFHTTPSessionManager.m */,
+				7CE1BCFA9E27511B900D6E78F40D9D5A /* AFURLSessionManager.h */,
+				387D63112DACDC913B8412D34E6C88D3 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		A393ABEE9B70B2340241A1E4791E70F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFFD419FC3C257CE814ED31491E71640 /* libAFNetworking.a */,
+				B6FF8C76711F974882E5E272FEEEC917 /* libAFNetworking.root-NSURLSession-Security-Serialization.a */,
+				2A1821C07602F4C92552C55967DF1CC2 /* libCocoaLumberjack-iOS.a */,
+				4F2024BA4E63572867EB2BAD4B0C8834 /* libCocoaLumberjack-watchOS.a */,
+				68BD95ED46F870FC67497F7ECE771DC4 /* libPods-VLC Controller.a */,
+				75CE37638EC86D16C6139772630D7751 /* libPods-VLC Controller-watchOS Extension.a */,
+				FE108FFA678F944DF996A88FE57AC317 /* libPods-VLC ControllerTests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDBE88C5BAFBA45EDE8AFB513A3F6292 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				17131E20939F6EB24B7933092593851D /* DDAbstractDatabaseLogger.h */,
+				C9061448B95E759E357C4EE593B651CC /* DDAbstractDatabaseLogger.m */,
+				F99FDE94A9DA24813ACF462B95D62468 /* DDASLLogCapture.h */,
+				AC9FCA8D6F779B42D63709502D1A6BDA /* DDASLLogCapture.m */,
+				DF6DCC4EA2C704D9BCBA9AD42ADF02AB /* DDASLLogger.h */,
+				9E965954DFF1026C5498037239F875E8 /* DDASLLogger.m */,
+				FAC371867FA86092B8868659B99DEA55 /* DDAssertMacros.h */,
+				F8DFAB4E4CE1DBDC9191CDEDDDBDDA2B /* DDFileLogger.h */,
+				E9A2CF4EBDC2E0DC7D7574DEC3BAF6A3 /* DDFileLogger.m */,
+				6F7705994FE734C1A2A96F1FFFE7205E /* DDLegacyMacros.h */,
+				08BA521E9B5C7E924ADA74C2C41D06D4 /* DDLog.h */,
+				4F825661C32B433FE4B19A7D0A3818BE /* DDLog.m */,
+				3199C092015AB07D500E3BC487932609 /* DDLog+LOGV.h */,
+				1DE9C883915EBC8332D8E0D47605BBA1 /* DDLogMacros.h */,
+				4683A420DB4D2E3F5A0A439283DF1DA2 /* DDTTYLogger.h */,
+				4C95FC4FCBDCB200E2BCC4B200480036 /* DDTTYLogger.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		D014BB7B457BB60BC661A0BE93D49D47 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CAD38D0CE55D5C8184A6307410273439 /* CoreGraphics.framework */,
+				91ED9A40966444B70F9624F50901DF16 /* Foundation.framework */,
+				9DC92A1248015E552139B38E7F7FC657 /* MobileCoreServices.framework */,
+				6B7AB539C13E92BE45994A63D861F136 /* Security.framework */,
+				86AE0A3C3BF690B839A6CDEB7A1FBB18 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DC8BD5A38ED9CB102089AC1579F4E023 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				BDBE88C5BAFBA45EDE8AFB513A3F6292 /* Core */,
+				4331D049869AC9A69B5CA5C388CB0828 /* Default */,
+				53D869C53CBED8532EFF68961122449E /* Extensions */,
+				0232E5BCC1893F74DECAD9163E78CAFC /* Support Files */,
+			);
+			name = CocoaLumberjack;
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+		E52DA07B734F18D215349BD337170F1B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				8BD407C19EFDC53EC9471A418377C1B7 /* AFAutoPurgingImageCache.h */,
+				9B77C2851700190F12E487B5D78D790E /* AFAutoPurgingImageCache.m */,
+				1F8FAF6089FB0643B1EC4D044BABBDEC /* AFImageDownloader.h */,
+				65D1751B63940BFE3407D9BBEAEC4492 /* AFImageDownloader.m */,
+				E450985B27FC150F12388862DD030160 /* AFNetworkActivityIndicatorManager.h */,
+				6C57C4FF61670E8303588266766AC8C4 /* AFNetworkActivityIndicatorManager.m */,
+				B55502870CBBE3BB9FA7B03E90178056 /* UIActivityIndicatorView+AFNetworking.h */,
+				2FF4EA45F324E54B81EAF5E3E2E47C25 /* UIActivityIndicatorView+AFNetworking.m */,
+				CF1A1F89EFFEFCAF6922A55BA916D1C8 /* UIButton+AFNetworking.h */,
+				993404ED2C87E3A62833DF6756289623 /* UIButton+AFNetworking.m */,
+				D49E32BBB1A85B6EAA3868A140472E35 /* UIImage+AFNetworking.h */,
+				EA1A92E573E85E6CB2FBFC962140C5C3 /* UIImageView+AFNetworking.h */,
+				64777D5349ED846FEDC17D6AD4B2719F /* UIImageView+AFNetworking.m */,
+				8F8B1D01C179B30A79DF64625799C19D /* UIKit+AFNetworking.h */,
+				7B36F27C5ABF28515DE3BCAA8F9E4568 /* UIProgressView+AFNetworking.h */,
+				CD2E039A6A6FE6CE32C339AD1013C2C8 /* UIProgressView+AFNetworking.m */,
+				65E377C6122E63BC1024A7DC2A8897A0 /* UIRefreshControl+AFNetworking.h */,
+				93281D3648D81A4F4CAAB34D4D3A4A3B /* UIRefreshControl+AFNetworking.m */,
+				64995424B384CC7DA82B2919CA7EFA82 /* UIWebView+AFNetworking.h */,
+				0718DD9A10DDBA77F3431F51FC9C1BEA /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		E8E8E329D0943FCA44D3822A01AA0EA4 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B5BF9A19D9C3BD2D28C428BE64192D6 /* CoreGraphics.framework */,
+				60CB553BC19D0A4B8F8905FF35C60525 /* Foundation.framework */,
+				A5B5EE4C26361A6E382C8FB71685B579 /* MobileCoreServices.framework */,
+				3753580A9ABF3956F29A528F08E2C183 /* Security.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		F7DA180559D3C329C566B2609C68FF7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D014BB7B457BB60BC661A0BE93D49D47 /* iOS */,
+				E8E8E329D0943FCA44D3822A01AA0EA4 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A1C2B07813030B0D51EB1D804A4439E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */,
+				6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */,
+				707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */,
+				E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */,
+				46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */,
+				DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */,
+				D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */,
+				C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */,
+				66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */,
+				F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */,
+				682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */,
+				1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */,
+				D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */,
+				5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */,
+				B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */,
+				F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */,
+				8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D15D1C21A48DAEDF6292E81987E14A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502536FE8FD9EA36CDC38C48C4D5446A /* CocoaLumberjack.h in Headers */,
+				5C26B227F40950A6BD0A8A4DE9EE8631 /* DDAbstractDatabaseLogger.h in Headers */,
+				D3ABD4E85C234B9135089C3CBC98A2D2 /* DDASLLogCapture.h in Headers */,
+				8A54AA272167FFD313DCB982D2AD01F7 /* DDASLLogger.h in Headers */,
+				24D3C3BE68A996A49BCC96088010FF6D /* DDAssertMacros.h in Headers */,
+				20515EB30B7EF26C91C7369D50718572 /* DDContextFilterLogFormatter.h in Headers */,
+				D0796FBBAE3EE0AE8EED285CC6C547FB /* DDDispatchQueueLogFormatter.h in Headers */,
+				90CBFFF47EB693242AC0D8F0E8DEBFBA /* DDFileLogger.h in Headers */,
+				EEB34A438AB718971853FE7A8D788C8D /* DDLegacyMacros.h in Headers */,
+				1335E03E68CF20FFB1D3E9410F086C1E /* DDLog+LOGV.h in Headers */,
+				A48DBD5372D999E804F0C6F80D8711E6 /* DDLog.h in Headers */,
+				33804D588D39D88C793590CAC09A5E67 /* DDLogMacros.h in Headers */,
+				2FC6D73369887BC8DB884040BE5DFDC3 /* DDMultiFormatter.h in Headers */,
+				741BA12FB62E0EDCC3D764C7BD32517F /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A32C627B8FBC5D6DB84BBB43A34D0AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8562381CFBC1C401DC2560CE4A17913E /* CocoaLumberjack.h in Headers */,
+				08B0A3769A63D3B9ABF22D93543FDED8 /* DDAbstractDatabaseLogger.h in Headers */,
+				8D4BBC2BA77981805F027FA9BAAA197C /* DDASLLogCapture.h in Headers */,
+				BE8F6DE4C06D5479297A6F85D5632B13 /* DDASLLogger.h in Headers */,
+				EE66FDCF1F712EEDC6A8FAACAB35F3D6 /* DDAssertMacros.h in Headers */,
+				A324A1D709BF4137AFDDD154F445DE2F /* DDContextFilterLogFormatter.h in Headers */,
+				9305334627C93C67BB8183FF644860A0 /* DDDispatchQueueLogFormatter.h in Headers */,
+				0F731E15340A519C53B4697677FB3580 /* DDFileLogger.h in Headers */,
+				B394B1C41668EF8FF3F19BA8C0674483 /* DDLegacyMacros.h in Headers */,
+				B2D5F8D764F9105D9244CEDCA95C7EC8 /* DDLog+LOGV.h in Headers */,
+				27008883A19FAD6A43DD76203AE5E84D /* DDLog.h in Headers */,
+				D6CE19CBEB69F31D8EDA3453332C220B /* DDLogMacros.h in Headers */,
+				A5ECA7141F1089578BC392824B1E8C75 /* DDMultiFormatter.h in Headers */,
+				11FC7025D34BAB9D1149C57831F1659C /* DDTTYLogger.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82EF40DBABFF6A073AB1A78940BD7CEC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9B620F63B7C5E7BED4A4DA1F487B61 /* AFHTTPSessionManager.h in Headers */,
+				20100E29FA63D750A19D91ED61772FFA /* AFNetworking.h in Headers */,
+				AF22F63F33F51114649B72ADB04958F3 /* AFSecurityPolicy.h in Headers */,
+				B2FAB18526C83157C7B38EA4609C8789 /* AFURLRequestSerialization.h in Headers */,
+				21EC2770DBAA801136F4F20F66C8351B /* AFURLResponseSerialization.h in Headers */,
+				F79585962C4CDEBDA22761A928B3E516 /* AFURLSessionManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2DF0CE5E23876960CF4E7D2F7E98EEA2 /* Pods-VLC Controller-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 587D08B739353C269E48393ED5466815 /* Build configuration list for PBXNativeTarget "Pods-VLC Controller-watchOS Extension" */;
+			buildPhases = (
+				EE47CC6E6E6A629371E6A89ADAB2F3CA /* Sources */,
+				A839464BAABE8488B421AD19C51E1B9D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4F8C79A02FC5BA8B55FE5D156506D21 /* PBXTargetDependency */,
+				BFA44CCBDC6999D78A7B2560F3F53703 /* PBXTargetDependency */,
+			);
+			name = "Pods-VLC Controller-watchOS Extension";
+			productName = "Pods-VLC Controller-watchOS Extension";
+			productReference = 75CE37638EC86D16C6139772630D7751 /* libPods-VLC Controller-watchOS Extension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7651BB5BE57A99CCFEDCD429A9D9A66A /* CocoaLumberjack-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845781A38280D664BF15567AD6F73AB1 /* Build configuration list for PBXNativeTarget "CocoaLumberjack-watchOS" */;
+			buildPhases = (
+				78E07F5C7E4B4AA243795760333FF4CC /* Sources */,
+				1A5B9A49A1BF5E2172971936CE98373A /* Frameworks */,
+				0D15D1C21A48DAEDF6292E81987E14A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaLumberjack-watchOS";
+			productName = "CocoaLumberjack-watchOS";
+			productReference = 4F2024BA4E63572867EB2BAD4B0C8834 /* libCocoaLumberjack-watchOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8748F98CD49BD64CB2E912AEBEDAA283 /* Pods-VLC ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AEA9D7BBBF8FD19088AF717CF69F9C0 /* Build configuration list for PBXNativeTarget "Pods-VLC ControllerTests" */;
+			buildPhases = (
+				EBA4EED939FCF0F44171A16C9FFF27A7 /* Sources */,
+				58F2EA49B1F99815B81F85A258442229 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-VLC ControllerTests";
+			productName = "Pods-VLC ControllerTests";
+			productReference = FE108FFA678F944DF996A88FE57AC317 /* libPods-VLC ControllerTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9E033EDB5EC0819481B0546434FA577B /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				0068413C89BADAAF4691AA78AFE62C3E /* Sources */,
+				F3284DBE3CA8932733932AD2A48445B2 /* Frameworks */,
+				0A1C2B07813030B0D51EB1D804A4439E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = EFFD419FC3C257CE814ED31491E71640 /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C289FFFBA02E90751B75D32C13AD38BE /* AFNetworking.root-NSURLSession-Security-Serialization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1B4A5DB4376A8AF0F74795CB7689EBE /* Build configuration list for PBXNativeTarget "AFNetworking.root-NSURLSession-Security-Serialization" */;
+			buildPhases = (
+				29B5B4754CD60C60781A25E87ACAD764 /* Sources */,
+				3267F6E2FC4CD9A5611C6A5282DFC2AE /* Frameworks */,
+				82EF40DBABFF6A073AB1A78940BD7CEC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AFNetworking.root-NSURLSession-Security-Serialization";
+			productName = "AFNetworking.root-NSURLSession-Security-Serialization";
+			productReference = B6FF8C76711F974882E5E272FEEEC917 /* libAFNetworking.root-NSURLSession-Security-Serialization.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F3B64CAF7AD52D5E0B32CABE10E0CCD4 /* CocoaLumberjack-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FFF3488C314D26EE4ECD0D609DC1C4A /* Build configuration list for PBXNativeTarget "CocoaLumberjack-iOS" */;
+			buildPhases = (
+				92B53F05DE6EB796C8116E1105EDE5F6 /* Sources */,
+				DA710EE7825C8F62C7445DDC84321C34 /* Frameworks */,
+				7A32C627B8FBC5D6DB84BBB43A34D0AA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CocoaLumberjack-iOS";
+			productName = "CocoaLumberjack-iOS";
+			productReference = 2A1821C07602F4C92552C55967DF1CC2 /* libCocoaLumberjack-iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FD2F27ACF18170621EBC1BC95880C8D7 /* Pods-VLC Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32CFB5907AC12A86E340F293DB6F32CC /* Build configuration list for PBXNativeTarget "Pods-VLC Controller" */;
+			buildPhases = (
+				B07027363121A3E83F289222D5A26741 /* Sources */,
+				4195AE7DCBDC42D062A01C7AE222E145 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07DBCA9FAC9FB3417FEA2D2DE5121AE1 /* PBXTargetDependency */,
+				EA8A4EFEB4EA40DF883C210A4CA58F60 /* PBXTargetDependency */,
+			);
+			name = "Pods-VLC Controller";
+			productName = "Pods-VLC Controller";
+			productReference = 68BD95ED46F870FC67497F7ECE771DC4 /* libPods-VLC Controller.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A393ABEE9B70B2340241A1E4791E70F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E033EDB5EC0819481B0546434FA577B /* AFNetworking */,
+				C289FFFBA02E90751B75D32C13AD38BE /* AFNetworking.root-NSURLSession-Security-Serialization */,
+				F3B64CAF7AD52D5E0B32CABE10E0CCD4 /* CocoaLumberjack-iOS */,
+				7651BB5BE57A99CCFEDCD429A9D9A66A /* CocoaLumberjack-watchOS */,
+				FD2F27ACF18170621EBC1BC95880C8D7 /* Pods-VLC Controller */,
+				2DF0CE5E23876960CF4E7D2F7E98EEA2 /* Pods-VLC Controller-watchOS Extension */,
+				8748F98CD49BD64CB2E912AEBEDAA283 /* Pods-VLC ControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0068413C89BADAAF4691AA78AFE62C3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */,
+				73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */,
+				5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */,
+				31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */,
+				97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */,
+				E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */,
+				66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */,
+				5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */,
+				85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */,
+				9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */,
+				2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */,
+				A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */,
+				D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */,
+				B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */,
+				A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B5B4754CD60C60781A25E87ACAD764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E945F0C66F19A4970B02A08B703AE22 /* AFHTTPSessionManager.m in Sources */,
+				FFF5857B5FC6BB1FE6EB962D35003EAA /* AFNetworking.root-NSURLSession-Security-Serialization-dummy.m in Sources */,
+				CBC5A0E0567B2B382B91C9FDB26F9B60 /* AFSecurityPolicy.m in Sources */,
+				AC7C9AD069F0BDB8D3774766D94843E9 /* AFURLRequestSerialization.m in Sources */,
+				2E8622D9F98557ED22BD2246389BFAE8 /* AFURLResponseSerialization.m in Sources */,
+				DA55B816BBA0E070E2956D21C93C0523 /* AFURLSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78E07F5C7E4B4AA243795760333FF4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01070D0D3FD191BEF2967E4720D9245E /* CocoaLumberjack-watchOS-dummy.m in Sources */,
+				2BF411533A3617D3B07AF773BC6428B5 /* DDAbstractDatabaseLogger.m in Sources */,
+				C9193F7B99B4288B7BC1510B9FCA5FFC /* DDASLLogCapture.m in Sources */,
+				A76BFEED1774B02E103F567AF3005332 /* DDASLLogger.m in Sources */,
+				EC746753263A8468068E45562071153E /* DDContextFilterLogFormatter.m in Sources */,
+				6EB98547DCB680EB324D0B7F8DB56A0D /* DDDispatchQueueLogFormatter.m in Sources */,
+				C53EE77E4F32960A4A6B8A0B144A033F /* DDFileLogger.m in Sources */,
+				61F0BCCF1B0B1F6FE0F5DE61860B426F /* DDLog.m in Sources */,
+				ACDCADEDBCA08F1C0B3F549460FA20C3 /* DDMultiFormatter.m in Sources */,
+				DD856223F29860F0C7CE6E714BD7578B /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B53F05DE6EB796C8116E1105EDE5F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2039531E8D8B5D8457FAF2E81B3C184 /* CocoaLumberjack-iOS-dummy.m in Sources */,
+				AC13B5F92096C88F9DA915D7BDE12C70 /* DDAbstractDatabaseLogger.m in Sources */,
+				CFCC71D090EB20763DEC15FD4662173E /* DDASLLogCapture.m in Sources */,
+				EB59E3EA8C079DF7C57B9497BA4AC441 /* DDASLLogger.m in Sources */,
+				E93F35BE9BF36D6D544F1647E9F9ED78 /* DDContextFilterLogFormatter.m in Sources */,
+				668099D59D20A2CDCF2017B1E2B50B24 /* DDDispatchQueueLogFormatter.m in Sources */,
+				1318AF067746AE5D598EC59F2030E806 /* DDFileLogger.m in Sources */,
+				C609D9E849D9757713C8799AC2212872 /* DDLog.m in Sources */,
+				E986C4A6C082CA004AF6A158F2BC0BFA /* DDMultiFormatter.m in Sources */,
+				1BD07DE136042C41D9AE267EEE7DBAED /* DDTTYLogger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07027363121A3E83F289222D5A26741 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70DDE7D880F48292970B40B75E926E0 /* Pods-VLC Controller-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBA4EED939FCF0F44171A16C9FFF27A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA14A8B889C04E043C34F455EF74E102 /* Pods-VLC ControllerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE47CC6E6E6A629371E6A89ADAB2F3CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C5ADE416437C3A186225DBFBA4AA6BA /* Pods-VLC Controller-watchOS Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07DBCA9FAC9FB3417FEA2D2DE5121AE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 9E033EDB5EC0819481B0546434FA577B /* AFNetworking */;
+			targetProxy = 2C4A79A24288AC9F702CECD877D115FF /* PBXContainerItemProxy */;
+		};
+		BFA44CCBDC6999D78A7B2560F3F53703 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaLumberjack-watchOS";
+			target = 7651BB5BE57A99CCFEDCD429A9D9A66A /* CocoaLumberjack-watchOS */;
+			targetProxy = 6FE7842A05A549CBA25DECC5AD0B2B2F /* PBXContainerItemProxy */;
+		};
+		E4F8C79A02FC5BA8B55FE5D156506D21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AFNetworking.root-NSURLSession-Security-Serialization";
+			target = C289FFFBA02E90751B75D32C13AD38BE /* AFNetworking.root-NSURLSession-Security-Serialization */;
+			targetProxy = 98FEBE82C9B33AF20FFD495F275C5364 /* PBXContainerItemProxy */;
+		};
+		EA8A4EFEB4EA40DF883C210A4CA58F60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CocoaLumberjack-iOS";
+			target = F3B64CAF7AD52D5E0B32CABE10E0CCD4 /* CocoaLumberjack-iOS */;
+			targetProxy = D5B4798B9EA9AC5B09D428B697611F4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F7D55ECF6BA5B1905B0F26639817BAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2A41D9D0DF0ACAFBAD555630D994E80 /* Pods-VLC Controller.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		15E283DDFC1DEB37ABFAB647BECE7774 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		3D3719B354211F353E866EBBB7597074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAB546C6EAC73E926A700D3F15E20EC /* AFNetworking.root-NSURLSession-Security-Serialization.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking.root-NSURLSession-Security-Serialization/AFNetworking.root-NSURLSession-Security-Serialization-prefix.pch";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		46FF60DD02F68E0DDB8BB05E547C351E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0AA99F91A01C9D78CBDA1E5784413F9 /* Pods-VLC Controller.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7296F8BA5234C115C50DEAC1384F195D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		72D1B831316303C2E356BBAC53FEF78A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD8F201306341F2691A2E2E80A50A8C /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		74B6922899204F9ACB530BEFE12D5A44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4435C72250A2F082D8129CCFF0F6421E /* Pods-VLC Controller-watchOS Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		7684355A63664B9CC6A8BEB208656666 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AC5DCE4518FA6A4CC79FD15CADFBD3 /* CocoaLumberjack-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack-iOS/CocoaLumberjack-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8BEAC1EACAA68425B7BF50CFF1476551 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F785B33537C8C3CE1594391607A5A02C /* CocoaLumberjack-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack-watchOS/CocoaLumberjack-watchOS-prefix.pch";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		94853CB8AD6DD6D31471B442DA85B4FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE757B372E54763F5AA18AF1F8D990EB /* Pods-VLC Controller-watchOS Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		983EC5758817D0C658881DA41DFDB837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8AC5DCE4518FA6A4CC79FD15CADFBD3 /* CocoaLumberjack-iOS.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack-iOS/CocoaLumberjack-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BFC6A6B44208091C2EE264490E409574 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAB546C6EAC73E926A700D3F15E20EC /* AFNetworking.root-NSURLSession-Security-Serialization.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking.root-NSURLSession-Security-Serialization/AFNetworking.root-NSURLSession-Security-Serialization-prefix.pch";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		C3E6D1B3AA84A69561C2A836C631B8EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F785B33537C8C3CE1594391607A5A02C /* CocoaLumberjack-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaLumberjack-watchOS/CocoaLumberjack-watchOS-prefix.pch";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		CB9A7C38D73B75A112A519B453DA7429 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FED908D6F86CD1C0F89D8BEAD54BF8 /* Pods-VLC ControllerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E2612CF68C656BF51F30D5D2D875BF03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02A71072DE51439710C6A683219C1989 /* Pods-VLC ControllerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FF778088B62C05BE1205DAE628D151DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD8F201306341F2691A2E2E80A50A8C /* AFNetworking.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7296F8BA5234C115C50DEAC1384F195D /* Debug */,
+				15E283DDFC1DEB37ABFAB647BECE7774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32CFB5907AC12A86E340F293DB6F32CC /* Build configuration list for PBXNativeTarget "Pods-VLC Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46FF60DD02F68E0DDB8BB05E547C351E /* Debug */,
+				0F7D55ECF6BA5B1905B0F26639817BAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FFF3488C314D26EE4ECD0D609DC1C4A /* Build configuration list for PBXNativeTarget "CocoaLumberjack-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				983EC5758817D0C658881DA41DFDB837 /* Debug */,
+				7684355A63664B9CC6A8BEB208656666 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		483FBC4A668BF7F1A8767452E7E188AC /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF778088B62C05BE1205DAE628D151DF /* Debug */,
+				72D1B831316303C2E356BBAC53FEF78A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		587D08B739353C269E48393ED5466815 /* Build configuration list for PBXNativeTarget "Pods-VLC Controller-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74B6922899204F9ACB530BEFE12D5A44 /* Debug */,
+				94853CB8AD6DD6D31471B442DA85B4FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AEA9D7BBBF8FD19088AF717CF69F9C0 /* Build configuration list for PBXNativeTarget "Pods-VLC ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2612CF68C656BF51F30D5D2D875BF03 /* Debug */,
+				CB9A7C38D73B75A112A519B453DA7429 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845781A38280D664BF15567AD6F73AB1 /* Build configuration list for PBXNativeTarget "CocoaLumberjack-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3E6D1B3AA84A69561C2A836C631B8EB /* Debug */,
+				8BEAC1EACAA68425B7BF50CFF1476551 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1B4A5DB4376A8AF0F74795CB7689EBE /* Build configuration list for PBXNativeTarget "AFNetworking.root-NSURLSession-Security-Serialization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFC6A6B44208091C2EE264490E409574 /* Debug */,
+				3D3719B354211F353E866EBBB7597074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

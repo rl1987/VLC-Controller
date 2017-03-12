@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AFNetworking.root-NSURLSession-Security-Serialization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack-iOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CocoaLumberjack-watchOS.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VLC Controller-watchOS Extension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VLC Controller.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-VLC ControllerTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2DF0CE5E23876960CF4E7D2F7E98EEA2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7651BB5BE57A99CCFEDCD429A9D9A66A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8748F98CD49BD64CB2E912AEBEDAA283</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E033EDB5EC0819481B0546434FA577B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C289FFFBA02E90751B75D32C13AD38BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F3B64CAF7AD52D5E0B32CABE10E0CCD4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD2F27ACF18170621EBC1BC95880C8D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
