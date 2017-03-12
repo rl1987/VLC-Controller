@@ -13,6 +13,7 @@
 #import "AddressValidator.h"
 #import "PortValidator.h"
 #import "PasswordValidator.h"
+#import "PlayerManager.h"
 
 @interface ConfigViewControllerTests : XCTestCase
 
