@@ -38,6 +38,7 @@ typedef void (^FileListingCompletionHandler)(NSArray<RemoteFile *> *files, NSErr
 
 - (void)pause;
 - (void)play;
+- (void)playRemoteFile:(RemoteFile *)remoteFile;
 - (void)stop;
 - (void)seekBy:(NSTimeInterval)offset;
 - (void)seekTo:(NSTimeInterval)secondsFromStart;

@@ -60,12 +60,13 @@
         self.uri = remoteFile.uri;
         [self reloadFileList];
     } else {
-        // TODO
+        [[PlayerManager defaultManager] playRemoteFile:remoteFile];
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark - Navigation
-
 
 - (IBAction)doneTapped
 {

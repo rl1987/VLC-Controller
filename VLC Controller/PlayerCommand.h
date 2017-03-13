@@ -10,6 +10,7 @@
 
 typedef enum {
     PlayerCommandPlay,
+    PlayerCommandPlayInput,
     PlayerCommandPause,
     PlayerCommandStop,
     PlayerCommandNextEntry,
@@ -27,5 +28,6 @@ typedef enum {
 
 @property (nonatomic, assign) PlayerCommandType commandType;
 @property (nonatomic, assign) double value;
+@property (nonatomic, strong) NSString *input;
 
 @end

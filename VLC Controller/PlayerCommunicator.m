@@ -45,6 +45,10 @@
             case PlayerCommandPlay:
             arguments = @{ @"command" : @"pl_play" };
             break;
+            case PlayerCommandPlayInput:
+            arguments = @{ @"command" : @"in_play",
+                           @"input" : command.input };
+            break;
             case PlayerCommandPause:
             arguments = @{ @"command" : @"pl_pause" };
             break;
