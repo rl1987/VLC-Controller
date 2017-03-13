@@ -45,6 +45,7 @@
     RemoteFile *remoteFile = self.remoteFiles[indexPath.row];
     
     cell.textLabel.text = remoteFile.fileName;
+    cell.imageView.image = remoteFile.isDirectory ? [UIImage imageNamed:@"Directory"] : [UIImage imageNamed:@"File"];
     
     return cell;
 }
