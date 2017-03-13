@@ -38,6 +38,12 @@
 		4DA840F11E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */; };
 		4DA840F41E76C2460021F01F /* AcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */; };
 		4DA840F51E76C62B0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */; };
+		4DA840F81E76DD200021F01F /* RemoteFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F71E76DD200021F01F /* RemoteFile.m */; };
+		4DA840FB1E76EA950021F01F /* RemoteFileBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */; };
+		4DA840FC1E76F2DF0021F01F /* RemoteFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F71E76DD200021F01F /* RemoteFile.m */; };
+		4DA840FD1E76F2E00021F01F /* RemoteFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F71E76DD200021F01F /* RemoteFile.m */; };
+		4DA840FE1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */; };
+		4DA840FF1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
@@ -154,6 +160,10 @@
 		4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Pods-VLC Controller-acknowledgements.markdown"; path = "Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
 		4DA840F21E76C2460021F01F /* AcknowledgementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcknowledgementsViewController.h; sourceTree = "<group>"; };
 		4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcknowledgementsViewController.m; sourceTree = "<group>"; };
+		4DA840F61E76DD200021F01F /* RemoteFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteFile.h; sourceTree = "<group>"; };
+		4DA840F71E76DD200021F01F /* RemoteFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteFile.m; sourceTree = "<group>"; };
+		4DA840F91E76EA950021F01F /* RemoteFileBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteFileBuilder.h; sourceTree = "<group>"; };
+		4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteFileBuilder.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
 		4DAA17151895707600D41033 /* PlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCommand.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
@@ -315,6 +325,10 @@
 				4DF57FC618749E22007D5F35 /* PlayerStatus.m */,
 				4DAA17141895707600D41033 /* PlayerCommand.h */,
 				4DAA17151895707600D41033 /* PlayerCommand.m */,
+				4DA840F61E76DD200021F01F /* RemoteFile.h */,
+				4DA840F71E76DD200021F01F /* RemoteFile.m */,
+				4DA840F91E76EA950021F01F /* RemoteFileBuilder.h */,
+				4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */,
 			);
 			name = "Biz logic";
 			sourceTree = "<group>";
@@ -789,6 +803,8 @@
 				4D2161FE1E62FB4F00042045 /* ComplicationController.m in Sources */,
 				4D2162111E632A4B00042045 /* PlayerStatusBuilder.m in Sources */,
 				4D2161F51E62FB4F00042045 /* InterfaceController.m in Sources */,
+				4DA840FE1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */,
+				4DA840FC1E76F2DF0021F01F /* RemoteFile.m in Sources */,
 				4D2161FB1E62FB4F00042045 /* NotificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -802,6 +818,8 @@
 				B7DEDDBA157A468000ADBD36 /* AppDelegate.m in Sources */,
 				4D2162241E64863800042045 /* WCSession+Settings.m in Sources */,
 				B7DEDDE0157A68FF00ADBD36 /* ConfigViewController.m in Sources */,
+				4DA840FB1E76EA950021F01F /* RemoteFileBuilder.m in Sources */,
+				4DA840F81E76DD200021F01F /* RemoteFile.m in Sources */,
 				4DAA17161895707600D41033 /* PlayerCommand.m in Sources */,
 				4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */,
 				B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */,
@@ -827,7 +845,9 @@
 				4D15B7F31896F994002A8294 /* MockPlayerCommunicator.m in Sources */,
 				4D15B7F51896FA94002A8294 /* PlayerManagerTests.m in Sources */,
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
+				4DA840FF1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */,
 				4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */,
+				4DA840FD1E76F2E00021F01F /* RemoteFile.m in Sources */,
 				4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */,
 				4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */,
 			);

@@ -113,4 +113,41 @@
                          }];
 }
 
+- (void)sendFileListRequestForDirectory:(NSString *)directory
+                                    uri:(NSString *)uri
+                      completionHandler:(void (^)(NSDictionary *jsonDictionary, NSError *error))completion
+{
+    if (!self.hostname) {
+        return;
+    }
+    
+    NSMutableDictionary *arguments = [[NSMutableDictionary alloc] init];
+    
+    if (directory)
+        arguments[@"dir"] = directory;
+    
+    if (uri)
+        arguments[@"uri"] = uri;
+    
+    NSString *urlString = [NSString stringWithFormat:@"http://%@:%d/requests/browse.json", self.hostname, self.port];
+    
+    [self.httpSessionManager.requestSerializer setAuthorizationHeaderFieldWithUsername:@"" password:self.password];
+    
+    [self.httpSessionManager GET:urlString
+                      parameters:arguments
+                        progress:nil
+                         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                             DDLogDebug(@"%@",responseObject);
+                             
+                             if (completion)
+                                 completion(responseObject, nil);
+                         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                             DDLogError(@"%@",error);
+                             
+                             if (completion)
+                                 completion(nil, error);
+                         }];
+    
+}
+
 @end

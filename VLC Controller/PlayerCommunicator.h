@@ -30,4 +30,8 @@
 - (void)retrieveCurrentStatus;
 - (void)sendCommand:(PlayerCommand *)command;
 
+- (void)sendFileListRequestForDirectory:(NSString *)directory
+                                    uri:(NSString *)uri
+                      completionHandler:(void (^)(NSDictionary *jsonDictionary, NSError *error))completion;
+
 @end

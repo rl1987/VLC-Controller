@@ -15,6 +15,9 @@
 #define kStatusUpdateInterval (1.0)
 
 #import "PlayerStatus.h"
+#import "RemoteFile.h"
+
+typedef void (^FileListingCompletionHandler)(NSArray<RemoteFile *> *files, NSError *error);
 
 @class PlayerManager;
 
@@ -48,5 +51,8 @@
 
 - (void)startReceivingStatusUpdates;
 - (void)stopReceivingStatusUpdates;
+
+- (void)listRemoteFilesInDirectory:(NSString *)directory withCompletionHandler:(FileListingCompletionHandler)completion;
+- (void)listRemoteFilesAtURI:(NSString *)uri withCompletionHandler:(FileListingCompletionHandler)completion;
 
 @end

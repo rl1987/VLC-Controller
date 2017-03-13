@@ -9,12 +9,14 @@
 #import "PlayerManager.h"
 
 #import "PlayerStatusBuilder.h"
+#import "RemoteFileBuilder.h"
 #import "PlayerCommunicator.h"
 
 @interface PlayerManager() <PlayerCommunicatorDelegate>
 
 @property (nonatomic, strong) PlayerCommunicator *communicator;
 @property (nonatomic, strong) PlayerStatusBuilder *playerStatusBuilder;
+@property (nonatomic, strong) RemoteFileBuilder *remoteFileBuilder;
 
 @property (nonatomic, strong) NSTimer *statusUpdateTimer;
 
@@ -53,6 +55,7 @@ static PlayerManager *_defaultManager;
         [self updatedCommunicatorSettings];
         
         self.playerStatusBuilder = [[PlayerStatusBuilder alloc] init];
+        self.remoteFileBuilder = [[RemoteFileBuilder alloc] init];
         
         [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification
                                                           object:nil
@@ -156,6 +159,35 @@ static PlayerManager *_defaultManager;
     [self.statusUpdateTimer invalidate];
     
     self.statusUpdateTimer = nil;
+}
+
+- (void)listRemoteFilesInDirectory:(NSString *)directory withCompletionHandler:(FileListingCompletionHandler)completion
+{
+    [self.communicator sendFileListRequestForDirectory:directory
+                                                   uri:nil
+                                     completionHandler:^(NSDictionary *jsonDictionary, NSError *error) {
+        // FIXME: code duplication
+        if (completion) {
+            if (error)
+                completion(nil, error);
+            else
+                completion([self.remoteFileBuilder remoteFilesFromJSONDictionary:jsonDictionary], nil);
+        }
+    }];
+}
+
+- (void)listRemoteFilesAtURI:(NSString *)uri withCompletionHandler:(FileListingCompletionHandler)completion
+{
+    [self.communicator sendFileListRequestForDirectory:nil
+                                                   uri:uri
+                                     completionHandler:^(NSDictionary *jsonDictionary, NSError *error) {
+        if (completion) {
+            if (error)
+                completion(nil, error);
+            else
+                completion([self.remoteFileBuilder remoteFilesFromJSONDictionary:jsonDictionary], nil);
+        }
+    }];
 }
 
 #pragma mark -

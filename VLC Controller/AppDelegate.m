@@ -21,7 +21,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
     [[WCSession defaultSession] setDelegate:self];
-    
+        
     return YES;
 }
 
