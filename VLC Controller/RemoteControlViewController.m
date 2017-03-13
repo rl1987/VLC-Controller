@@ -100,19 +100,6 @@
     // TODO
 }
 
-- (IBAction)browsePressed:(id)sender
-{
-    [self.playerManager listRemoteFilesInDirectory:@"."
-                             withCompletionHandler:^(NSArray<RemoteFile *> *files, NSError *error) {
-                                 DDLogInfo(@"%@",files);
-                                 
-                                 [self.playerManager listRemoteFilesAtURI:[[files firstObject] uri]
-                                                    withCompletionHandler:^(NSArray<RemoteFile *> *files, NSError *error) {
-                                                        DDLogInfo(@"%@",files);
-                                                    }];
-                             }];
-}
-
 - (IBAction)shuffleButtonTapped:(id)sender
 {
     [self.playerManager toggleShuffle];

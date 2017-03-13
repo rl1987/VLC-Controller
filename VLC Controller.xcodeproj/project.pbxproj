@@ -44,6 +44,7 @@
 		4DA840FD1E76F2E00021F01F /* RemoteFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F71E76DD200021F01F /* RemoteFile.m */; };
 		4DA840FE1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */; };
 		4DA840FF1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */; };
+		4DA841021E76F98A0021F01F /* RemoteFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA841011E76F98A0021F01F /* RemoteFilesTableViewController.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
@@ -164,6 +165,8 @@
 		4DA840F71E76DD200021F01F /* RemoteFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteFile.m; sourceTree = "<group>"; };
 		4DA840F91E76EA950021F01F /* RemoteFileBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteFileBuilder.h; sourceTree = "<group>"; };
 		4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteFileBuilder.m; sourceTree = "<group>"; };
+		4DA841001E76F98A0021F01F /* RemoteFilesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteFilesTableViewController.h; sourceTree = "<group>"; };
+		4DA841011E76F98A0021F01F /* RemoteFilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteFilesTableViewController.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
 		4DAA17151895707600D41033 /* PlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCommand.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 				4DA840EA1E75CA880021F01F /* AboutViewController.m */,
 				4DA840F21E76C2460021F01F /* AcknowledgementsViewController.h */,
 				4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */,
+				4DA841001E76F98A0021F01F /* RemoteFilesTableViewController.h */,
+				4DA841011E76F98A0021F01F /* RemoteFilesTableViewController.m */,
 			);
 			path = "VLC Controller";
 			sourceTree = "<group>";
@@ -822,6 +827,7 @@
 				4DA840F81E76DD200021F01F /* RemoteFile.m in Sources */,
 				4DAA17161895707600D41033 /* PlayerCommand.m in Sources */,
 				4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */,
+				4DA841021E76F98A0021F01F /* RemoteFilesTableViewController.m in Sources */,
 				B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */,
 				B7DEDDF3157A6D7000ADBD36 /* InputValidator.m in Sources */,
 				4DF57FBE18749DEC007D5F35 /* PlayerManager.m in Sources */,
