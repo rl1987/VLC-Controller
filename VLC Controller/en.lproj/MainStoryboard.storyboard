@@ -418,6 +418,9 @@
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="1rQ-Uo-br9" kind="show" id="PWI-A6-yXE"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -473,12 +476,45 @@
             </objects>
             <point key="canvasLocation" x="3517.5999999999999" y="8.5457271364317844"/>
         </scene>
+        <!--Acknowledgements View Controller-->
+        <scene sceneID="i6N-WP-GkZ">
+            <objects>
+                <viewController id="1rQ-Uo-br9" customClass="AcknowledgementsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rdY-bM-tYQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djx-gM-HHF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P0H-YZ-7HV">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4M-A4-wbW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H4M-A4-wbW" firstAttribute="top" secondItem="rdY-bM-tYQ" secondAttribute="bottom" id="3Gk-Zy-Z20"/>
+                            <constraint firstItem="H4M-A4-wbW" firstAttribute="leading" secondItem="P0H-YZ-7HV" secondAttribute="leading" id="TJm-dM-aPJ"/>
+                            <constraint firstItem="Djx-gM-HHF" firstAttribute="top" secondItem="H4M-A4-wbW" secondAttribute="bottom" id="vTe-Cy-zLc"/>
+                            <constraint firstAttribute="trailing" secondItem="H4M-A4-wbW" secondAttribute="trailing" id="xV7-Cp-UTZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="H4M-A4-wbW" id="cwB-8c-NXy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2fC-9Q-W0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3518" y="818"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="d6H-Py-mBi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2d0-YD-PQp" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" translucent="NO" id="W4Z-vc-Ee4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="W4Z-vc-Ee4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -8,6 +8,7 @@ target 'VLC Controller' do
   # Pods for VLC Controller
   pod 'AFNetworking'
   pod 'CocoaLumberjack'
+  pod 'MMMarkdown', '~> 0.5'
 
   target 'VLC ControllerTests' do
     inherit! :search_paths

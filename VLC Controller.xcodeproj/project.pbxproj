@@ -35,6 +35,9 @@
 		4D2162251E64863A00042045 /* WCSession+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2162231E64863500042045 /* WCSession+Settings.m */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
 		4DA840EB1E75CA880021F01F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840EA1E75CA880021F01F /* AboutViewController.m */; };
+		4DA840F11E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */; };
+		4DA840F41E76C2460021F01F /* AcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */; };
+		4DA840F51E76C62B0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
@@ -150,6 +153,9 @@
 		4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerManagerDelegate.m; sourceTree = "<group>"; };
 		4DA840E91E75CA880021F01F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		4DA840EA1E75CA880021F01F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Pods-VLC Controller-acknowledgements.markdown"; path = "Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
+		4DA840F21E76C2460021F01F /* AcknowledgementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AcknowledgementsViewController.h; sourceTree = "<group>"; };
+		4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AcknowledgementsViewController.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
 		4DAA17151895707600D41033 /* PlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCommand.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
@@ -387,6 +393,8 @@
 				B7DEDDB0157A468000ADBD36 /* Supporting Files */,
 				4DA840E91E75CA880021F01F /* AboutViewController.h */,
 				4DA840EA1E75CA880021F01F /* AboutViewController.m */,
+				4DA840F21E76C2460021F01F /* AcknowledgementsViewController.h */,
+				4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */,
 			);
 			path = "VLC Controller";
 			sourceTree = "<group>";
@@ -394,6 +402,7 @@
 		B7DEDDB0157A468000ADBD36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */,
 				B7DEDDB1157A468000ADBD36 /* VLC Controller-Info.plist */,
 				B7DEDDB2157A468000ADBD36 /* InfoPlist.strings */,
 				B7DEDDB5157A468000ADBD36 /* main.m */,
@@ -620,6 +629,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA840F51E76C62B0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Resources */,
 				B7DEDDB4157A468000ADBD36 /* InfoPlist.strings in Resources */,
 				4D2161DD1E61EEEB00042045 /* Images.xcassets in Resources */,
 				B7DEDDBD157A468000ADBD36 /* MainStoryboard.storyboard in Resources */,
@@ -809,6 +819,8 @@
 				4DF57FBE18749DEC007D5F35 /* PlayerManager.m in Sources */,
 				4DA840EB1E75CA880021F01F /* AboutViewController.m in Sources */,
 				B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */,
+				4DA840F41E76C2460021F01F /* AcknowledgementsViewController.m in Sources */,
+				4DA840F11E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Sources */,
 				B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */,
 				4DF57FC718749E22007D5F35 /* PlayerStatus.m in Sources */,
 				4D004683188DC0A100636F50 /* PasswordValidator.m in Sources */,
