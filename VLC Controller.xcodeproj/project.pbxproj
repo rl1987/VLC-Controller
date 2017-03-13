@@ -62,7 +62,6 @@
 		B7DEDDC9157A468100ADBD36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDA9157A468000ADBD36 /* UIKit.framework */; };
 		B7DEDDCA157A468100ADBD36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DEDDAB157A468000ADBD36 /* Foundation.framework */; };
 		B7DEDDD2157A468100ADBD36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7DEDDD0157A468100ADBD36 /* InfoPlist.strings */; };
-		B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */; };
 		B7DEDDE0157A68FF00ADBD36 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDDF157A68FF00ADBD36 /* ConfigViewController.m */; };
 		B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDEB157A6D7000ADBD36 /* AddressValidator.m */; };
 		B7DEDDF3157A6D7000ADBD36 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DEDDED157A6D7000ADBD36 /* InputValidator.m */; };
@@ -195,8 +194,6 @@
 		B7DEDDC6157A468100ADBD36 /* VLC ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLC ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DEDDCF157A468100ADBD36 /* VLC ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLC ControllerTests-Info.plist"; sourceTree = "<group>"; };
 		B7DEDDD1157A468100ADBD36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B7DEDDD3157A468100ADBD36 /* VLC_ControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLC_ControllerTests.h; sourceTree = "<group>"; };
-		B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLC_ControllerTests.m; sourceTree = "<group>"; };
 		B7DEDDDE157A68FF00ADBD36 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		B7DEDDDF157A68FF00ADBD36 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		B7DEDDEA157A6D7000ADBD36 /* AddressValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressValidator.h; sourceTree = "<group>"; };
@@ -416,8 +413,6 @@
 			isa = PBXGroup;
 			children = (
 				4D05DF4C187894FC008F8DA9 /* Biz logic tests */,
-				B7DEDDD3157A468100ADBD36 /* VLC_ControllerTests.h */,
-				B7DEDDD4157A468100ADBD36 /* VLC_ControllerTests.m */,
 				B7DEDDCE157A468100ADBD36 /* Supporting Files */,
 				4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */,
 				4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */,
@@ -836,7 +831,6 @@
 				4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */,
 				4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */,
 				4D15B7F31896F994002A8294 /* MockPlayerCommunicator.m in Sources */,
-				B7DEDDD5157A468100ADBD36 /* VLC_ControllerTests.m in Sources */,
 				4D15B7F51896FA94002A8294 /* PlayerManagerTests.m in Sources */,
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
 				4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */,
