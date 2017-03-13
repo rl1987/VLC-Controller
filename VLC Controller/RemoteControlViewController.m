@@ -8,6 +8,7 @@
 
 #import "RemoteControlViewController.h"
 
+#import "ConfigViewController.h"
 #import "PlayerManager.h"
 
 @interface RemoteControlViewController () <PlayerManagerDelegate>
@@ -125,17 +126,6 @@
 }
 
 #pragma mark -
-#pragma mark Config view controller delegate
-
-- (void)configViewController:(ConfigViewController *)cvc
-        didFinishWithAddress:(NSString *)ipAddressString
-                     andPort:(int)port
-                    password:(NSString *)password
-{
-    DDLogInfo(@"configViewController:didFinishWithAddress:andPort:password:");
-}
-
-#pragma mark -
 #pragma mark Player Manager delegate
 
 - (void)playerManager:(PlayerManager *)manager
@@ -164,19 +154,6 @@
     self.shuffleButton.alpha = status.randomized ? 1.0 : 0.5;
     self.repeatButton.alpha = status.repeating ? 1.0 : 0.5;
     self.fullscreenButton.alpha = status.fullscreen ? 1.0 : 0.5;
-}
-
-#pragma mark -
-#pragma mark Segue
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([segue.identifier isEqualToString:@"to_config"])
-    {
-        ConfigViewController *configVC = segue.destinationViewController;
-        
-        configVC.delegate = self;
-    }
 }
 
 @end

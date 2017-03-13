@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "ConfigViewController.h"
-
-@interface RemoteControlViewController : UIViewController <ConfigViewControllerDelegate>
+@interface RemoteControlViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *filenameLabel;

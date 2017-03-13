@@ -9,24 +9,6 @@
 @synthesize addressField;
 @synthesize portField;
 
-@synthesize delegate = _delegate;
-
-#pragma mark -
-#pragma mark Accessors
-
-- (void)setDelegate:(id<ConfigViewControllerDelegate>)delegate
-{
-    if (!delegate || [(NSObject *)delegate conformsToProtocol:@protocol(ConfigViewControllerDelegate)])
-        _delegate = delegate;
-    else {
-        NSException *exception = [NSException exceptionWithName:NSInvalidArgumentException
-                                                         reason:@"Delegate object does not conform to the delegate protocol"
-                                                       userInfo:nil];
-        
-        [exception raise];
-    }
-}
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -91,8 +73,7 @@
 
 - (IBAction)okPressed 
 {
-    
-    if ((self.delegate) && [self.addressField isValid] && 
+    if ([self.addressField isValid] &&
         [self.portField isValid] && [self.passwordField isValid])
     {
         NSNumber *port = [NSNumber numberWithInt:[self.portField.text intValue]];
@@ -100,18 +81,11 @@
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         
         [defaults setValue:self.addressField.text forKey:kUserDefaultsAddressKey];
-        
         [defaults setValue:port forKey:kUserDefaultsPortKey];
-        
         [defaults setValue:self.passwordField.text forKey:kUserDefaultsPassword];
         
         [defaults synchronize];
-        
-        [self.delegate configViewController:self 
-                       didFinishWithAddress:[self.addressField.text copy]
-                                    andPort:[self.portField.text intValue]
-                                   password:self.passwordField.text];
-        
+
         [[WCSession defaultSession] sendSettingsToPeer];
     }
     

@@ -9,7 +9,6 @@
 #import <XCTest/XCTest.h>
 
 #import "ConfigViewController.h"
-#import "FakeConfigPresentingViewController.h"
 #import "AddressValidator.h"
 #import "PortValidator.h"
 #import "PasswordValidator.h"
@@ -18,7 +17,7 @@
 @interface ConfigViewControllerTests : XCTestCase
 
 @property ConfigViewController *configViewController;
-@property FakeConfigPresentingViewController *presentingViewController;
+@property (nonatomic, strong) UIViewController *presentingViewController;
 
 @end
 
@@ -34,9 +33,8 @@
     
     self.configViewController = [storyboard instantiateViewControllerWithIdentifier:@"config"];
     
-    self.presentingViewController = [[FakeConfigPresentingViewController alloc] init];
+    self.presentingViewController = [[UIViewController alloc] init];
     
-    self.configViewController.delegate = self.presentingViewController;
     
     [[[UIApplication sharedApplication] keyWindow] setRootViewController:self.presentingViewController];
 }
@@ -50,157 +48,6 @@
     [super tearDown];
 }
 
-#pragma mark -
-#pragma mark Delegate related tests
-
-- (void)testNonConformingObjectCannotBeDelegate
-{
-    ConfigViewController *cvc = [[ConfigViewController alloc] init];
-    
-    XCTAssertThrows(cvc.delegate = (id <ConfigViewControllerDelegate>)[NSNull null],
-                    @"Object that doesn't implement ConfigViewController protocol cannot be delegate.");
-}
-
-- (void)testConformingObjectCanBeDelegate
-{
-    ConfigViewController *cvc = [[ConfigViewController alloc] init];
-    
-    XCTAssertNoThrow(cvc.delegate = self.presentingViewController,
-                     @"Object conforming to ConfigViewDelegate protocol should be used as delegate.");
-}
-
-- (void)testNilCanBeSetAsDelegate
-{
-    ConfigViewController *cvc = [[ConfigViewController alloc] init];
-    
-    cvc.delegate = self.presentingViewController;
-    
-    XCTAssertNoThrow(cvc.delegate = nil, @"Exception should not be thrown when setting nil as delegate.");
-    
-    XCTAssertNil(cvc.delegate, @"ConfigViewController should allow unsetting delegate");
-    
-}
-
-- (void)testTappingCancelClosesConfigWithoutCallingDelegateMethod
-{
-    self.presentingViewController.delegateMethodCalled = NO;
-    
-    [self.presentingViewController presentViewController:self.configViewController
-                                                animated:NO
-                                              completion:NULL];
-    
-    [self.configViewController cancelPressed];
-    
-    // Wait for view dismissal animation to finish.
-    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate dateWithTimeIntervalSinceNow: 1.0]];
-    
-    XCTAssertFalse(self.presentingViewController.delegateMethodCalled,
-                   @"Delegate method must not be called when Cancel button is tapped.");
-    XCTAssertNil(self.presentingViewController.presentedViewController,
-                 @"Tapping Cancel button should dismiss modally presented ConfigViewController");
-    
-}
-
-- (void)testTappingOKClosesConfigAndTellsTheInputToDelegate
-{
-    self.presentingViewController.delegateMethodCalled = NO;
-    self.presentingViewController.ipAddressString = nil;
-    self.presentingViewController.port = 0;
-    
-    [self.presentingViewController presentViewController:self.configViewController
-                                                animated:NO
-                                              completion:NULL];
-    
-    NSString *addressString = @"192.168.2.1";
-    NSString *portString = @"8080";
-    NSString *password = @"trustno1";
-    
-    self.configViewController.addressField.text = addressString;
-    self.configViewController.portField.text = portString;
-    self.configViewController.passwordField.text = password;
-    
-    [self.configViewController okPressed];
-    
-    // Wait for view dismissal animation to finish.
-    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate dateWithTimeIntervalSinceNow: 1.0]];
-    
-    XCTAssertTrue(self.presentingViewController.delegateMethodCalled,
-                  @"Delegate method should be called when IP:port fields are filled and OK button is tapped");
-    
-    XCTAssertEqualObjects(self.presentingViewController.ipAddressString, addressString,
-                   @"ConfigViewController should tell the delegate text in its address field.");
-    
-    XCTAssertEqual(self.presentingViewController.port, [portString intValue],
-                  @"ConfigViewController should tell the delegate port number user entered");
-    
-    XCTAssertEqualObjects(self.presentingViewController.password,
-                          password, @"ConfigViewController should tell the delegate a password user entered.");
-    
-    XCTAssertNil(self.presentingViewController.presentedViewController,
-                 @"ConfigViewController should be dismissed after OK is tapped");
-    
-}
-
-- (void)testTappingOKClosesConfigButDoesntCallDelegateIfInputIsntValid
-{
-    self.presentingViewController.delegateMethodCalled = NO;
-    
-    [self.presentingViewController presentViewController:self.configViewController
-                                                animated:NO
-                                              completion:NULL];
-    
-    self.configViewController.addressField.text = @"192.168.2.1";
-    self.configViewController.portField.text = @"INVALID PORT INPUT";
-    self.configViewController.passwordField.text = @"a";
-    
-    [self.configViewController okPressed];
-    
-    // Wait for view dismissal animation to finish.
-    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate dateWithTimeIntervalSinceNow: 1.0]];
-    
-    XCTAssertFalse(self.presentingViewController.delegateMethodCalled,
-                   @"ConfigViewController should not call delegate if invalid port is entered.");
-    
-    XCTAssertNil(self.presentingViewController.presentedViewController,
-                 @"ConfigViewController should be dismissed after OK is tapped");
-    
-    self.presentingViewController.delegateMethodCalled = NO;
-    
-    [self.presentingViewController presentViewController:self.configViewController
-                                                animated:NO
-                                              completion:NULL];
-    
-    self.configViewController.addressField.text = @"INVALID IP ADDR";
-    self.configViewController.portField.text = @"80";
-    self.configViewController.passwordField.text = @"a";
-    
-    [self.configViewController okPressed];
-    
-    // Wait for view dismissal animation to finish.
-    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate dateWithTimeIntervalSinceNow: 1.0]];
-    
-    XCTAssertFalse(self.presentingViewController.delegateMethodCalled,
-                   @"ConfigViewController should not call delegate if invalid IP is entered.");
-    
-    XCTAssertNil(self.presentingViewController.presentedViewController,
-                 @"ConfigViewController should be dismissed after OK is tapped");
-    
-    self.configViewController.addressField.text = @"192.168.2.1";
-    self.configViewController.portField.text = @"80";
-    self.configViewController.passwordField.text = @"";
-    
-    [self.configViewController okPressed];
-    
-    // Wait for view dismissal animation to finish.
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
-    
-    XCTAssertFalse(self.presentingViewController.delegateMethodCalled,
-                   @"ConfigViewController should not call delegate if invalid password is entered.");
-    
-    XCTAssertNil(self.presentingViewController.presentedViewController,
-                 @"ConfigViewController should be dismissed after OK is tapped");
-    
-}
 
 #pragma mark -
 #pragma mark View lifecycle related tests

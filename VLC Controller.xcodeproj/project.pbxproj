@@ -43,7 +43,6 @@
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
 		4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */; };
 		4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */; };
-		4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */; };
 		4DC7FEF518720F3200BAD690 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */; };
 		4DF57FBA18748019007D5F35 /* RemoteControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FB918748019007D5F35 /* RemoteControlViewController.m */; };
 		4DF57FBE18749DEC007D5F35 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FBD18749DEC007D5F35 /* PlayerManager.m */; };
@@ -161,8 +160,6 @@
 		4DC7FEEB1871C75100BAD690 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortValidatorTests.m; sourceTree = "<group>"; };
 		4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewControllerTests.m; sourceTree = "<group>"; };
-		4DC7FEF11871E9ED00BAD690 /* FakeConfigPresentingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeConfigPresentingViewController.h; sourceTree = "<group>"; };
-		4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeConfigPresentingViewController.m; sourceTree = "<group>"; };
 		4DC7FEF418720F3200BAD690 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4DC7FEF6187328A200BAD690 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4DF57FB818748019007D5F35 /* RemoteControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteControlViewController.h; sourceTree = "<group>"; };
@@ -417,8 +414,6 @@
 				4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */,
 				4DC7FEED1871D25900BAD690 /* PortValidatorTests.m */,
 				4DC7FEEF1871E97300BAD690 /* ConfigViewControllerTests.m */,
-				4DC7FEF11871E9ED00BAD690 /* FakeConfigPresentingViewController.h */,
-				4DC7FEF21871E9ED00BAD690 /* FakeConfigPresentingViewController.m */,
 				4D004684188DC0D700636F50 /* PasswordValidatorTests.m */,
 				4D15B7F11896F994002A8294 /* MockPlayerCommunicator.h */,
 				4D15B7F21896F994002A8294 /* MockPlayerCommunicator.m */,
@@ -827,7 +822,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DC7FEF31871E9ED00BAD690 /* FakeConfigPresentingViewController.m in Sources */,
 				4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */,
 				4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */,
 				4D15B7F31896F994002A8294 /* MockPlayerCommunicator.m in Sources */,
