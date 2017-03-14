@@ -14,5 +14,6 @@
 @property (nonatomic, assign) NSTimeInterval duration;
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *uri;
+@property (nonatomic, assign) BOOL isCurrent;
 
 @end
