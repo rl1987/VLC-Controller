@@ -98,6 +98,17 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:command];
 }
 
+- (void)enqueueRemoteFile:(RemoteFile *)remoteFile
+{
+    assert(remoteFile.uri);
+    
+    PlayerCommand *command = [[PlayerCommand alloc] init];
+    command.commandType = PlayerCommandEnqueueInput;
+    command.input = remoteFile.uri;
+    
+    [self.communicator sendCommand:command];
+}
+
 - (void)stop
 {
     [self.communicator sendCommand:[self commandWithType:PlayerCommandStop]];

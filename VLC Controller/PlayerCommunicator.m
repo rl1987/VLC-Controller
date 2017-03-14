@@ -49,6 +49,10 @@
             arguments = @{ @"command" : @"in_play",
                            @"input" : command.input };
             break;
+            case PlayerCommandEnqueueInput:
+            arguments = @{ @"command" : @"in_enqueue",
+                           @"input" : command.input };
+            break;
             case PlayerCommandPause:
             arguments = @{ @"command" : @"pl_pause" };
             break;

@@ -55,7 +55,27 @@
     cell.textLabel.text = remoteFile.fileName;
     cell.imageView.image = remoteFile.isDirectory ? [UIImage imageNamed:@"Directory"] : [UIImage imageNamed:@"File"];
     
+    if (remoteFile.isDirectory == NO) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+        [button addTarget:self action:@selector(addButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+        
+        button.tag = indexPath.row;
+        
+        cell.accessoryView = button;
+    } else {
+        cell.accessoryView = nil;
+    }
+    
     return cell;
+}
+
+- (void)addButtonTapped:(UIButton *)sender
+{
+    NSUInteger index = sender.tag;
+    
+    RemoteFile *remoteFile = self.remoteFiles[index];
+    
+    [[PlayerManager defaultManager] enqueueRemoteFile:remoteFile];
 }
 
 #pragma mark - Table view delegate
