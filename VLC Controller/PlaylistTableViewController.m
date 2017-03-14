@@ -8,6 +8,8 @@
 
 #import "PlaylistTableViewController.h"
 
+#import "PlayerManager.h"
+
 @interface PlaylistTableViewController ()
 
 @end
@@ -24,9 +26,13 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [[PlayerManager defaultManager] getPlaylistWithCompletionHandler:^(Playlist *playlist, NSError *error) {
+        DDLogInfo(@"%@",playlist);
+    }];
 }
 
 #pragma mark - Table view data source

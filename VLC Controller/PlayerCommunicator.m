@@ -158,4 +158,29 @@
     
 }
 
+- (void)getPlaylistWithCompletionHandler:(void (^)(NSDictionary *jsonDictionary, NSError *error))completion
+{
+    if (!self.hostname)
+        return;
+    
+    NSString *urlString = [NSString stringWithFormat:@"http://%@:%d/requests/playlist.json", self.hostname, self.port];
+    
+    [self.httpSessionManager.requestSerializer setAuthorizationHeaderFieldWithUsername:@"" password:self.password];
+    
+    [self.httpSessionManager GET:urlString
+                      parameters:nil
+                        progress:nil
+                         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                             DDLogDebug(@"%@",responseObject);
+                             
+                             if (completion)
+                                 completion(responseObject, nil);
+                         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                             DDLogError(@"%@",error);
+                             
+                             if (completion)
+                                 completion(nil, error);
+                         }];
+}
+
 @end

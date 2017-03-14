@@ -95,11 +95,6 @@
     [self.playerManager changeVolumeBy:10];
 }
 
-- (IBAction)playlistPressed:(id)sender
-{
-    // TODO
-}
-
 - (IBAction)shuffleButtonTapped:(id)sender
 {
     [self.playerManager toggleShuffle];

@@ -46,6 +46,15 @@
 		4DA840FF1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */; };
 		4DA841021E76F98A0021F01F /* RemoteFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA841011E76F98A0021F01F /* RemoteFilesTableViewController.m */; };
 		4DA841051E781F360021F01F /* PlaylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA841041E781F350021F01F /* PlaylistTableViewController.m */; };
+		4DA841081E782EC50021F01F /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA841071E782EC50021F01F /* Playlist.m */; };
+		4DA8410B1E782FFA0021F01F /* PlaylistEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8410A1E782FFA0021F01F /* PlaylistEntry.m */; };
+		4DA8410E1E7838D50021F01F /* PlaylistBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8410D1E7838D50021F01F /* PlaylistBuilder.m */; };
+		4DA8410F1E783EFF0021F01F /* PlaylistBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8410D1E7838D50021F01F /* PlaylistBuilder.m */; };
+		4DA841101E783F010021F01F /* PlaylistBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8410D1E7838D50021F01F /* PlaylistBuilder.m */; };
+		4DA841111E783F040021F01F /* PlaylistEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8410A1E782FFA0021F01F /* PlaylistEntry.m */; };
+		4DA841121E783F050021F01F /* PlaylistEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA8410A1E782FFA0021F01F /* PlaylistEntry.m */; };
+		4DA841131E783F070021F01F /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA841071E782EC50021F01F /* Playlist.m */; };
+		4DA841141E783F080021F01F /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA841071E782EC50021F01F /* Playlist.m */; };
 		4DAA17161895707600D41033 /* PlayerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DAA17151895707600D41033 /* PlayerCommand.m */; };
 		4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */; };
 		4DC7FEEC1871C75100BAD690 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7FEEB1871C75100BAD690 /* XCTest.framework */; };
@@ -170,6 +179,12 @@
 		4DA841011E76F98A0021F01F /* RemoteFilesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteFilesTableViewController.m; sourceTree = "<group>"; };
 		4DA841031E781F350021F01F /* PlaylistTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistTableViewController.h; sourceTree = "<group>"; };
 		4DA841041E781F350021F01F /* PlaylistTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistTableViewController.m; sourceTree = "<group>"; };
+		4DA841061E782EC50021F01F /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		4DA841071E782EC50021F01F /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		4DA841091E782FFA0021F01F /* PlaylistEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistEntry.h; sourceTree = "<group>"; };
+		4DA8410A1E782FFA0021F01F /* PlaylistEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistEntry.m; sourceTree = "<group>"; };
+		4DA8410C1E7838D50021F01F /* PlaylistBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistBuilder.h; sourceTree = "<group>"; };
+		4DA8410D1E7838D50021F01F /* PlaylistBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistBuilder.m; sourceTree = "<group>"; };
 		4DAA17141895707600D41033 /* PlayerCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerCommand.h; sourceTree = "<group>"; };
 		4DAA17151895707600D41033 /* PlayerCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCommand.m; sourceTree = "<group>"; };
 		4DC7FEE91871C4D000BAD690 /* AddressValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressValidatorTests.m; sourceTree = "<group>"; };
@@ -335,6 +350,12 @@
 				4DA840F71E76DD200021F01F /* RemoteFile.m */,
 				4DA840F91E76EA950021F01F /* RemoteFileBuilder.h */,
 				4DA840FA1E76EA950021F01F /* RemoteFileBuilder.m */,
+				4DA841061E782EC50021F01F /* Playlist.h */,
+				4DA841071E782EC50021F01F /* Playlist.m */,
+				4DA841091E782FFA0021F01F /* PlaylistEntry.h */,
+				4DA8410A1E782FFA0021F01F /* PlaylistEntry.m */,
+				4DA8410C1E7838D50021F01F /* PlaylistBuilder.h */,
+				4DA8410D1E7838D50021F01F /* PlaylistBuilder.m */,
 			);
 			name = "Biz logic";
 			sourceTree = "<group>";
@@ -806,13 +827,16 @@
 			files = (
 				4D21620F1E632A4300042045 /* PlayerManager.m in Sources */,
 				4D2162101E632A4800042045 /* PlayerCommunicator.m in Sources */,
+				4DA841101E783F010021F01F /* PlaylistBuilder.m in Sources */,
 				4D2162121E632A5600042045 /* PlayerStatus.m in Sources */,
+				4DA841141E783F080021F01F /* Playlist.m in Sources */,
 				4D2162251E64863A00042045 /* WCSession+Settings.m in Sources */,
 				4D2162131E632A5800042045 /* PlayerCommand.m in Sources */,
 				4D2161F81E62FB4F00042045 /* ExtensionDelegate.m in Sources */,
 				4D2161FE1E62FB4F00042045 /* ComplicationController.m in Sources */,
 				4D2162111E632A4B00042045 /* PlayerStatusBuilder.m in Sources */,
 				4D2161F51E62FB4F00042045 /* InterfaceController.m in Sources */,
+				4DA841121E783F050021F01F /* PlaylistEntry.m in Sources */,
 				4DA840FE1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */,
 				4DA840FC1E76F2DF0021F01F /* RemoteFile.m in Sources */,
 				4D2161FB1E62FB4F00042045 /* NotificationController.m in Sources */,
@@ -831,6 +855,7 @@
 				4DA840FB1E76EA950021F01F /* RemoteFileBuilder.m in Sources */,
 				4DA840F81E76DD200021F01F /* RemoteFile.m in Sources */,
 				4DAA17161895707600D41033 /* PlayerCommand.m in Sources */,
+				4DA841081E782EC50021F01F /* Playlist.m in Sources */,
 				4DF57FC418749E15007D5F35 /* PlayerStatusBuilder.m in Sources */,
 				4DA841021E76F98A0021F01F /* RemoteFilesTableViewController.m in Sources */,
 				B7DEDDF2157A6D7000ADBD36 /* AddressValidator.m in Sources */,
@@ -839,11 +864,13 @@
 				4DA840EB1E75CA880021F01F /* AboutViewController.m in Sources */,
 				B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */,
 				4DA840F41E76C2460021F01F /* AcknowledgementsViewController.m in Sources */,
+				4DA8410E1E7838D50021F01F /* PlaylistBuilder.m in Sources */,
 				4DA840F11E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Sources */,
 				B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */,
 				4DF57FC718749E22007D5F35 /* PlayerStatus.m in Sources */,
 				4D004683188DC0A100636F50 /* PasswordValidator.m in Sources */,
 				4DF57FBA18748019007D5F35 /* RemoteControlViewController.m in Sources */,
+				4DA8410B1E782FFA0021F01F /* PlaylistEntry.m in Sources */,
 				4DA841051E781F360021F01F /* PlaylistTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -859,8 +886,11 @@
 				4DC7FEEA1871C4D000BAD690 /* AddressValidatorTests.m in Sources */,
 				4DA840FF1E76F2E30021F01F /* RemoteFileBuilder.m in Sources */,
 				4DC7FEF01871E97300BAD690 /* ConfigViewControllerTests.m in Sources */,
+				4DA841131E783F070021F01F /* Playlist.m in Sources */,
 				4DA840FD1E76F2E00021F01F /* RemoteFile.m in Sources */,
 				4DC7FEEE1871D25900BAD690 /* PortValidatorTests.m in Sources */,
+				4DA8410F1E783EFF0021F01F /* PlaylistBuilder.m in Sources */,
+				4DA841111E783F040021F01F /* PlaylistEntry.m in Sources */,
 				4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

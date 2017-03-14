@@ -28,7 +28,6 @@
 - (IBAction)nextPressed:(id)sender;
 - (IBAction)softerPressed:(id)sender;
 - (IBAction)louderPressed:(id)sender;
-- (IBAction)playlistPressed:(id)sender;
 - (IBAction)volumeSliderValueChanged:(UISlider *)sender;
 - (IBAction)shuffleButtonTapped:(id)sender;
 - (IBAction)repeatButtonTapped:(id)sender;

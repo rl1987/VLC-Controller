@@ -11,12 +11,14 @@
 #import "PlayerStatusBuilder.h"
 #import "RemoteFileBuilder.h"
 #import "PlayerCommunicator.h"
+#import "PlaylistBuilder.h"
 
 @interface PlayerManager() <PlayerCommunicatorDelegate>
 
 @property (nonatomic, strong) PlayerCommunicator *communicator;
 @property (nonatomic, strong) PlayerStatusBuilder *playerStatusBuilder;
 @property (nonatomic, strong) RemoteFileBuilder *remoteFileBuilder;
+@property (nonatomic, strong) PlaylistBuilder *playlistBuilder;
 
 @property (nonatomic, strong) NSTimer *statusUpdateTimer;
 
@@ -56,6 +58,7 @@ static PlayerManager *_defaultManager;
         
         self.playerStatusBuilder = [[PlayerStatusBuilder alloc] init];
         self.remoteFileBuilder = [[RemoteFileBuilder alloc] init];
+        self.playlistBuilder = [[PlaylistBuilder alloc] init];
         
         [[NSNotificationCenter defaultCenter] addObserverForName:NSUserDefaultsDidChangeNotification
                                                           object:nil
@@ -207,6 +210,18 @@ static PlayerManager *_defaultManager;
                 completion(nil, error);
             else
                 completion([self.remoteFileBuilder remoteFilesFromJSONDictionary:jsonDictionary], nil);
+        }
+    }];
+}
+
+- (void)getPlaylistWithCompletionHandler:(PlaylistRequestCompletionHandler)completion
+{
+    [self.communicator getPlaylistWithCompletionHandler:^(NSDictionary *jsonDictionary, NSError *error) {
+        if (completion) {
+            if (error)
+                completion(nil, error);
+            else
+                completion([self.playlistBuilder playlistFromJSONDictionary:jsonDictionary], nil);
         }
     }];
 }

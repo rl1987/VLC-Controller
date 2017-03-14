@@ -16,8 +16,10 @@
 
 #import "PlayerStatus.h"
 #import "RemoteFile.h"
+#import "Playlist.h"
 
 typedef void (^FileListingCompletionHandler)(NSArray<RemoteFile *> *files, NSError *error);
+typedef void (^PlaylistRequestCompletionHandler)(Playlist *playlist, NSError *error);
 
 @class PlayerManager;
 
@@ -56,5 +58,7 @@ typedef void (^FileListingCompletionHandler)(NSArray<RemoteFile *> *files, NSErr
 
 - (void)listRemoteFilesInDirectory:(NSString *)directory withCompletionHandler:(FileListingCompletionHandler)completion;
 - (void)listRemoteFilesAtURI:(NSString *)uri withCompletionHandler:(FileListingCompletionHandler)completion;
+
+- (void)getPlaylistWithCompletionHandler:(PlaylistRequestCompletionHandler)completion;
 
 @end

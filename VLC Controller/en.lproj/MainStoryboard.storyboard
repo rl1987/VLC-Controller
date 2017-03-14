@@ -98,7 +98,6 @@
                                     <barButtonItem image="Playlist" id="hyc-rM-T1M">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <action selector="playlistPressed:" destination="odB-Yy-49K" id="9ls-wJ-v2E"/>
                                             <segue destination="odX-gu-iuQ" kind="show" id="T9K-yI-vIM"/>
                                         </connections>
                                     </barButtonItem>
@@ -241,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FlZ-GN-DJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="805"/>
+            <point key="canvasLocation" x="-148" y="805"/>
         </scene>
         <!--Config-->
         <scene sceneID="N92-4o-rag">

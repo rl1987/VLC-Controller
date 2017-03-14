@@ -34,4 +34,6 @@
                                     uri:(NSString *)uri
                       completionHandler:(void (^)(NSDictionary *jsonDictionary, NSError *error))completion;
 
+- (void)getPlaylistWithCompletionHandler:(void (^)(NSDictionary *jsonDictionary, NSError *error))completion;
+
 @end
