@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Playlist.h"
+
 @interface PlaylistTableViewController : UITableViewController
+
+@property (nonatomic, strong) Playlist *playlist;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *customBackButton;
 
 - (IBAction)doneTapped;
 
