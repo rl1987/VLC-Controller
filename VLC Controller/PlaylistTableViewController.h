@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *customBackButton;
 
 - (IBAction)doneTapped;
+- (IBAction)clearTapped;
 
 @end

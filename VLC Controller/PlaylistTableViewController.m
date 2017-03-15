@@ -96,9 +96,22 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+#pragma mark - IBActions
+
 - (IBAction)doneTapped
 {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)clearTapped
+{
+    [[PlayerManager defaultManager] clearPlaylist];
+    
+    PlaylistTableViewController *firstPTVC = [self.navigationController.viewControllers firstObject];
+    
+    firstPTVC.playlist = nil;
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

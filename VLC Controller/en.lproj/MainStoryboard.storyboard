@@ -645,6 +645,12 @@
                                 <action selector="doneTapped" destination="UvI-9I-cAx" id="LRd-54-aMo"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="uv3-zv-s19">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="clearTapped" destination="UvI-9I-cAx" id="tji-oU-6AX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="customBackButton" destination="7dt-0E-TIh" id="Abb-mC-YTK"/>

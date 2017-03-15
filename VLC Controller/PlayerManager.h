@@ -53,6 +53,7 @@ typedef void (^PlaylistRequestCompletionHandler)(Playlist *playlist, NSError *er
 - (void)toggleShuffle;
 - (void)toggleRepeat;
 - (void)toggleFullscreen;
+- (void)clearPlaylist;
 
 - (void)startReceivingStatusUpdates;
 - (void)stopReceivingStatusUpdates;

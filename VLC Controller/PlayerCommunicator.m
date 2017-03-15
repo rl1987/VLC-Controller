@@ -90,6 +90,9 @@
             case PlayerCommandToggleRepeat:
             arguments = @{ @"command" : @"pl_repeat" };
             break;
+            case PlayerCommandClearPlaylist:
+            arguments = @{ @"command" : @"pl_empty" };
+            break;
         default:
             break;
     }

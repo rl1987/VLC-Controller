@@ -235,6 +235,11 @@ static PlayerManager *_defaultManager;
     }];
 }
 
+- (void)clearPlaylist
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandClearPlaylist]];
+}
+
 #pragma mark -
 #pragma mark Player communicator delegate
 
