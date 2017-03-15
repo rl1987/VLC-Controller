@@ -294,6 +294,4 @@ static PlayerManager *_defaultManager;
     self.communicator.port = [[NSUserDefaults standardUserDefaults] integerForKey:kUserDefaultsPortKey];
 }
 
-
-
 @end
