@@ -43,7 +43,9 @@
     
     switch (command.commandType) {
             case PlayerCommandPlay:
-            arguments = @{ @"command" : @"pl_play" };
+            arguments = command.value ?
+            @{ @"command" : @"pl_play", @"id" : command.value } :
+            @{ @"command" : @"pl_play" };
             break;
             case PlayerCommandPlayInput:
             arguments = @{ @"command" : @"in_play",
@@ -69,18 +71,18 @@
             arguments = @{ @"command" : @"fullscreen" };
             break;
             case PlayerCommandSetVolume:
-            arguments = @{ @"command" : @"volume", @"val" : [NSString stringWithFormat:@"%.0f", command.value] };
+            arguments = @{ @"command" : @"volume", @"val" : [NSString stringWithFormat:@"%.0f", [command.value doubleValue]] };
             break;
             case PlayerCommandSetVolumeRelative:
             arguments = @{ @"command" : @"volume", @"val" : [NSString stringWithFormat:@"%s%.0f",
-                                                             command.value > 0.0 ? "+" : "-" ,fabs(command.value)] };
+                                                             [command.value doubleValue] > 0.0 ? "+" : "-" ,fabs([command.value doubleValue])] };
             break;
             case PlayerCommandSeek:
-            arguments = @{ @"command" : @"seek", @"val" : [NSString stringWithFormat:@"%.0f", command.value] };
+            arguments = @{ @"command" : @"seek", @"val" : [NSString stringWithFormat:@"%.0f", [command.value doubleValue]] };
             break;
             case PlayerCommandSeekRelative:
             arguments = @{ @"command" : @"seek", @"val" : [NSString stringWithFormat:@"%s%.0fS",
-                                                           command.value > 0.0 ? "+" : "-" ,fabs(command.value)] };
+                                                           [command.value doubleValue] > 0.0 ? "+" : "-" ,fabs([command.value doubleValue])] };
             break;
             case PlayerCommandToggleShuffle:
             arguments = @{ @"command" : @"pl_random" };

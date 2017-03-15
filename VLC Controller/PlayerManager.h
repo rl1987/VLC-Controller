@@ -40,6 +40,7 @@ typedef void (^PlaylistRequestCompletionHandler)(Playlist *playlist, NSError *er
 
 - (void)pause;
 - (void)play;
+- (void)playPlaylistEntry:(PlaylistEntry *)playlistEntry;
 - (void)playRemoteFile:(RemoteFile *)remoteFile;
 - (void)enqueueRemoteFile:(RemoteFile *)remoteFile;
 - (void)stop;

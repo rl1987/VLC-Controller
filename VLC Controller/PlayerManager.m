@@ -101,6 +101,15 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:command];
 }
 
+- (void)playPlaylistEntry:(PlaylistEntry *)playlistEntry
+{
+    PlayerCommand *command = [[PlayerCommand alloc] init];
+    command.commandType = PlayerCommandPlay;
+    command.value = @(playlistEntry.identifier);
+    
+    [self.communicator sendCommand:command];
+}
+
 - (void)enqueueRemoteFile:(RemoteFile *)remoteFile
 {
     assert(remoteFile.uri);
@@ -258,7 +267,7 @@ static PlayerManager *_defaultManager;
 {
     PlayerCommand *command = [self commandWithType:type];
     
-    command.value = value;
+    command.value = @(value);
     
     return command;
 }

@@ -10,10 +10,6 @@
 
 #import "PlayerManager.h"
 
-@interface PlaylistTableViewController ()
-
-@end
-
 @implementation PlaylistTableViewController
 
 - (void)viewDidLoad
@@ -93,7 +89,11 @@
         newPTVC.playlist = child;
         
         [self.navigationController pushViewController:newPTVC animated:YES];
+    } else if ([child isKindOfClass:[PlaylistEntry class]]) {
+        [[PlayerManager defaultManager] playPlaylistEntry:child];
     }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (IBAction)doneTapped
