@@ -130,16 +130,13 @@
     self.timeSlider.value = status.currentTime;
     self.volumeSlider.value = status.volume;
     
-    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-    [timeFormatter setDateFormat:@"HH:mm:ss"];
-    [timeFormatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"UTC"]];
-    
-    NSDate *d1 = [NSDate dateWithTimeIntervalSinceReferenceDate:status.duration];
-    NSDate *d2 = [NSDate dateWithTimeIntervalSinceReferenceDate:status.currentTime];
+    NSDateComponentsFormatter *dateComponentsFormatter = [[NSDateComponentsFormatter alloc] init];
+    dateComponentsFormatter.zeroFormattingBehavior = NSDateComponentsFormatterZeroFormattingBehaviorPad;
+    dateComponentsFormatter.allowedUnits = (NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
     
     self.timeLabel.text = [NSString stringWithFormat:@"%@ / %@",
-                           [timeFormatter stringFromDate:d2],
-                           [timeFormatter stringFromDate:d1]];
+                           [dateComponentsFormatter stringFromTimeInterval:status.currentTime],
+                           [dateComponentsFormatter stringFromTimeInterval:status.duration]];
     
     self.shuffleButton.alpha = status.randomized ? 1.0 : 0.5;
     self.repeatButton.alpha = status.repeating ? 1.0 : 0.5;
