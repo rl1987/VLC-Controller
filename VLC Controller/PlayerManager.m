@@ -240,6 +240,16 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:[self commandWithType:PlayerCommandClearPlaylist]];
 }
 
+- (void)removePlaylistEntry:(PlaylistEntry *)playlistEntry
+{
+    PlayerCommand *command = [[PlayerCommand alloc] init];
+    
+    command.commandType = PlayerCommandRemovePlaylistEntry;
+    command.value = @(playlistEntry.identifier);
+    
+    [self.communicator sendCommand:command];
+}
+
 #pragma mark -
 #pragma mark Player communicator delegate
 

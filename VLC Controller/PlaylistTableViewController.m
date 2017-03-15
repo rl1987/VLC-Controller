@@ -96,6 +96,30 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [self.playlist.children[indexPath.row] isKindOfClass:[PlaylistEntry class]];
+}
+
+- (void)tableView:(UITableView *)tableView
+commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
+forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        PlaylistEntry *entryToDelete = self.playlist.children[indexPath.row];
+        
+        [[PlayerManager defaultManager] removePlaylistEntry:entryToDelete];
+        
+        NSMutableArray *mutableChildrenArray = [self.playlist.children mutableCopy];
+        
+        [mutableChildrenArray removeObjectAtIndex:indexPath.row];
+        
+        self.playlist.children = [mutableChildrenArray copy];
+        
+        [self.tableView reloadData];
+    }
+}
+
 #pragma mark - IBActions
 
 - (IBAction)doneTapped

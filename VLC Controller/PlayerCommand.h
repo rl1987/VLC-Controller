@@ -23,7 +23,8 @@ typedef enum {
     PlayerCommandSeekRelative,
     PlayerCommandToggleShuffle,
     PlayerCommandToggleRepeat,
-    PlayerCommandClearPlaylist
+    PlayerCommandClearPlaylist,
+    PlayerCommandRemovePlaylistEntry
 } PlayerCommandType;
 
 @interface PlayerCommand : NSObject

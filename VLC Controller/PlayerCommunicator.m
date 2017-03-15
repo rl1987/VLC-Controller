@@ -93,6 +93,9 @@
             case PlayerCommandClearPlaylist:
             arguments = @{ @"command" : @"pl_empty" };
             break;
+            case PlayerCommandRemovePlaylistEntry:
+            arguments = @{ @"command" : @"pl_delete", @"id" : command.value };
+            break;
         default:
             break;
     }
