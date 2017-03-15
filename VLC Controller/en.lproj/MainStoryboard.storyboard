@@ -599,29 +599,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlist_cell" textLabel="abe-lV-ek6" detailTextLabel="QOY-Fe-8wd" style="IBUITableViewCellStyleValue1" id="JyN-qX-xNE">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="playlist_cell" id="KVf-RZ-kBY">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JyN-qX-xNE" id="gTz-50-1ak">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KVf-RZ-kBY" id="Qnn-bK-eax">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="abe-lV-ek6">
-                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" tag="1" contentMode="left" text="Title" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP2-8M-hB6">
+                                            <rect key="frame" x="15" y="12" width="34" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="left" layoutMarginsFollowReadableWidth="YES" text="00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="72" id="QOY-Fe-8wd">
-                                            <rect key="frame" x="288" y="11" width="72" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" alpha="0.80000001192092896" tag="2" contentMode="left" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" layoutMarginsFollowReadableWidth="YES" text="00:00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="72" translatesAutoresizingMaskIntoConstraints="NO" id="mW5-xN-5sA">
+                                            <rect key="frame" x="288" y="12" width="72" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="mW5-xN-5sA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MP2-8M-hB6" secondAttribute="trailing" constant="8" id="5gZ-Pu-K3u"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="mW5-xN-5sA" secondAttribute="bottom" constant="2" id="6xF-Eb-f7K"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="MP2-8M-hB6" secondAttribute="bottom" constant="2" id="7Uz-th-t2B"/>
+                                        <constraint firstItem="mW5-xN-5sA" firstAttribute="centerY" secondItem="Qnn-bK-eax" secondAttribute="centerY" id="U5q-EV-25X"/>
+                                        <constraint firstItem="MP2-8M-hB6" firstAttribute="leading" secondItem="Qnn-bK-eax" secondAttribute="leadingMargin" constant="7" id="bDY-Tz-Xl1"/>
+                                        <constraint firstItem="MP2-8M-hB6" firstAttribute="top" secondItem="Qnn-bK-eax" secondAttribute="topMargin" constant="4" id="mRF-7X-g2a"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="mW5-xN-5sA" secondAttribute="trailing" constant="7" id="rjL-bd-Lhw"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </tableViewCell>
@@ -645,7 +652,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eqf-IL-1Db" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="1551"/>
+            <point key="canvasLocation" x="1893.5999999999999" y="1550.3748125937032"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pnt-Oz-bDq">

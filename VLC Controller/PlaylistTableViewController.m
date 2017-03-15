@@ -59,12 +59,20 @@
     
     id child = self.playlist.children[indexPath.row];
     
+    UILabel *textLabel = [cell viewWithTag:1];
+    UILabel *detailTextLabel = [cell viewWithTag:2];
+    
     if ([child isKindOfClass:[Playlist class]]) {
-        cell.textLabel.text = [(Playlist *)child name];
-        cell.detailTextLabel.text = nil;
+        textLabel.text = [(Playlist *)child name];
+        detailTextLabel.text = nil;
     } else if ([child isKindOfClass:[PlaylistEntry class]]) {
-        cell.textLabel.text = [(PlaylistEntry *) child name];
-        cell.detailTextLabel.text = @"TODO";
+        textLabel.text = [(PlaylistEntry *) child name];
+        
+        NSDateComponentsFormatter *dateComponentsFormatter = [[NSDateComponentsFormatter alloc] init];
+        dateComponentsFormatter.zeroFormattingBehavior = NSDateComponentsFormatterZeroFormattingBehaviorPad | NSDateComponentsFormatterZeroFormattingBehaviorDropLeading;
+        dateComponentsFormatter.allowedUnits = (NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
+        
+        detailTextLabel.text = [dateComponentsFormatter stringFromTimeInterval:[(PlaylistEntry *)child duration]];
     }
     
     return cell;
