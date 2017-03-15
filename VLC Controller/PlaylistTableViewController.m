@@ -95,10 +95,21 @@
         
         [self.navigationController pushViewController:newPTVC animated:YES];
     } else if ([child isKindOfClass:[PlaylistEntry class]]) {
+        for (id c in self.playlist.children) {
+            if ([c isKindOfClass:[PlaylistEntry class]]) {
+                if ([(PlaylistEntry *)c isCurrent]){
+                    [(PlaylistEntry *)c setIsCurrent:NO];
+                    break;
+                }
+            }
+        }
+        
         [[PlayerManager defaultManager] playPlaylistEntry:child];
+        
+        [(PlaylistEntry *)child setIsCurrent:YES];
+        
+        [self.tableView reloadData];
     }
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
