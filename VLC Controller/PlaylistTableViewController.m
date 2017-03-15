@@ -61,14 +61,19 @@
     if ([child isKindOfClass:[Playlist class]]) {
         textLabel.text = [(Playlist *)child name];
         detailTextLabel.text = nil;
+        
+        [[cell viewWithTag:3] setHidden:YES];
     } else if ([child isKindOfClass:[PlaylistEntry class]]) {
-        textLabel.text = [(PlaylistEntry *) child name];
+        textLabel.text = [(PlaylistEntry *)child name];
         
         NSDateComponentsFormatter *dateComponentsFormatter = [[NSDateComponentsFormatter alloc] init];
         dateComponentsFormatter.zeroFormattingBehavior = NSDateComponentsFormatterZeroFormattingBehaviorPad | NSDateComponentsFormatterZeroFormattingBehaviorDropLeading;
         dateComponentsFormatter.allowedUnits = (NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond);
         
         detailTextLabel.text = [dateComponentsFormatter stringFromTimeInterval:[(PlaylistEntry *)child duration]];
+        
+        BOOL isCurrent =  [(PlaylistEntry *)child isCurrent];
+        [[cell viewWithTag:3] setHidden:!isCurrent];
     }
     
     return cell;

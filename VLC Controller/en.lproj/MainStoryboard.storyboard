@@ -618,15 +618,25 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHp-nU-bry">
+                                            <rect key="frame" x="0.0" y="0.0" width="6" height="43"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="6" id="lJw-M9-pBu"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstItem="mW5-xN-5sA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MP2-8M-hB6" secondAttribute="trailing" constant="8" id="5gZ-Pu-K3u"/>
                                         <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="mW5-xN-5sA" secondAttribute="bottom" constant="2" id="6xF-Eb-f7K"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="MP2-8M-hB6" secondAttribute="bottom" constant="2" id="7Uz-th-t2B"/>
+                                        <constraint firstItem="iHp-nU-bry" firstAttribute="leading" secondItem="Qnn-bK-eax" secondAttribute="leading" id="JDI-Qw-dIJ"/>
                                         <constraint firstItem="mW5-xN-5sA" firstAttribute="centerY" secondItem="Qnn-bK-eax" secondAttribute="centerY" id="U5q-EV-25X"/>
                                         <constraint firstItem="MP2-8M-hB6" firstAttribute="leading" secondItem="Qnn-bK-eax" secondAttribute="leadingMargin" constant="7" id="bDY-Tz-Xl1"/>
+                                        <constraint firstItem="iHp-nU-bry" firstAttribute="top" secondItem="Qnn-bK-eax" secondAttribute="top" id="jzs-La-f9x"/>
                                         <constraint firstItem="MP2-8M-hB6" firstAttribute="top" secondItem="Qnn-bK-eax" secondAttribute="topMargin" constant="4" id="mRF-7X-g2a"/>
+                                        <constraint firstAttribute="bottom" secondItem="iHp-nU-bry" secondAttribute="bottom" id="oGM-Fh-1Jd"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="mW5-xN-5sA" secondAttribute="trailing" constant="7" id="rjL-bd-Lhw"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -658,7 +668,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eqf-IL-1Db" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1893.5999999999999" y="1550.3748125937032"/>
+            <point key="canvasLocation" x="1893.5999999999999" y="1549.4752623688157"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pnt-Oz-bDq">
