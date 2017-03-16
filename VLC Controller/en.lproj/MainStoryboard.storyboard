@@ -47,7 +47,7 @@
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Subtitles"/>
                                 <connections>
-                                    <action selector="repeatButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="FC3-fd-tpq"/>
+                                    <action selector="subtitleButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="aQo-mr-Bfw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpX-Mz-Xh7">
@@ -202,10 +202,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHX-AN-3xd">
                                                 <rect key="frame" x="8" y="79" width="25" height="25"/>
                                                 <state key="normal" image="Minus"/>
+                                                <connections>
+                                                    <action selector="popoverMinusButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="hEw-zn-9PE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJN-lZ-css">
                                                 <rect key="frame" x="207" y="79" width="25" height="25"/>
                                                 <state key="normal" image="Plus"/>
+                                                <connections>
+                                                    <action selector="popoverPlusButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="3WO-A1-Lqj"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Sub delay:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA7-9X-ef2">
                                                 <rect key="frame" x="80" y="54" width="80" height="21"/>
@@ -323,6 +329,10 @@
                         <outlet property="filenameLabel" destination="N61-A0-zHg" id="XCU-sd-Vho"/>
                         <outlet property="fullscreenButton" destination="iVB-0W-EIh" id="tXE-zA-Inm"/>
                         <outlet property="playButton" destination="36q-ke-PG8" id="t4s-kh-HgS"/>
+                        <outlet property="popoverCentralLabel" destination="FA7-9X-ef2" id="QdO-dk-eK4"/>
+                        <outlet property="popoverContainerView" destination="fGx-CX-yit" id="D4Q-LQ-7ke"/>
+                        <outlet property="popoverMainButton" destination="lEB-or-loa" id="0Vq-yc-gMn"/>
+                        <outlet property="popoverNumberLabel" destination="RO9-bf-nk9" id="Fat-vn-yMB"/>
                         <outlet property="repeatButton" destination="8KH-91-xZe" id="cBs-Ir-2oy"/>
                         <outlet property="shuffleButton" destination="WF3-kS-T02" id="86x-hA-3nc"/>
                         <outlet property="timeLabel" destination="Wgx-Jp-ENr" id="uK9-PN-wfU"/>

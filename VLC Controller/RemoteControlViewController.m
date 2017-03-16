@@ -115,6 +115,17 @@
     [self.playerManager toggleFullscreen];
 }
 
+- (IBAction)subtitleButtonTapped:(id)sender
+{
+    
+}
+
+- (IBAction)popoverMinusButtonTapped:(id)sender {
+}
+
+- (IBAction)popoverPlusButtonTapped:(id)sender {
+}
+
 #pragma mark -
 #pragma mark Player Manager delegate
 

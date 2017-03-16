@@ -19,6 +19,11 @@
 @property (strong, nonatomic) IBOutlet UIButton *repeatButton;
 @property (strong, nonatomic) IBOutlet UIButton *fullscreenButton;
 
+@property (weak, nonatomic) IBOutlet UIView *popoverContainerView;
+@property (weak, nonatomic) IBOutlet UIButton *popoverMainButton;
+@property (weak, nonatomic) IBOutlet UILabel *popoverCentralLabel;
+@property (weak, nonatomic) IBOutlet UILabel *popoverNumberLabel;
+
 - (IBAction)timeSliderValueChanged:(id)sender;
 - (IBAction)seekBackPressed:(id)sender;
 - (IBAction)seekForwardPressed:(id)sender;
@@ -32,5 +37,9 @@
 - (IBAction)shuffleButtonTapped:(id)sender;
 - (IBAction)repeatButtonTapped:(id)sender;
 - (IBAction)fullscreenButtonTapped:(id)sender;
+- (IBAction)subtitleButtonTapped:(id)sender;
+
+- (IBAction)popoverMinusButtonTapped:(id)sender;
+- (IBAction)popoverPlusButtonTapped:(id)sender;
 
 @end
