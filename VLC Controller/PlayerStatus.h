@@ -18,5 +18,6 @@
 @property (nonatomic, strong) NSString *filename;
 @property (nonatomic, assign) BOOL randomized;
 @property (nonatomic, assign) BOOL repeating;
+@property (nonatomic, assign) NSTimeInterval subtitleDelay;
 
 @end

@@ -96,6 +96,12 @@
             case PlayerCommandRemovePlaylistEntry:
             arguments = @{ @"command" : @"pl_delete", @"id" : command.value };
             break;
+            case PlayerCommandSubtitleDelayIncrease:
+            arguments = @{ @"command" : @"key", @"val" : @"subdelay-up" };
+            break;
+            case PlayerCommandSubtitleDelayDecrease:
+            arguments = @{ @"command" : @"key", @"val" : @"subdelay-down" };
+            break;
         default:
             break;
     }

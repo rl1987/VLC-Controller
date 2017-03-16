@@ -121,9 +121,11 @@
 }
 
 - (IBAction)popoverMinusButtonTapped:(id)sender {
+    [self.playerManager decreaseSubtitleDelay];
 }
 
 - (IBAction)popoverPlusButtonTapped:(id)sender {
+    [self.playerManager increaseSubtitleDelay];
 }
 
 - (IBAction)popoverBackgroundTapped:(id)sender {
@@ -156,6 +158,10 @@
     self.shuffleButton.alpha = status.randomized ? 1.0 : 0.5;
     self.repeatButton.alpha = status.repeating ? 1.0 : 0.5;
     self.fullscreenButton.alpha = status.fullscreen ? 1.0 : 0.5;
+    
+    if (!self.popoverContainerView.hidden) {
+        self.popoverNumberLabel.text = [NSString stringWithFormat:@"%.0f ms", status.subtitleDelay * 1000];
+    }
 }
 
 @end
