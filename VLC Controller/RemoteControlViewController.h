@@ -41,5 +41,6 @@
 
 - (IBAction)popoverMinusButtonTapped:(id)sender;
 - (IBAction)popoverPlusButtonTapped:(id)sender;
+- (IBAction)popoverBackgroundTapped:(id)sender;
 
 @end

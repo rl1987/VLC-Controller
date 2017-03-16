@@ -117,13 +117,17 @@
 
 - (IBAction)subtitleButtonTapped:(id)sender
 {
-    
+    self.popoverContainerView.hidden = NO;
 }
 
 - (IBAction)popoverMinusButtonTapped:(id)sender {
 }
 
 - (IBAction)popoverPlusButtonTapped:(id)sender {
+}
+
+- (IBAction)popoverBackgroundTapped:(id)sender {
+    self.popoverContainerView.hidden = YES;
 }
 
 #pragma mark -
