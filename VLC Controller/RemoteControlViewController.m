@@ -120,6 +120,11 @@
     self.popoverContainerView.hidden = NO;
 }
 
+- (IBAction)popoverMainButtonTapped:(id)sender
+{
+    [self.playerManager switchSubtitles];
+}
+
 - (IBAction)popoverMinusButtonTapped:(id)sender {
     [self.playerManager decreaseSubtitleDelay];
 }

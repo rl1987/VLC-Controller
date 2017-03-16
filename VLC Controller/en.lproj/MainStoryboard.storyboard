@@ -202,6 +202,9 @@
                                                 <state key="normal" title="Switch subtitle">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="popoverMainButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="xNq-f2-WPz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHX-AN-3xd">
                                                 <rect key="frame" x="8" y="79" width="25" height="25"/>

@@ -102,6 +102,9 @@
             case PlayerCommandSubtitleDelayDecrease:
             arguments = @{ @"command" : @"key", @"val" : @"subdelay-down" };
             break;
+            case PlayerCommandSwitchSubtitles:
+            arguments = @{ @"command" : @"key", @"val" : @"subtitle-track" };
+            break;
         default:
             break;
     }

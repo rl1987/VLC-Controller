@@ -26,7 +26,8 @@ typedef enum {
     PlayerCommandClearPlaylist,
     PlayerCommandRemovePlaylistEntry,
     PlayerCommandSubtitleDelayIncrease,
-    PlayerCommandSubtitleDelayDecrease
+    PlayerCommandSubtitleDelayDecrease,
+    PlayerCommandSwitchSubtitles
 } PlayerCommandType;
 
 @interface PlayerCommand : NSObject
