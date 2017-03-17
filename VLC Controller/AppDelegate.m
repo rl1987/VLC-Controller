@@ -37,7 +37,8 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 
 - (void)sessionDidBecomeInactive:(WCSession *)session
 {
-    
+    DDLogWarn(@"AppDelegate sessionDidBecomeInactive:");
+    DDLogWarn(@"%@",session);
 }
 
 - (void)sessionDidDeactivate:(WCSession *)session
