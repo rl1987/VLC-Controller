@@ -19,5 +19,6 @@
 @property (nonatomic, assign) BOOL randomized;
 @property (nonatomic, assign) BOOL repeating;
 @property (nonatomic, assign) NSTimeInterval subtitleDelay;
+@property (nonatomic, assign) NSTimeInterval audioDelay;
 
 @end

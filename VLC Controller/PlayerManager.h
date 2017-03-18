@@ -58,6 +58,9 @@ typedef void (^PlaylistRequestCompletionHandler)(Playlist *playlist, NSError *er
 - (void)increaseSubtitleDelay;
 - (void)decreaseSubtitleDelay;
 - (void)switchSubtitles;
+- (void)increaseAudioDelay;
+- (void)decreaseAudioDelay;
+- (void)switchAudioTrack;
 
 - (void)startReceivingStatusUpdates;
 - (void)stopReceivingStatusUpdates;

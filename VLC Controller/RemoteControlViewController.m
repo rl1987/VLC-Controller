@@ -135,19 +135,22 @@ typedef enum {
 {
     if (self.popoverState == PopoverStateSubtitle)
         [self.playerManager switchSubtitles];
-    else if (self.popoverState == PopoverStateAudio) {
-        // TODO
-    }
+    else if (self.popoverState == PopoverStateAudio)
+        [self.playerManager switchAudioTrack];
 }
 
 - (IBAction)popoverMinusButtonTapped:(id)sender {
     if (self.popoverState == PopoverStateSubtitle)
         [self.playerManager decreaseSubtitleDelay];
+    else if (self.popoverState == PopoverStateAudio)
+        [self.playerManager decreaseAudioDelay];
 }
 
 - (IBAction)popoverPlusButtonTapped:(id)sender {
     if (self.popoverState == PopoverStateSubtitle)
         [self.playerManager increaseSubtitleDelay];
+    else if (self.popoverState == PopoverStateAudio)
+        [self.playerManager increaseAudioDelay];
 }
 
 - (IBAction)popoverBackgroundTapped:(id)sender {
@@ -207,6 +210,8 @@ typedef enum {
     
     if (self.popoverState == PopoverStateSubtitle) {
         self.popoverNumberLabel.text = [NSString stringWithFormat:@"%.0f ms", status.subtitleDelay * 1000];
+    } else if (self.popoverState == PopoverStateAudio) {
+        self.popoverNumberLabel.text = [NSString stringWithFormat:@"%.0f ms", status.audioDelay * 1000];
     }
 }
 

@@ -265,6 +265,21 @@ static PlayerManager *_defaultManager;
     [self.communicator sendCommand:[self commandWithType:PlayerCommandSwitchSubtitles]];
 }
 
+- (void)increaseAudioDelay
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandAudioDelayIncrease]];
+}
+
+- (void)decreaseAudioDelay
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandAudioDelayDecrease]];
+}
+
+- (void)switchAudioTrack
+{
+    [self.communicator sendCommand:[self commandWithType:PlayerCommandSwitchAudioTrack]];
+}
+
 #pragma mark -
 #pragma mark Player communicator delegate
 

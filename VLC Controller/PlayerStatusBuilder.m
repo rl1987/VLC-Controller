@@ -25,6 +25,7 @@
     status.randomized = [jsonDictionary[@"random"] boolValue];
     status.repeating = [jsonDictionary[@"repeat"] boolValue];
     status.subtitleDelay = [jsonDictionary[@"subtitledelay"] doubleValue];
+    status.audioDelay = [jsonDictionary[@"audiodelay"] doubleValue];
     
     return status;
 }
