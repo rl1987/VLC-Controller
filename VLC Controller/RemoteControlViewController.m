@@ -11,9 +11,16 @@
 #import "ConfigViewController.h"
 #import "PlayerManager.h"
 
+typedef enum {
+    PopoverStateNotPresented = 0,
+    PopoverStateSubtitle,
+    PopoverStateAudio
+} PopoverState;
+
 @interface RemoteControlViewController () <PlayerManagerDelegate>
 
 @property (nonatomic, strong) PlayerManager *playerManager;
+@property (nonatomic, assign) PopoverState popoverState;
 
 @end
 
@@ -117,24 +124,58 @@
 
 - (IBAction)subtitleButtonTapped:(id)sender
 {
-    self.popoverContainerView.hidden = NO;
+    [self presentPopoverWithState:PopoverStateSubtitle];
+}
+
+- (IBAction)audioButtonTapped:(id)sender {
+    [self presentPopoverWithState:PopoverStateAudio];
 }
 
 - (IBAction)popoverMainButtonTapped:(id)sender
 {
-    [self.playerManager switchSubtitles];
+    if (self.popoverState == PopoverStateSubtitle)
+        [self.playerManager switchSubtitles];
+    else if (self.popoverState == PopoverStateAudio) {
+        // TODO
+    }
 }
 
 - (IBAction)popoverMinusButtonTapped:(id)sender {
-    [self.playerManager decreaseSubtitleDelay];
+    if (self.popoverState == PopoverStateSubtitle)
+        [self.playerManager decreaseSubtitleDelay];
 }
 
 - (IBAction)popoverPlusButtonTapped:(id)sender {
-    [self.playerManager increaseSubtitleDelay];
+    if (self.popoverState == PopoverStateSubtitle)
+        [self.playerManager increaseSubtitleDelay];
 }
 
 - (IBAction)popoverBackgroundTapped:(id)sender {
     self.popoverContainerView.hidden = YES;
+    self.popoverState = PopoverStateNotPresented;
+}
+
+#pragma mark -
+
+- (void)presentPopoverWithState:(PopoverState)popoverState
+{
+    self.popoverState = popoverState;
+    
+    if (popoverState == PopoverStateAudio)
+    {
+        self.popoverCentralLabel.text = @"Audio delay:";
+        [self.popoverMainButton setTitle:@"Switch audio" forState:UIControlStateNormal];
+    }
+    else if (popoverState == PopoverStateSubtitle)
+    {
+        self.popoverCentralLabel.text = @"Sub delay:";
+        [self.popoverMainButton setTitle:@"Switch subtitle" forState:UIControlStateNormal];
+    }
+    
+    self.popoverNumberLabel.text = @"";
+    
+    self.popoverContainerView.hidden = NO;
+    [self.view bringSubviewToFront:self.popoverContainerView];
 }
 
 #pragma mark -
@@ -164,7 +205,7 @@
     self.repeatButton.alpha = status.repeating ? 1.0 : 0.5;
     self.fullscreenButton.alpha = status.fullscreen ? 1.0 : 0.5;
     
-    if (!self.popoverContainerView.hidden) {
+    if (self.popoverState == PopoverStateSubtitle) {
         self.popoverNumberLabel.text = [NSString stringWithFormat:@"%.0f ms", status.subtitleDelay * 1000];
     }
 }

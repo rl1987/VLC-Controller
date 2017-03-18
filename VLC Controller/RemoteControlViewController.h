@@ -38,6 +38,7 @@
 - (IBAction)repeatButtonTapped:(id)sender;
 - (IBAction)fullscreenButtonTapped:(id)sender;
 - (IBAction)subtitleButtonTapped:(id)sender;
+- (IBAction)audioButtonTapped:(id)sender;
 
 - (IBAction)popoverMainButtonTapped:(id)sender;
 - (IBAction)popoverMinusButtonTapped:(id)sender;
