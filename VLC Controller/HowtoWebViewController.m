@@ -8,6 +8,8 @@
 
 #import "HowtoWebViewController.h"
 
+#import <SVProgressHUD/SVProgressHUD.h>
+
 @interface HowtoWebViewController ()
 
 @end
@@ -27,7 +29,27 @@
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
+    [SVProgressHUD show];
+    
     [self.webView loadRequest:request];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [SVProgressHUD dismiss];
+    
+    [super viewWillDisappear:animated];
+}
+
+#pragma mark - Web view delegate
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [SVProgressHUD dismiss];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    [SVProgressHUD showErrorWithStatus:@"Error"];
 }
 
 @end

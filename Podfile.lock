@@ -23,17 +23,20 @@ PODS:
   - CocoaLumberjack/Extensions (3.0.0):
     - CocoaLumberjack/Default
   - MMMarkdown (0.5.5)
+  - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack
   - MMMarkdown (~> 0.5)
+  - SVProgressHUD (~> 2.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 27bd787339610506a2241df3cc7eff86b5c64aac
+PODFILE CHECKSUM: d0b9248a43845a4457306342815ab4f008d3b762
 
 COCOAPODS: 1.1.1
