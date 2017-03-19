@@ -611,6 +611,28 @@
                                             <segue destination="1rQ-Uo-br9" kind="show" id="PWI-A6-yXE"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="X63-GX-vjS" style="IBUITableViewCellStyleDefault" id="YCI-O8-LCd">
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YCI-O8-LCd" id="PWv-e0-8Rw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="How to configure VLC Media Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X63-GX-vjS">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="Y6S-HR-dp5" kind="show" id="JwJ-TN-dk1"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -663,7 +685,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKL-a9-wdt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3713" y="-340"/>
+            <point key="canvasLocation" x="3657" y="-692"/>
+        </scene>
+        <!--Howto Web View Controller-->
+        <scene sceneID="pks-vC-FFd">
+            <objects>
+                <viewController id="Y6S-HR-dp5" customClass="HowtoWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aYh-23-Ubz"/>
+                        <viewControllerLayoutGuide type="bottom" id="ePF-r4-ET8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZT0-Nu-RPp">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qkm-Eb-XKq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ePF-r4-ET8" firstAttribute="top" secondItem="qkm-Eb-XKq" secondAttribute="bottom" id="JAO-Zt-27P"/>
+                            <constraint firstItem="qkm-Eb-XKq" firstAttribute="leading" secondItem="ZT0-Nu-RPp" secondAttribute="leading" id="Nln-df-7mo"/>
+                            <constraint firstItem="qkm-Eb-XKq" firstAttribute="top" secondItem="aYh-23-Ubz" secondAttribute="bottom" id="XsB-87-bRl"/>
+                            <constraint firstAttribute="trailing" secondItem="qkm-Eb-XKq" secondAttribute="trailing" id="cJA-td-L6H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="qkm-Eb-XKq" id="HiL-PJ-DK7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5R2-Ls-b1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656.8000000000002" y="709.29535232383819"/>
         </scene>
         <!--Acknowledgements View Controller-->
         <scene sceneID="i6N-WP-GkZ">
@@ -696,7 +751,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fC-9Q-W0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3713" y="357"/>
+            <point key="canvasLocation" x="3657" y="5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d6H-Py-mBi">
