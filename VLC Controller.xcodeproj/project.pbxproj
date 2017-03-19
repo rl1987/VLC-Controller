@@ -36,7 +36,6 @@
 		4D2162251E64863A00042045 /* WCSession+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2162231E64863500042045 /* WCSession+Settings.m */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
 		4DA840EB1E75CA880021F01F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840EA1E75CA880021F01F /* AboutViewController.m */; };
-		4DA840F11E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */; };
 		4DA840F41E76C2460021F01F /* AcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */; };
 		4DA840F51E76C62B0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */; };
 		4DA840F81E76DD200021F01F /* RemoteFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F71E76DD200021F01F /* RemoteFile.m */; };
@@ -870,7 +869,6 @@
 				B7DEDDF4157A6D7000ADBD36 /* PortValidator.m in Sources */,
 				4DA840F41E76C2460021F01F /* AcknowledgementsViewController.m in Sources */,
 				4DA8410E1E7838D50021F01F /* PlaylistBuilder.m in Sources */,
-				4DA840F11E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Sources */,
 				4D162D7F1E7EAA5A0043655F /* HowtoWebViewController.m in Sources */,
 				B7DEDDF5157A6D7000ADBD36 /* ValidatingTextField.m in Sources */,
 				4DF57FC718749E22007D5F35 /* PlayerStatus.m in Sources */,

@@ -833,7 +833,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Qvj-tG-Vai">
-                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="7dt-0E-TIh">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="7dt-0E-TIh">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="doneTapped" destination="UvI-9I-cAx" id="LRd-54-aMo"/>
