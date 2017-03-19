@@ -277,6 +277,7 @@
                             <constraint firstAttribute="leadingMargin" secondItem="Fy3-gX-YpY" secondAttribute="leading" id="03h-qG-MiL"/>
                             <constraint firstItem="N61-A0-zHg" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Fy3-gX-YpY" secondAttribute="leading" id="05N-x9-ydg"/>
                             <constraint firstItem="I8T-jh-nY2" firstAttribute="leading" secondItem="ewH-9P-gT4" secondAttribute="trailing" constant="6" id="0Uo-bu-nuF"/>
+                            <constraint firstItem="fGx-CX-yit" firstAttribute="top" secondItem="phA-qE-0GQ" secondAttribute="top" id="0bx-eX-Ewb"/>
                             <constraint firstItem="N61-A0-zHg" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="IpX-Mz-Xh7" secondAttribute="trailing" id="0hb-gN-3wc"/>
                             <constraint firstItem="OfK-cE-z94" firstAttribute="top" secondItem="iVB-0W-EIh" secondAttribute="bottom" constant="-0.5" id="1CQ-NV-edR"/>
                             <constraint firstItem="WF3-kS-T02" firstAttribute="width" secondItem="CAh-Gb-QkG" secondAttribute="width" id="1ND-EW-xox"/>
@@ -567,8 +568,30 @@
                         <sections>
                             <tableViewSection id="gQV-ef-KAD">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="jrd-g9-wNC" style="IBUITableViewCellStyleDefault" id="Ibd-9X-VFf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="X63-GX-vjS" style="IBUITableViewCellStyleDefault" id="YCI-O8-LCd">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YCI-O8-LCd" id="PWv-e0-8Rw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="How to configure VLC Media Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X63-GX-vjS">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="Y6S-HR-dp5" kind="show" id="JwJ-TN-dk1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="jrd-g9-wNC" style="IBUITableViewCellStyleDefault" id="Ibd-9X-VFf">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ibd-9X-VFf" id="fca-Xu-MG9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -590,7 +613,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="r3Y-0H-lyv" style="IBUITableViewCellStyleDefault" id="FTz-bR-jfQ">
-                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FTz-bR-jfQ" id="rgG-7E-vCU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -609,28 +632,6 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <segue destination="1rQ-Uo-br9" kind="show" id="PWI-A6-yXE"/>
-                                        </connections>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="X63-GX-vjS" style="IBUITableViewCellStyleDefault" id="YCI-O8-LCd">
-                                        <rect key="frame" x="0.0" y="88" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YCI-O8-LCd" id="PWv-e0-8Rw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="How to configure VLC Media Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X63-GX-vjS">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <connections>
-                                            <segue destination="Y6S-HR-dp5" kind="show" id="JwJ-TN-dk1"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
