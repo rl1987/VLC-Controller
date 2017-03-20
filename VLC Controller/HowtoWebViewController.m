@@ -16,6 +16,13 @@
 
 @implementation HowtoWebViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [SVProgressHUD show];
+}
+
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
@@ -28,8 +35,6 @@
     NSURL *url = [NSURL URLWithString:urlString];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    
-    [SVProgressHUD show];
     
     [self.webView loadRequest:request];
 }
