@@ -35,18 +35,21 @@ typedef enum {
     
     self.playerManager = [PlayerManager defaultManager];
     self.playerManager.delegate = self;
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
+    [self becomeFirstResponder];
     [self.playerManager startReceivingStatusUpdates];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
     [self.playerManager stopReceivingStatusUpdates];
+    [self resignFirstResponder];
     
     [super viewDidDisappear:animated];
 }
@@ -179,6 +182,14 @@ typedef enum {
     
     self.popoverContainerView.hidden = NO;
     [self.view bringSubviewToFront:self.popoverContainerView];
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        DDLogInfo(@"Shake detected!");
+        // TODO: retry communication with VLC player
+    }
 }
 
 #pragma mark -
