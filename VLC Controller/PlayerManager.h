@@ -28,6 +28,8 @@ typedef void (^PlaylistRequestCompletionHandler)(Playlist *playlist, NSError *er
 - (void)playerManager:(PlayerManager *)manager
        receivedStatus:(PlayerStatus *)status;
 
+- (void)playerManagerFailedWithError:(NSError *)error;
+
 @end
 
 @interface PlayerManager : NSObject

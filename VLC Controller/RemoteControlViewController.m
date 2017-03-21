@@ -188,7 +188,8 @@ typedef enum {
     if (motion == UIEventSubtypeMotionShake)
     {
         DDLogInfo(@"Shake detected!");
-        // TODO: retry communication with VLC player
+        
+        [self.playerManager startReceivingStatusUpdates];
     }
 }
 
@@ -201,6 +202,8 @@ typedef enum {
     UIImage *image = status.playing ? [UIImage imageNamed:@"Pause"] : [UIImage imageNamed:@"Play"];
     
     [self.playButton setImage:image forState:UIControlStateNormal];
+    
+    self.filenameLabel.textColor = [UIColor whiteColor];
     
     self.filenameLabel.text = status.filename;
     self.timeSlider.maximumValue = status.duration;
@@ -224,6 +227,13 @@ typedef enum {
     } else if (self.popoverState == PopoverStateAudio) {
         self.popoverNumberLabel.text = [NSString stringWithFormat:@"%.0f ms", status.audioDelay * 1000];
     }
+}
+
+- (void)playerManagerFailedWithError:(NSError *)error
+{
+    self.filenameLabel.textColor = [UIColor redColor];
+    
+    self.filenameLabel.text = @"Error - Shake to retry";
 }
 
 @end

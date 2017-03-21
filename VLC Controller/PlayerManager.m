@@ -294,6 +294,11 @@ static PlayerManager *_defaultManager;
 - (void)playerCommunicator:(PlayerCommunicator *)communicator failedWithError:(NSError *)error
 {
     DDLogError(@"%@",error);
+    
+    if (self.delegate)
+        [self.delegate playerManagerFailedWithError:error]; // TODO: use Facade pattern for errors as well
+    
+    [self stopReceivingStatusUpdates];
 }
 
 #pragma mark -
