@@ -8,6 +8,8 @@
 
 #import "PlaylistTableViewController.h"
 
+#import <SVProgressHUD/SVProgressHUD.h>
+
 #import "PlayerManager.h"
 
 @implementation PlaylistTableViewController
@@ -31,10 +33,12 @@
     if (!self.playlist)
     {
         [[PlayerManager defaultManager] getPlaylistWithCompletionHandler:^(Playlist *playlist, NSError *error) {
-            if (!error && playlist) {
+            if (!error) {
                 self.playlist = playlist;
                 
                 [self.tableView reloadData];
+            } else {
+                [SVProgressHUD showErrorWithStatus:@"Error"];
             }
         }];
     }

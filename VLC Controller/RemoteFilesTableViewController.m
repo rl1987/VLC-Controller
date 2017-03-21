@@ -8,6 +8,8 @@
 
 #import "RemoteFilesTableViewController.h"
 
+#import <SVProgressHUD/SVProgressHUD.h>
+
 #import "PlayerManager.h"
 #import "RemoteFile.h"
 
@@ -112,6 +114,8 @@
                                            if (!error) {
                                                self.remoteFiles = files;
                                                [self.tableView reloadData];
+                                           } else {
+                                               [SVProgressHUD showErrorWithStatus:@"Error"];
                                            }
                                        }];
     }
@@ -122,6 +126,8 @@
                                                  if (!error) {
                                                      self.remoteFiles = files;
                                                      [self.tableView reloadData];
+                                                 } else {
+                                                     [SVProgressHUD showErrorWithStatus:@"Error"];
                                                  }
                                              }];
     }
