@@ -18,7 +18,7 @@
      ^(id obj, NSUInteger idx, BOOL *stop) {
          int number = [(NSString *)obj intValue];
          
-         if ((number < 1) || (number > 255))
+         if ((number < 0) || (number > 255))
          {
              answer = NO;
              *stop = YES;
