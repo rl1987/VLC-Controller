@@ -3,6 +3,9 @@
 #import <WatchConnectivity/WatchConnectivity.h>
 #import <CocoaLumberjack/CocoaLumberjack.h>
 
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
+
 #import "PlayerManager.h"
 #import "WCSession+Settings.h"
 
@@ -18,6 +21,8 @@
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [Fabric with:@[[Crashlytics class]]];
+    
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
     
     [[WCSession defaultSession] setDelegate:self];

@@ -563,6 +563,7 @@
 				27EEF215D7943CE458AA74C9 /* [CP] Embed Pods Frameworks */,
 				3729756C16770CC2753985DF /* [CP] Copy Pods Resources */,
 				4D21620C1E62FB4F00042045 /* Embed Watch Content */,
+				46F31FB81EFD838200596180 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -716,6 +717,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		46F31FB81EFD838200596180 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9b1d983f59f254fae17f643b4236c302c1a6f72a 3c8f232f4451eed4f2b85a2ebd0960bbd1e25b2053da1de68adcfd8e3db37389";
 		};
 		4AF314F59046D0095A1022F8 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
