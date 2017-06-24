@@ -460,6 +460,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="cAc-LW-MjT" firstAttribute="leading" secondItem="Fyu-5p-PXe" secondAttribute="leading" id="1hL-dA-9CP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dg3-em-VG2" secondAttribute="trailing" constant="66" id="2K3-rp-zV9"/>
@@ -479,6 +480,9 @@
                             <constraint firstItem="qdm-Di-fSa" firstAttribute="leading" secondItem="Fyu-5p-PXe" secondAttribute="trailing" constant="14" id="tIb-FF-neM"/>
                             <constraint firstItem="Fyu-5p-PXe" firstAttribute="top" secondItem="cAc-LW-MjT" secondAttribute="bottom" constant="18" id="wtG-XZ-Kgh"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="dxZ-pU-ApC" appends="YES" id="tGn-qP-3CL"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Config" id="PTB-TS-GmJ"/>
                     <connections>
@@ -488,6 +492,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtX-eJ-uLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dxZ-pU-ApC">
+                    <connections>
+                        <action selector="backgroundTapped:" destination="7DJ-QM-eA9" id="zKe-p5-I0a"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1895.2" y="9.4452773613193415"/>
         </scene>

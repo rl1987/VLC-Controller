@@ -71,6 +71,14 @@
 #pragma mark -
 #pragma mark Target-action stuff
 
+- (IBAction)backgroundTapped:(UITapGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateRecognized) {
+        [self.addressField resignFirstResponder];
+        [self.portField resignFirstResponder];
+        [self.addressField resignFirstResponder];
+    }
+}
+
 - (IBAction)okPressed 
 {
     if ([self.addressField isValid] &&
