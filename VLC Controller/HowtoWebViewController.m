@@ -30,7 +30,7 @@
     // stepwise through the HTTP interface setup procedure.
     
     NSString *urlString =
-    @"https://web.archive.org/web/20161221161508/https://www.howtogeek.com/117261/how-to-activate-vlcs-web-interface-control-vlc-from-a-browser-use-any-smartphone-as-a-remote/";
+    @"https://www.howtogeek.com/117261/how-to-activate-vlcs-web-interface-control-vlc-from-a-browser-use-any-smartphone-as-a-remote/";
     
     NSURL *url = [NSURL URLWithString:urlString];
     
