@@ -453,7 +453,7 @@
                                     <constraint firstAttribute="height" constant="31" id="3yu-Bl-DkU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="7DJ-QM-eA9" id="Hdc-CO-b4i"/>
                                 </connections>
