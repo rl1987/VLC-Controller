@@ -104,7 +104,7 @@
     XCTAssertEqual(self.playerCommunicator.lastCommand.commandType,
                    PlayerCommandSeek, @"Manager should tell the communicator to send PlayerCommandSeek command");
     
-    XCTAssertEqual(self.playerCommunicator.lastCommand.value, seekValue,
+    XCTAssertEqual(self.playerCommunicator.lastCommand.value.doubleValue, seekValue,
                    @"Manager should assign the correct value for PlayerCommandSeek command");
 }
 
@@ -117,7 +117,7 @@
     XCTAssertEqual(self.playerCommunicator.lastCommand.commandType,
                    PlayerCommandSetVolume, @"Manager should tell the communicator to send PlayerCommandSetVolume command");
     
-    XCTAssertEqual(self.playerCommunicator.lastCommand.value, (double)volumeToSet,
+    XCTAssertEqual(self.playerCommunicator.lastCommand.value.doubleValue, (double)volumeToSet,
                    @"Manager should assign the correct value for PlayerCommandSetVolume command");
 }
 
