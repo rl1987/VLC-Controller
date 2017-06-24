@@ -23,8 +23,6 @@
 		4D2161FE1E62FB4F00042045 /* ComplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2161FD1E62FB4F00042045 /* ComplicationController.m */; };
 		4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161FF1E62FB4F00042045 /* Assets.xcassets */; };
 		4D2162041E62FB4F00042045 /* VLC Controller-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4D2161E01E62FB4B00042045 /* VLC Controller-watchOS.app */; };
-		4D21620D1E6326CD00042045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
-		4D21620E1E6326CE00042045 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
 		4D21620F1E632A4300042045 /* PlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FBD18749DEC007D5F35 /* PlayerManager.m */; };
 		4D2162101E632A4800042045 /* PlayerCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC018749DFC007D5F35 /* PlayerCommunicator.m */; };
 		4D2162111E632A4B00042045 /* PlayerStatusBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF57FC318749E15007D5F35 /* PlayerStatusBuilder.m */; };
@@ -650,7 +648,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D21620D1E6326CD00042045 /* Images.xcassets in Resources */,
 				4D2161E61E62FB4D00042045 /* Assets.xcassets in Resources */,
 				4D2161E41E62FB4C00042045 /* Interface.storyboard in Resources */,
 			);
@@ -661,7 +658,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */,
-				4D21620E1E6326CE00042045 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1174,6 +1170,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A810F5F1A654890A2D80961E /* Pods-VLC Controller.debug.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
@@ -1197,6 +1194,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3448BC77BD47053B1BCFBCA4 /* Pods-VLC Controller.release.xcconfig */;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
