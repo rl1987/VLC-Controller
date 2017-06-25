@@ -12,72 +12,71 @@
 
 @interface AddressValidatorTests : XCTestCase
 
+@property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) AddressValidator *validator;
+
 @end
 
 @implementation AddressValidatorTests
 
+- (void)setUp
+{
+    [super setUp];
+    
+    self.textField = [[UITextField alloc] init];
+    self.validator = [[AddressValidator alloc] init];
+}
+
+- (void)tearDown
+{
+    self.textField = nil;
+    self.validator = nil;
+    
+    [super tearDown];
+}
+
 - (void)testValidIPv4AddressesAreValidatedProperly
 {
-    AddressValidator *validator = [[AddressValidator alloc] init];
+    self.textField.text = @"1.2.3.4";
     
-    UITextField *textField = [[UITextField alloc] init];
+    XCTAssertTrue([self.validator validate:self.textField],
+                  @"%@ should be considered valid input.", self.textField.text);
     
-    textField.text = @"1.2.3.4";
+    self.textField.text = @"192.168.1.1";
     
-    XCTAssertTrue([validator validate:textField],
-                  @"%@ should be considered valid input.", textField.text);
-    
-    textField.text = @"192.168.1.1";
-    
-    XCTAssertTrue([validator validate:textField],
-                  @"%@ should be considered valid input.", textField.text);
+    XCTAssertTrue([self.validator validate:self.textField],
+                  @"%@ should be considered valid input.", self.textField.text);
 }
 
 - (void)testInvalidIPv4AddressAreInvalidated
 {
-    AddressValidator *validator = [[AddressValidator alloc] init];
-    
-    UITextField *textField = [[UITextField alloc] init];
-    
-    textField.text = @"256.168.1.1";
+    self.textField.text = @"256.168.1.1";
 
-    XCTAssertFalse([validator validate:textField],
-                   @"%@ should NOT be considered valid input.", textField.text);
+    XCTAssertFalse([self.validator validate:self.textField],
+                   @"%@ should NOT be considered valid input.", self.textField.text);
 }
 
 - (void)testIncompleteIPv4AddressesAreInvalidated
 {
-    AddressValidator *validator = [[AddressValidator alloc] init];
+    self.textField.text = @"226.168.1.";
     
-    UITextField *textField = [[UITextField alloc] init];
-    
-    textField.text = @"226.168.1.";
-    
-    XCTAssertFalse([validator validate:textField],
-                   @"%@ should NOT be considered valid input.", textField.text);
+    XCTAssertFalse([self.validator validate:self.textField],
+                   @"%@ should NOT be considered valid input.", self.textField.text);
 }
 
 - (void)testTooLongIPv4AddressesAreInvalidated
 {
-    AddressValidator *validator = [[AddressValidator alloc] init];
+    self.textField.text = @"226.168.1.2.3";
     
-    UITextField *textField = [[UITextField alloc] init];
-    
-    textField.text = @"226.168.1.2.3";
-    
-    XCTAssertFalse([validator validate:textField],
-                   @"%@ should NOT be considered valid input.", textField.text);
+    XCTAssertFalse([self.validator validate:self.textField],
+                   @"%@ should NOT be considered valid input.", self.textField.text);
 }
 
 - (void)testIPv6AddressIsValidated {
-    AddressValidator *validator = [[AddressValidator alloc] init];
+    self.textField.text = @"2001:0db8:85a3:0000:0000:8a2e:0370:7334";
     
-    UITextField *textField = [[UITextField alloc] init];
-    
-    textField.text = @"2001:0db8:85a3:0000:0000:8a2e:0370:7334";
-    
-    XCTAssert([validator validate:textField],
-              @"%@ should be considered valid input.", textField.text);
+    XCTAssert([self.validator validate:self.textField],
+              @"%@ should be considered valid input.", self.textField.text);
 }
 
 @end

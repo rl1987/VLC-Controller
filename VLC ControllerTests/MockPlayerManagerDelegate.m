@@ -16,4 +16,8 @@
     
 }
 
+- (void)playerManagerFailedWithError:(NSError *)error {
+    
+}
+
 @end
