@@ -1,36 +1,19 @@
 #import "AddressValidator.h"
 
+#include <arpa/inet.h>
+
 @implementation AddressValidator
 
 - (BOOL)validate:(UITextField *)textField
 {
+    const char *cString = [textField.text cStringUsingEncoding:NSASCIIStringEncoding];
     
-    __block BOOL answer = YES;
+    struct sockaddr_storage dummy;
     
-    NSArray *numbers = [textField.text componentsSeparatedByString:@"."];
+    BOOL isValidIP4 = inet_pton(AF_INET, cString, &dummy);
+    BOOL isValidIP6 = inet_pton(AF_INET6, cString, &dummy);
     
-    if ([numbers count] != 4) {
-        answer = NO;
-        return answer;
-    }
-    
-    [numbers enumerateObjectsUsingBlock:
-     ^(id obj, NSUInteger idx, BOOL *stop) {
-         int number = [(NSString *)obj intValue];
-         
-         if ((number < 0) || (number > 255))
-         {
-             answer = NO;
-             *stop = YES;
-         }
-         else
-         {
-             answer = YES;
-         }
-     }];
-    
-    return answer;
+    return isValidIP4 || isValidIP6;
 }
-
 
 @end
