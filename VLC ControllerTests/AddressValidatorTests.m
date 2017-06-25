@@ -69,4 +69,15 @@
                    @"%@ should NOT be considered valid input.", textField.text);
 }
 
+- (void)testIPv6AddressIsValidated {
+    AddressValidator *validator = [[AddressValidator alloc] init];
+    
+    UITextField *textField = [[UITextField alloc] init];
+    
+    textField.text = @"2001:0db8:85a3:0000:0000:8a2e:0370:7334";
+    
+    XCTAssert([validator validate:textField],
+              @"%@ should be considered valid input.", textField.text);
+}
+
 @end
