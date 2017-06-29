@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46E143EE1F05721F0099271F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
+		46E143EF1F0572200099271F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D2161DC1E61EEEA00042045 /* Images.xcassets */; };
 		4D004683188DC0A100636F50 /* PasswordValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004682188DC0A100636F50 /* PasswordValidator.m */; };
 		4D004685188DC0D700636F50 /* PasswordValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D004684188DC0D700636F50 /* PasswordValidatorTests.m */; };
 		4D05DF5118789608008F8DA9 /* PlayerStatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D05DF5018789608008F8DA9 /* PlayerStatusTests.m */; };
@@ -648,6 +650,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E143EE1F05721F0099271F /* Images.xcassets in Resources */,
 				4D2161E61E62FB4D00042045 /* Assets.xcassets in Resources */,
 				4D2161E41E62FB4C00042045 /* Interface.storyboard in Resources */,
 			);
@@ -658,6 +661,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */,
+				46E143EF1F0572200099271F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
