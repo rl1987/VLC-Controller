@@ -32,11 +32,14 @@
     
     if (!self.playlist)
     {
+        [SVProgressHUD show];
+        
         [[PlayerManager defaultManager] getPlaylistWithCompletionHandler:^(Playlist *playlist, NSError *error) {
             if (!error) {
                 self.playlist = playlist;
                 
                 [self.tableView reloadData];
+                [SVProgressHUD dismiss];
             } else {
                 [SVProgressHUD showErrorWithStatus:@"Error"];
             }

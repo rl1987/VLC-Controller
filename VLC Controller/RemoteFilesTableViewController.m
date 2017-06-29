@@ -107,6 +107,8 @@
 
 - (void)reloadFileList
 {
+    [SVProgressHUD show];
+    
     if (self.uri)
     {
         [[PlayerManager defaultManager] listRemoteFilesAtURI:self.uri
@@ -114,6 +116,7 @@
                                            if (!error) {
                                                self.remoteFiles = files;
                                                [self.tableView reloadData];
+                                               [SVProgressHUD dismiss];
                                            } else {
                                                [SVProgressHUD showErrorWithStatus:@"Error"];
                                            }
@@ -126,6 +129,7 @@
                                                  if (!error) {
                                                      self.remoteFiles = files;
                                                      [self.tableView reloadData];
+                                                     [SVProgressHUD dismiss];
                                                  } else {
                                                      [SVProgressHUD showErrorWithStatus:@"Error"];
                                                  }
