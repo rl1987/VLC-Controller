@@ -47,6 +47,12 @@
     }
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [SVProgressHUD dismiss];
+    
+    [super viewWillDisappear:animated];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
