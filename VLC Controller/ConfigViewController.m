@@ -40,8 +40,6 @@
     if (defaultPassword)
         self.passwordField.text = defaultPassword;
     
-    //self.doubleVolumeSwitch.isOn = [defaults objectForKey:kUserDefaultsIsVolumeDouble];
-    
     [self.doubleVolumeSwitch setOn:[defaults boolForKey:kUserDefaultsIsVolumeDouble]
                           animated:NO];
 }
