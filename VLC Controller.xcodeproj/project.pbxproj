@@ -606,20 +606,20 @@
 				TargetAttributes = {
 					4D2161DF1E62FB4A00042045 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9DJ2VKZ2UF;
+						DevelopmentTeam = 2AWB3N3D5T;
 						ProvisioningStyle = Automatic;
 					};
 					4D2161EB1E62FB4E00042045 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9DJ2VKZ2UF;
+						DevelopmentTeam = 2AWB3N3D5T;
 						ProvisioningStyle = Automatic;
 					};
 					B7DEDDA4157A468000ADBD36 = {
-						DevelopmentTeam = 9DJ2VKZ2UF;
+						DevelopmentTeam = 2AWB3N3D5T;
 						ProvisioningStyle = Automatic;
 					};
 					B7DEDDC5157A468100ADBD36 = {
-						DevelopmentTeam = 9DJ2VKZ2UF;
+						DevelopmentTeam = 2AWB3N3D5T;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -982,7 +982,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -990,7 +990,7 @@
 				INFOPLIST_FILE = "VLC Controller-watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "int.VLC-Controller.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1013,7 +1013,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
@@ -1022,7 +1022,7 @@
 				INFOPLIST_FILE = "VLC Controller-watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "int.VLC-Controller.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1045,13 +1045,13 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IBSC_MODULE = VLC_Controller_watchOS_Extension;
 				INFOPLIST_FILE = "VLC Controller-watchOS/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "int.VLC-Controller.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1075,14 +1075,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				IBSC_MODULE = VLC_Controller_watchOS_Extension;
 				INFOPLIST_FILE = "VLC Controller-watchOS/Info.plist";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "int.VLC-Controller.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -1177,7 +1177,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1186,7 +1186,7 @@
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = "int.VLC-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1201,7 +1201,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1210,7 +1210,7 @@
 				INFOPLIST_FILE = "VLC Controller/VLC Controller-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.tx0.rl1987.VLC-Controller";
+				PRODUCT_BUNDLE_IDENTIFIER = "int.VLC-Controller";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1225,7 +1225,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1247,7 +1247,7 @@
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Controller.app/VLC Controller";
 				CLANG_ENABLE_CODE_COVERAGE = NO;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9DJ2VKZ2UF;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

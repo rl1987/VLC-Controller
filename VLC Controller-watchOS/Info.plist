@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>org.tx0.rl1987.VLC-Controller</string>
+	<string>int.VLC-Controller</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>
