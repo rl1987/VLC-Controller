@@ -39,6 +39,11 @@
     
     if (defaultPassword)
         self.passwordField.text = defaultPassword;
+    
+    //self.doubleVolumeSwitch.isOn = [defaults objectForKey:kUserDefaultsIsVolumeDouble];
+    
+    [self.doubleVolumeSwitch setOn:[defaults boolForKey:kUserDefaultsIsVolumeDouble]
+                          animated:NO];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:
@@ -91,6 +96,7 @@
         [defaults setValue:self.addressField.text forKey:kUserDefaultsAddressKey];
         [defaults setValue:port forKey:kUserDefaultsPortKey];
         [defaults setValue:self.passwordField.text forKey:kUserDefaultsPassword];
+        [defaults setBool:self.doubleVolumeSwitch.isOn forKey:kUserDefaultsIsVolumeDouble];
         
         [defaults synchronize];
 

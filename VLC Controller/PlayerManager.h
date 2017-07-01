@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-#define kUserDefaultsPortKey     @"user.defaults.port"
-#define kUserDefaultsAddressKey  @"user.defaults.address"
-#define kUserDefaultsPassword    @"user.defaults.password"
+#define kUserDefaultsPortKey        @"user.defaults.port"
+#define kUserDefaultsAddressKey     @"user.defaults.address"
+#define kUserDefaultsPassword       @"user.defaults.password"
+#define kUserDefaultsIsVolumeDouble @"user.defaults.volumedoubled"
 
 #define kStatusUpdateInterval (1.0)
 

@@ -140,6 +140,11 @@ static PlayerManager *_defaultManager;
 
 - (void)changeVolumeTo:(NSUInteger)volume
 {
+    BOOL volumeDoubled = [[NSUserDefaults standardUserDefaults] boolForKey:kUserDefaultsIsVolumeDouble];
+    
+    if (volumeDoubled)
+        volume *= 2;
+    
     [self.communicator sendCommand:[self commandWithType:PlayerCommandSetVolume
                                                 andValue:(double)volume]];
 }
@@ -286,6 +291,12 @@ static PlayerManager *_defaultManager;
 - (void)playerCommunicator:(PlayerCommunicator *)communicator retrievedStatusJSONDictionary:(NSDictionary *)jsonDictionary
 {
     self.status = [self.playerStatusBuilder statusFromJSONDictionary:jsonDictionary];
+    
+    BOOL volumeDoubled = [[NSUserDefaults standardUserDefaults] boolForKey:kUserDefaultsIsVolumeDouble];
+
+    if (volumeDoubled) {
+        self.status.volume /= 2;
+    }
     
     if (self.delegate)
         [self.delegate playerManager:self receivedStatus:self.status];
