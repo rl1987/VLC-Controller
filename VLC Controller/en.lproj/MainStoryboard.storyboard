@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="YNP-tN-gX3">
-                                <rect key="frame" x="47" y="78" width="282" height="31"/>
+                                <rect key="frame" x="47" y="78" width="282" height="28"/>
                                 <connections>
                                     <action selector="timeSliderValueChanged:" destination="odB-Yy-49K" eventType="valueChanged" id="kwm-fY-0Er"/>
                                 </connections>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpX-Mz-Xh7">
-                                <rect key="frame" x="334" y="82" width="25" height="25"/>
+                                <rect key="frame" x="334" y="79" width="25" height="25"/>
                                 <state key="normal" image="FastForward">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -144,8 +144,8 @@
                                     <action selector="louderPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="nQa-7N-YJz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fy3-gX-YpY">
-                                <rect key="frame" x="16" y="82" width="25" height="25"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fy3-gX-YpY">
+                                <rect key="frame" x="16" y="79" width="25" height="25"/>
                                 <state key="normal" image="Rewind">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -340,8 +340,10 @@
                             <constraint firstItem="36q-ke-PG8" firstAttribute="centerX" secondItem="phA-qE-0GQ" secondAttribute="centerX" id="pj7-pf-1gv"/>
                             <constraint firstItem="fGx-CX-yit" firstAttribute="bottom" secondItem="uLG-PH-9qN" secondAttribute="top" id="q9M-pr-s4n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IpX-Mz-Xh7" secondAttribute="trailing" id="rJe-10-ATe"/>
+                            <constraint firstItem="Fy3-gX-YpY" firstAttribute="centerY" secondItem="YNP-tN-gX3" secondAttribute="centerY" id="rdX-0r-gB8"/>
                             <constraint firstItem="ehh-De-auz" firstAttribute="top" secondItem="ewH-9P-gT4" secondAttribute="top" id="xc6-Uk-S9q"/>
                             <constraint firstItem="fP8-3r-ZFv" firstAttribute="top" secondItem="8KH-91-xZe" secondAttribute="bottom" constant="-0.5" id="yYV-KP-Cik"/>
+                            <constraint firstItem="IpX-Mz-Xh7" firstAttribute="centerY" secondItem="YNP-tN-gX3" secondAttribute="centerY" id="ydk-1g-Uu0"/>
                             <constraint firstItem="YNP-tN-gX3" firstAttribute="top" secondItem="Wgx-Jp-ENr" secondAttribute="bottom" constant="8" id="zta-C3-LTX"/>
                         </constraints>
                     </view>
