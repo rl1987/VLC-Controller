@@ -30,6 +30,10 @@
         [self.navigationItem setLeftBarButtonItem:nil];
     }
     
+    if ([[PlayerManager defaultManager] isConfigured] == false) {
+        return;
+    }
+    
     if (!self.playlist)
     {
         [SVProgressHUD show];

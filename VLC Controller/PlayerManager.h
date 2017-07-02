@@ -41,6 +41,8 @@ typedef void (^PlaylistRequestCompletionHandler)(Playlist *playlist, NSError *er
 
 + (instancetype)defaultManager;
 
+- (BOOL)isConfigured;
+
 - (void)pause;
 - (void)play;
 - (void)playPlaylistEntry:(PlaylistEntry *)playlistEntry;

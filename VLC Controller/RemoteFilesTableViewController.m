@@ -113,6 +113,10 @@
 
 - (void)reloadFileList
 {
+    if ([[PlayerManager defaultManager] isConfigured] == false) {
+        return;
+    }
+    
     [SVProgressHUD show];
     
     if (self.uri)

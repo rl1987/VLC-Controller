@@ -81,6 +81,13 @@ static PlayerManager *_defaultManager;
     return _defaultManager;
 }
 
+- (BOOL)isConfigured
+{
+    return [[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsAddressKey] &&
+    [[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsPortKey] &&
+    [[NSUserDefaults standardUserDefaults] objectForKey:kUserDefaultsPassword];
+}
+
 - (void)pause
 {
     [self.communicator sendCommand:[self commandWithType:PlayerCommandPause]];
