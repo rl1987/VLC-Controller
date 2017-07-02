@@ -1,4 +1,4 @@
-VLC Controller is iPhone/iPad/Apple Watch application for remote control of VLC player on your Mac or PC.
+VLC Controller is application for remote control of VLC player on your Mac or PC.
 
 Features:
 =========
