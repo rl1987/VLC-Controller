@@ -862,6 +862,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Playlist" id="Qvj-tG-Vai">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="mXs-4L-kmF"/>
                         <barButtonItem key="leftBarButtonItem" title="Back" id="7dt-0E-TIh">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
