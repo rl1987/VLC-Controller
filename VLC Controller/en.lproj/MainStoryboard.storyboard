@@ -522,7 +522,7 @@
             </objects>
             <point key="canvasLocation" x="1895.2" y="9.4452773613193415"/>
         </scene>
-        <!--Remote Files Table View Controller-->
+        <!--Files-->
         <scene sceneID="bKx-PQ-jed">
             <objects>
                 <tableViewController id="baF-S2-eIb" customClass="RemoteFilesTableViewController" sceneMemberID="viewController">
@@ -556,7 +556,7 @@
                             <outlet property="delegate" destination="baF-S2-eIb" id="6iC-iG-Lms"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Llc-1f-Qky">
+                    <navigationItem key="navigationItem" title="Files" id="Llc-1f-Qky">
                         <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="84G-lt-BtE">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
@@ -803,7 +803,7 @@
             </objects>
             <point key="canvasLocation" x="1015" y="9"/>
         </scene>
-        <!--Playlist Table View Controller-->
+        <!--Playlist-->
         <scene sceneID="CkY-R9-lrI">
             <objects>
                 <tableViewController storyboardIdentifier="PlaylistTableViewController" id="UvI-9I-cAx" customClass="PlaylistTableViewController" sceneMemberID="viewController">
@@ -861,7 +861,7 @@
                             <outlet property="delegate" destination="UvI-9I-cAx" id="fn2-wn-ZqG"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Qvj-tG-Vai">
+                    <navigationItem key="navigationItem" title="Playlist" id="Qvj-tG-Vai">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="7dt-0E-TIh">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
