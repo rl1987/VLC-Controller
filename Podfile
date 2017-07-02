@@ -12,6 +12,7 @@ target 'VLC Controller' do
   pod 'SVProgressHUD', '~> 2.1'
   pod 'Fabric'
   pod 'Crashlytics'
+  pod 'MarqueeLabel', '~> 3.1'
 
   target 'VLC ControllerTests' do
     inherit! :search_paths

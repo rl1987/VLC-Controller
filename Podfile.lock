@@ -14,17 +14,18 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - CocoaLumberjack (3.0.0):
-    - CocoaLumberjack/Default (= 3.0.0)
-    - CocoaLumberjack/Extensions (= 3.0.0)
-  - CocoaLumberjack/Core (3.0.0)
-  - CocoaLumberjack/Default (3.0.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (3.0.0):
+  - CocoaLumberjack (3.2.0):
+    - CocoaLumberjack/Default (= 3.2.0)
+    - CocoaLumberjack/Extensions (= 3.2.0)
+  - CocoaLumberjack/Default (3.2.0)
+  - CocoaLumberjack/Extensions (3.2.0):
     - CocoaLumberjack/Default
   - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.11)
+  - MarqueeLabel (3.1.0):
+    - MarqueeLabel/ObjC (= 3.1.0)
+  - MarqueeLabel/ObjC (3.1.0)
   - MMMarkdown (0.5.5)
   - SVProgressHUD (2.1.2)
 
@@ -33,17 +34,19 @@ DEPENDENCIES:
   - CocoaLumberjack
   - Crashlytics
   - Fabric
+  - MarqueeLabel (~> 3.1)
   - MMMarkdown (~> 0.5)
   - SVProgressHUD (~> 2.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  CocoaLumberjack: 9b4aed7073d242f29cc2f62068d995faf67f703a
   Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  MarqueeLabel: 061d04687ee5485ac035b45c8e292274a87afe01
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: 633199f7744cc72c6ab6e07463defcc682b2aee2
+PODFILE CHECKSUM: 880ed8400a66c600253a3a5f8c391f7a7bbf6971
 
 COCOAPODS: 1.1.0
