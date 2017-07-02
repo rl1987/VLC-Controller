@@ -113,7 +113,7 @@
 
 - (void)reloadFileList
 {
-    if ([[PlayerManager defaultManager] isConfigured] == false) {
+    if ([[PlayerManager defaultManager] isConfigured] == NO) {
         return;
     }
     

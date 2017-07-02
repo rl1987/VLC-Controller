@@ -30,7 +30,7 @@
         [self.navigationItem setLeftBarButtonItem:nil];
     }
     
-    if ([[PlayerManager defaultManager] isConfigured] == false) {
+    if ([[PlayerManager defaultManager] isConfigured] == NO) {
         return;
     }
     
