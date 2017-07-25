@@ -16,13 +16,6 @@
 
 @implementation HowtoWebViewController
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    
-    [SVProgressHUD show];
-}
-
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
@@ -34,16 +27,10 @@
     
     NSURL *url = [NSURL URLWithString:urlString];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    if ([[UIApplication sharedApplication] canOpenURL:url])
+        [[UIApplication sharedApplication] openURL:url];
     
-    [self.webView loadRequest:request];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [SVProgressHUD dismiss];
-    
-    [super viewWillDisappear:animated];
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 #pragma mark - Web view delegate
