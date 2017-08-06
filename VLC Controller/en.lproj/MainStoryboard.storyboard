@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="odB-Yy-49K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="odB-Yy-49K">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,6 +40,11 @@
                                 <rect key="frame" x="100.5" y="476" width="57.5" height="57.5"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Subtitles"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="subtitleButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="aQo-mr-Bfw"/>
                                 </connections>
@@ -53,10 +58,15 @@
                                     <action selector="seekForwardPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="qv7-x2-tRL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36q-ke-PG8">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36q-ke-PG8">
                                 <rect key="frame" x="159" y="248" width="57" height="57.5"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Play"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="playPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="VaJ-hz-mAo"/>
                                 </connections>
@@ -65,6 +75,11 @@
                                 <rect key="frame" x="159" y="362.5" width="57" height="57.5"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Stop"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="stopPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="ivg-TA-KWW"/>
                                 </connections>
@@ -73,6 +88,11 @@
                                 <rect key="frame" x="216" y="305.5" width="57.5" height="57"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="6l6-OE-e9g"/>
                                 </connections>
@@ -81,6 +101,11 @@
                                 <rect key="frame" x="101.5" y="305.5" width="57.5" height="57"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Previous"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="prevPressed:" destination="odB-Yy-49K" eventType="touchUpInside" id="0OR-Nt-FsK"/>
                                 </connections>
@@ -89,6 +114,11 @@
                                 <rect key="frame" x="44" y="420" width="57.5" height="57"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Repeat"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="repeatButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="P85-zt-KPh"/>
                                 </connections>
@@ -151,6 +181,11 @@
                                 <rect key="frame" x="273.5" y="420" width="57.5" height="57"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Shuffle"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="shuffleButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="wO2-13-34K"/>
                                 </connections>
@@ -159,6 +194,11 @@
                                 <rect key="frame" x="215" y="476" width="57.5" height="57.5"/>
                                 <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="Audio Wave"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="audioButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="noT-Cs-Tpv"/>
                                 </connections>
@@ -170,6 +210,11 @@
                                     <constraint firstAttribute="width" secondItem="iVB-0W-EIh" secondAttribute="height" multiplier="1:1" id="uPJ-jo-0Va"/>
                                 </constraints>
                                 <state key="normal" image="Fullscreen"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="fullscreenButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="vLj-yM-OYw"/>
                                 </connections>
@@ -210,6 +255,11 @@
                                                 <state key="normal" title="Switch subtitle">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="popoverMainButtonTapped:" destination="odB-Yy-49K" eventType="touchUpInside" id="xNq-f2-WPz"/>
                                                 </connections>
