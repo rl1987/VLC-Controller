@@ -18,7 +18,7 @@
 {
     [super viewDidLoad];
     
-    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    NSString *appVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 
     self.versionLabel.text = [@"Version " stringByAppendingString:appVersion];
 }
