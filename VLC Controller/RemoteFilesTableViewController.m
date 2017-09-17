@@ -102,6 +102,17 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+- (void)tableView:(UITableView *)tableView
+  willDisplayCell:(UITableViewCell *)cell
+forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (cell.accessoryView) {
+        cell.accessoryView.frame = CGRectMake(cell.accessoryView.frame.origin.x,
+                                              0.0, cell.accessoryView.frame.size.width,
+                                              cell.bounds.size.height);
+    }
+}
+
 #pragma mark - Navigation
 
 - (IBAction)doneTapped
