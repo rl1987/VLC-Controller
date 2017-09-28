@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Open Folder_ffffff_25.png",
+      "filename" : "icons8-opened_folder_filled.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Open Folder_ffffff_50.png",
+      "filename" : "icons8-opened_folder_filled-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Open Folder_ffffff_75.png",
+      "filename" : "icons8-opened_folder_filled-2.png",
       "scale" : "3x"
     }
   ],
