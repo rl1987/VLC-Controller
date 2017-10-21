@@ -28,9 +28,11 @@
     NSURL *url = [NSURL URLWithString:urlString];
     
     if ([[UIApplication sharedApplication] canOpenURL:url])
-        [[UIApplication sharedApplication] openURL:url];
-    
-    [self.navigationController popViewControllerAnimated:NO];
+        [[UIApplication sharedApplication] openURL:url
+                                           options:@{}
+                                 completionHandler:^(BOOL success) {
+            [self.navigationController popViewControllerAnimated:NO];
+                                 }];
 }
 
 #pragma mark - Web view delegate
