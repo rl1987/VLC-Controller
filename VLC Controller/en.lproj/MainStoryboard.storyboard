@@ -229,6 +229,18 @@
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGx-CX-yit">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
+                                    <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Swb-rq-cwE">
+                                        <rect key="frame" x="0.0" y="-19" width="375" height="667"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xln-N9-t47">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <gestureRecognizers/>
+                                            <connections>
+                                                <outletCollection property="gestureRecognizers" destination="0NF-Hs-rrg" appends="YES" id="idO-Dy-GIq"/>
+                                            </connections>
+                                        </view>
+                                        <blurEffect style="dark"/>
+                                    </visualEffectView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbl-MB-nzH">
                                         <rect key="frame" x="67" y="277.5" width="240" height="112"/>
                                         <subviews>
@@ -293,18 +305,6 @@
                                             <constraint firstItem="FA7-9X-ef2" firstAttribute="centerX" secondItem="Tbl-MB-nzH" secondAttribute="centerX" id="ksv-yK-jbB"/>
                                         </constraints>
                                     </view>
-                                    <visualEffectView opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Swb-rq-cwE">
-                                        <rect key="frame" x="0.0" y="-19" width="375" height="667"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xln-N9-t47">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <gestureRecognizers/>
-                                            <connections>
-                                                <outletCollection property="gestureRecognizers" destination="0NF-Hs-rrg" appends="YES" id="idO-Dy-GIq"/>
-                                            </connections>
-                                        </view>
-                                        <blurEffect style="dark"/>
-                                    </visualEffectView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
