@@ -206,33 +206,34 @@ static PlayerManager *_defaultManager;
     self.statusUpdateTimer = nil;
 }
 
-- (void)listRemoteFilesInDirectory:(NSString *)directory withCompletionHandler:(FileListingCompletionHandler)completion
+- (void)listRemoteFilesInDirectory:(NSString *)directory
+                            xorURI:(NSString *)uri
+             withCompletionHandler:(FileListingCompletionHandler)completion
 {
     [self.communicator sendFileListRequestForDirectory:directory
-                                                   uri:nil
+                                                   uri:uri
                                      completionHandler:^(NSDictionary *jsonDictionary, NSError *error) {
-        // FIXME: code duplication
-        if (completion) {
-            if (error)
-                completion(nil, error);
-            else
-                completion([self.remoteFileBuilder remoteFilesFromJSONDictionary:jsonDictionary], nil);
-        }
-    }];
+                                         if (completion) {
+                                             if (error)
+                                                 completion(nil, error);
+                                             else
+                                                 completion([self.remoteFileBuilder remoteFilesFromJSONDictionary:jsonDictionary], nil);
+                                         }
+                                     }];
+}
+
+- (void)listRemoteFilesInDirectory:(NSString *)directory withCompletionHandler:(FileListingCompletionHandler)completion
+{
+    [self listRemoteFilesInDirectory:directory
+                              xorURI:nil
+               withCompletionHandler:completion];
 }
 
 - (void)listRemoteFilesAtURI:(NSString *)uri withCompletionHandler:(FileListingCompletionHandler)completion
 {
-    [self.communicator sendFileListRequestForDirectory:nil
-                                                   uri:uri
-                                     completionHandler:^(NSDictionary *jsonDictionary, NSError *error) {
-        if (completion) {
-            if (error)
-                completion(nil, error);
-            else
-                completion([self.remoteFileBuilder remoteFilesFromJSONDictionary:jsonDictionary], nil);
-        }
-    }];
+    [self listRemoteFilesInDirectory:nil
+                              xorURI:uri
+               withCompletionHandler:completion];
 }
 
 - (void)getPlaylistWithCompletionHandler:(PlaylistRequestCompletionHandler)completion
