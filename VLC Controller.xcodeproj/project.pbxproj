@@ -169,6 +169,7 @@
 		4D2162231E64863500042045 /* WCSession+Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WCSession+Settings.m"; sourceTree = "<group>"; };
 		4D292EA618B3949500B5D3CA /* MockPlayerManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerManagerDelegate.h; sourceTree = "<group>"; };
 		4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerManagerDelegate.m; sourceTree = "<group>"; };
+		4D7FBFFC210C564000E2DCD9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
 		4DA840E91E75CA880021F01F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		4DA840EA1E75CA880021F01F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Pods-VLC Controller-acknowledgements.markdown"; path = "Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
@@ -404,6 +405,7 @@
 		B7DEDDA8157A468000ADBD36 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D7FBFFC210C564000E2DCD9 /* libxml2.tbd */,
 				4D2162181E643ACD00042045 /* WatchConnectivity.framework */,
 				4DC7FEEB1871C75100BAD690 /* XCTest.framework */,
 				B7DEDDA9157A468000ADBD36 /* UIKit.framework */,
@@ -540,8 +542,6 @@
 				4D2161E81E62FB4E00042045 /* Sources */,
 				4D2161E91E62FB4E00042045 /* Frameworks */,
 				4D2161EA1E62FB4E00042045 /* Resources */,
-				792334D684B8231056A41B6C /* [CP] Embed Pods Frameworks */,
-				4AF314F59046D0095A1022F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -560,7 +560,6 @@
 				B7DEDDA1157A468000ADBD36 /* Sources */,
 				B7DEDDA2157A468000ADBD36 /* Frameworks */,
 				B7DEDDA3157A468000ADBD36 /* Resources */,
-				27EEF215D7943CE458AA74C9 /* [CP] Embed Pods Frameworks */,
 				3729756C16770CC2753985DF /* [CP] Copy Pods Resources */,
 				4D21620C1E62FB4F00042045 /* Embed Watch Content */,
 				46F31FB81EFD838200596180 /* ShellScript */,
@@ -583,8 +582,6 @@
 				B7DEDDC1157A468100ADBD36 /* Sources */,
 				B7DEDDC2157A468100ADBD36 /* Frameworks */,
 				B7DEDDC3157A468100ADBD36 /* Resources */,
-				BB8889755B3B7227983B8764 /* [CP] Embed Pods Frameworks */,
-				E7FAC516DAAD438F4790B426 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -688,21 +685,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27EEF215D7943CE458AA74C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3729756C16770CC2753985DF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -714,7 +696,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -733,21 +715,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9b1d983f59f254fae17f643b4236c302c1a6f72a 3c8f232f4451eed4f2b85a2ebd0960bbd1e25b2053da1de68adcfd8e3db37389";
-		};
-		4AF314F59046D0095A1022F8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC Controller-watchOS Extension/Pods-VLC Controller-watchOS Extension-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		52149A8C989DA67E2D911810 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -785,36 +752,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		792334D684B8231056A41B6C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC Controller-watchOS Extension/Pods-VLC Controller-watchOS Extension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB8889755B3B7227983B8764 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC ControllerTests/Pods-VLC ControllerTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C6DA6A51166CFD7EA525D172 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -831,21 +768,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7FAC516DAAD438F4790B426 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VLC ControllerTests/Pods-VLC ControllerTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -989,7 +911,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
@@ -999,6 +921,12 @@
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+				);
 				INFOPLIST_FILE = "VLC Controller-watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1019,7 +947,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
@@ -1031,6 +959,12 @@
 				GCC_PREFIX_HEADER = "VLC Controller/VLC Controller-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+				);
 				INFOPLIST_FILE = "VLC Controller-watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;

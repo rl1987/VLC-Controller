@@ -38,6 +38,16 @@ DEPENDENCIES:
   - MMMarkdown (~> 0.5)
   - SVProgressHUD (~> 2.1)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CocoaLumberjack
+    - Crashlytics
+    - Fabric
+    - MarqueeLabel
+    - MMMarkdown
+    - SVProgressHUD
+
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
@@ -47,6 +57,6 @@ SPEC CHECKSUMS:
   MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
 
-PODFILE CHECKSUM: 880ed8400a66c600253a3a5f8c391f7a7bbf6971
+PODFILE CHECKSUM: 7a2d7f3060de83f29d101a785660b277ef8a997a
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
