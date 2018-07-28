@@ -26,9 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      codeCoverageEnabled = "YES"
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -37,6 +36,16 @@
                BlueprintIdentifier = "B7DEDDC5157A468100ADBD36"
                BuildableName = "VLC ControllerTests.xctest"
                BlueprintName = "VLC ControllerTests"
+               ReferencedContainer = "container:VLC Controller.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4D7FC00F210C59AA00E2DCD9"
+               BuildableName = "VLC ControllerUITests.xctest"
+               BlueprintName = "VLC ControllerUITests"
                ReferencedContainer = "container:VLC Controller.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,7 +66,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"

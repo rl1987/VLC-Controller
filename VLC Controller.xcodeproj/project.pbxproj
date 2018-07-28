@@ -36,6 +36,7 @@
 		4D2162241E64863800042045 /* WCSession+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2162231E64863500042045 /* WCSession+Settings.m */; };
 		4D2162251E64863A00042045 /* WCSession+Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D2162231E64863500042045 /* WCSession+Settings.m */; };
 		4D292EA818B3949500B5D3CA /* MockPlayerManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */; };
+		4D7FC013210C59AA00E2DCD9 /* VLC_ControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7FC012210C59AA00E2DCD9 /* VLC_ControllerUITests.m */; };
 		4DA840EB1E75CA880021F01F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840EA1E75CA880021F01F /* AboutViewController.m */; };
 		4DA840F41E76C2460021F01F /* AcknowledgementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA840F31E76C2460021F01F /* AcknowledgementsViewController.m */; };
 		4DA840F51E76C62B0021F01F /* Pods-VLC Controller-acknowledgements.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */; };
@@ -100,6 +101,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4D2161DF1E62FB4A00042045;
 			remoteInfo = "VLC Controller-watchOS";
+		};
+		4D7FC015210C59AA00E2DCD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7DEDD9C157A467F00ADBD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7DEDDA4157A468000ADBD36;
+			remoteInfo = "VLC Controller";
 		};
 		B7DEDDCB157A468100ADBD36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -170,6 +178,9 @@
 		4D292EA618B3949500B5D3CA /* MockPlayerManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockPlayerManagerDelegate.h; sourceTree = "<group>"; };
 		4D292EA718B3949500B5D3CA /* MockPlayerManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockPlayerManagerDelegate.m; sourceTree = "<group>"; };
 		4D7FBFFC210C564000E2DCD9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/usr/lib/libxml2.tbd; sourceTree = DEVELOPER_DIR; };
+		4D7FC010210C59AA00E2DCD9 /* VLC ControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLC ControllerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7FC012210C59AA00E2DCD9 /* VLC_ControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLC_ControllerUITests.m; sourceTree = "<group>"; };
+		4D7FC014210C59AA00E2DCD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA840E91E75CA880021F01F /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		4DA840EA1E75CA880021F01F /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		4DA840F01E76C14E0021F01F /* Pods-VLC Controller-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = "Pods-VLC Controller-acknowledgements.markdown"; path = "Pods/Target Support Files/Pods-VLC Controller/Pods-VLC Controller-acknowledgements.markdown"; sourceTree = SOURCE_ROOT; };
@@ -258,6 +269,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D7FC00D210C59AA00E2DCD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7DEDDA2157A468000ADBD36 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,6 +354,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4D7FC011210C59AA00E2DCD9 /* VLC ControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D7FC012210C59AA00E2DCD9 /* VLC_ControllerUITests.m */,
+				4D7FC014210C59AA00E2DCD9 /* Info.plist */,
+			);
+			path = "VLC ControllerUITests";
+			sourceTree = "<group>";
+		};
 		4DF57FBB18749DC4007D5F35 /* Biz logic */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +412,7 @@
 				B7DEDDCD157A468100ADBD36 /* VLC ControllerTests */,
 				4D2161E11E62FB4C00042045 /* VLC Controller-watchOS */,
 				4D2161F01E62FB4E00042045 /* VLC Controller-watchOS Extension */,
+				4D7FC011210C59AA00E2DCD9 /* VLC ControllerUITests */,
 				B7DEDDA8157A468000ADBD36 /* Frameworks */,
 				B7DEDDA6157A468000ADBD36 /* Products */,
 				A6FDA9128858486B833B2D4C /* Pods */,
@@ -398,6 +426,7 @@
 				B7DEDDC6157A468100ADBD36 /* VLC ControllerTests.xctest */,
 				4D2161E01E62FB4B00042045 /* VLC Controller-watchOS.app */,
 				4D2161EC1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex */,
+				4D7FC010210C59AA00E2DCD9 /* VLC ControllerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -552,6 +581,24 @@
 			productReference = 4D2161EC1E62FB4E00042045 /* VLC Controller-watchOS Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		4D7FC00F210C59AA00E2DCD9 /* VLC ControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D7FC017210C59AA00E2DCD9 /* Build configuration list for PBXNativeTarget "VLC ControllerUITests" */;
+			buildPhases = (
+				4D7FC00C210C59AA00E2DCD9 /* Sources */,
+				4D7FC00D210C59AA00E2DCD9 /* Frameworks */,
+				4D7FC00E210C59AA00E2DCD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D7FC016210C59AA00E2DCD9 /* PBXTargetDependency */,
+			);
+			name = "VLC ControllerUITests";
+			productName = "VLC ControllerUITests";
+			productReference = 4D7FC010210C59AA00E2DCD9 /* VLC ControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		B7DEDDA4157A468000ADBD36 /* VLC Controller */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B7DEDDD8157A468100ADBD36 /* Build configuration list for PBXNativeTarget "VLC Controller" */;
@@ -599,6 +646,7 @@
 		B7DEDD9C157A467F00ADBD36 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0900;
 				TargetAttributes = {
 					4D2161DF1E62FB4A00042045 = {
@@ -610,6 +658,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2AWB3N3D5T;
 						ProvisioningStyle = Automatic;
+					};
+					4D7FC00F210C59AA00E2DCD9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 2AWB3N3D5T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7DEDDA4157A468000ADBD36;
 					};
 					B7DEDDA4157A468000ADBD36 = {
 						DevelopmentTeam = 2AWB3N3D5T;
@@ -638,6 +692,7 @@
 				B7DEDDC5157A468100ADBD36 /* VLC ControllerTests */,
 				4D2161DF1E62FB4A00042045 /* VLC Controller-watchOS */,
 				4D2161EB1E62FB4E00042045 /* VLC Controller-watchOS Extension */,
+				4D7FC00F210C59AA00E2DCD9 /* VLC ControllerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -659,6 +714,13 @@
 			files = (
 				4D2162001E62FB4F00042045 /* Assets.xcassets in Resources */,
 				46E143EF1F0572200099271F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D7FC00E210C59AA00E2DCD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -795,6 +857,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D7FC00C210C59AA00E2DCD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D7FC013210C59AA00E2DCD9 /* VLC_ControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B7DEDDA1157A468000ADBD36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -859,6 +929,11 @@
 			isa = PBXTargetDependency;
 			target = 4D2161DF1E62FB4A00042045 /* VLC Controller-watchOS */;
 			targetProxy = 4D2162021E62FB4F00042045 /* PBXContainerItemProxy */;
+		};
+		4D7FC016210C59AA00E2DCD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7DEDDA4157A468000ADBD36 /* VLC Controller */;
+			targetProxy = 4D7FC015210C59AA00E2DCD9 /* PBXContainerItemProxy */;
 		};
 		B7DEDDCC157A468100ADBD36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1034,6 +1109,74 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		4D7FC018210C59AA00E2DCD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "VLC ControllerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "lt.keyspace.VLC-ControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VLC Controller";
+			};
+			name = Debug;
+		};
+		4D7FC019210C59AA00E2DCD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2AWB3N3D5T;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "VLC ControllerUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "lt.keyspace.VLC-ControllerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VLC Controller";
 			};
 			name = Release;
 		};
@@ -1237,6 +1380,15 @@
 			buildConfigurations = (
 				4D21620A1E62FB4F00042045 /* Debug */,
 				4D21620B1E62FB4F00042045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D7FC017210C59AA00E2DCD9 /* Build configuration list for PBXNativeTarget "VLC ControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D7FC018210C59AA00E2DCD9 /* Debug */,
+				4D7FC019210C59AA00E2DCD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
